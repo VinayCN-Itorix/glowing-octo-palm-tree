@@ -1,0 +1,22 @@
+{
+  "cts" : 1712833005098,
+  "createdUserName" : "Elise Barnes",
+  "modifiedUserName" : "Elise Barnes",
+  "mts" : 1712833005098,
+  "createdBy" : "6036857c38e56d398c70be85",
+  "modifiedBy" : "6036857c38e56d398c70be85",
+  "proxyId" : "6617c1edde25ac5dfb8c7f3b",
+  "revision" : 1,
+  "name" : "dummy_name-SA3O",
+  "description" : "dummy_description",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/dummy/path",
+  "pathArray" : [ "dummy", "path" ],
+  "environmentId" : "dummy_environment_id",
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ ],
+  "vertexHashMap" : { },
+  "deployed" : false
+}
