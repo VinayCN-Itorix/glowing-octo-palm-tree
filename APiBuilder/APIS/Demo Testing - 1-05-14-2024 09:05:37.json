@@ -1,0 +1,319 @@
+{
+  "cts" : 1715677537310,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715677537310,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66432961d3cebc7c029638b0",
+  "revision" : 1,
+  "name" : "Demo Testing - 1-05-14-2024 09:05:37",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ {
+    "source" : "26d84dd5-56ec-4886-bd00-7dcd103b3412",
+    "target" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882"
+  }, {
+    "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
+    "target" : "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9"
+  }, {
+    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+    "target" : "99bfd90a-4230-43d7-b147-824306326c9d"
+  }, {
+    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+    "target" : "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8"
+  }, {
+    "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
+    "target" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684"
+  }, {
+    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+    "target" : "26d84dd5-56ec-4886-bd00-7dcd103b3412"
+  }, {
+    "source" : "v1",
+    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
+  }, {
+    "source" : "99bfd90a-4230-43d7-b147-824306326c9d",
+    "target" : "da9525ad-d23d-4533-8421-7b895a25908c"
+  } ],
+  "vertexHashMap" : {
+    "85ced650-6b9b-4f99-b6fa-e51c075305c9" : {
+      "vertexId" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "variables.sessionId",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "99bfd90a-4230-43d7-b147-824306326c9d" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "ABSENT",
+            "key" : "variables.sessionId",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "26d84dd5-56ec-4886-bd00-7dcd103b3412" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8" ]
+      } ]
+    },
+    "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684" : {
+      "vertexId" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"sessionId\": {{sessionId}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "26d84dd5-56ec-4886-bd00-7dcd103b3412" : {
+      "vertexId" : "26d84dd5-56ec-4886-bd00-7dcd103b3412",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "sessionId",
+        "value" : "664309154c35ff1e9df7653d",
+        "type" : "string",
+        "source" : "headers"
+      } ]
+    },
+    "99bfd90a-4230-43d7-b147-824306326c9d" : {
+      "vertexId" : "99bfd90a-4230-43d7-b147-824306326c9d",
+      "vertexType" : "TARGET",
+      "name" : "Get OAS",
+      "target" : {
+        "name" : "Get OAS",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
+          "headerParams" : [ {
+            "name" : "jsessionId",
+            "value" : "{{sessionId}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "GetOAS",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
+    },
+    "c53818e7-5ad0-458e-b7f7-9ddc99bd4882" : {
+      "vertexId" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"elseif\": true\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "sessionId",
+        "reference" : "headers",
+        "value" : "sessionid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      } ]
+    },
+    "da9525ad-d23d-4533-8421-7b895a25908c" : {
+      "vertexId" : "da9525ad-d23d-4533-8421-7b895a25908c",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "GetOAS",
+        "variables" : [ ],
+        "listType" : "json",
+        "startingVertex" : [ "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9" ],
+        "listVariableVertexId" : "99bfd90a-4230-43d7-b147-824306326c9d",
+        "loopVertexes" : [ "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9" ]
+      }
+    },
+    "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9" : {
+      "vertexId" : "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9",
+      "vertexType" : "TARGET",
+      "name" : "Testing For",
+      "target" : {
+        "name" : "Testing For",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dummyjson.com/products",
+          "path" : "/1",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "parentVertex" : "da9525ad-d23d-4533-8421-7b895a25908c"
+    },
+    "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8" : {
+      "vertexId" : "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"else\": true\n}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "changeLogs" : [ {
+    "commitId" : "cc5595ec13371fcc79baeba52f12499e4371c183",
+    "timeStamp" : 1715669101451,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "8333d03961434f1627e194dce2f582204cc24412",
+    "timeStamp" : 1715669140206,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "509cdefc2942a1f3d7daae5de99dfc06c4c74e7a",
+    "timeStamp" : 1715669759360,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "3f38252411dd735f60389898d3cc75349d7fa46d",
+    "timeStamp" : 1715669802140,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "69213aaa02cefda25e3d0e10b58f43797c1eadee",
+    "timeStamp" : 1715669843848,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "b7dc13d121f12078db7dce1334652e1da701dd91",
+    "timeStamp" : 1715669896784,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "f8eec88592006cd641d70d5ad0dd575c9c7fb1bc",
+    "timeStamp" : 1715670151653,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "068c12b32fcd5deb7e958fdc4633ade15506bdd7",
+    "timeStamp" : 1715670250440,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "56651167f72f5cbbbaa394c0d2bc075d3eb16bb1",
+    "timeStamp" : 1715670350455,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "dc1727c24dddccaafe223b4233afb9bce1fd425c",
+    "timeStamp" : 1715670368440,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "a6fcaa6ab79ee2d939f2f5f651a4e0e5ab7c2101",
+    "timeStamp" : 1715670384021,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "81531878e9f4fe1204d44cd7fb03f0d6f1c00f70",
+    "timeStamp" : 1715670919038,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
