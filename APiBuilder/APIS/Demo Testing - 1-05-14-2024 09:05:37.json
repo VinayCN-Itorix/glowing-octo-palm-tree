@@ -3,7 +3,7 @@
   "cts" : 1715677537310,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715678484844,
+  "mts" : 1715678811649,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66432961d3cebc7c029638b0",
@@ -17,20 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
-  }, {
     "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
     "target" : "2d731a98-30d8-4fe9-9e4f-c27a10bb9ed9"
   }, {
-    "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
-    "target" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684"
+    "source" : "423b314c-4185-45d4-913f-281ca3f23c90",
+    "target" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882"
   }, {
     "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
     "target" : "99bfd90a-4230-43d7-b147-824306326c9d"
-  }, {
-    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
-    "target" : "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8"
   }, {
     "source" : "26d84dd5-56ec-4886-bd00-7dcd103b3412",
     "target" : "423b314c-4185-45d4-913f-281ca3f23c90"
@@ -38,11 +32,20 @@
     "source" : "99bfd90a-4230-43d7-b147-824306326c9d",
     "target" : "da9525ad-d23d-4533-8421-7b895a25908c"
   }, {
+    "source" : "da9525ad-d23d-4533-8421-7b895a25908c",
+    "target" : "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684"
+  }, {
     "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
     "target" : "26d84dd5-56ec-4886-bd00-7dcd103b3412"
   }, {
-    "source" : "423b314c-4185-45d4-913f-281ca3f23c90",
-    "target" : "c53818e7-5ad0-458e-b7f7-9ddc99bd4882"
+    "source" : "bff52b16-e6a1-4fd0-8a54-3642fb8b35b2",
+    "target" : "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8"
+  }, {
+    "source" : "85ced650-6b9b-4f99-b6fa-e51c075305c9",
+    "target" : "bff52b16-e6a1-4fd0-8a54-3642fb8b35b2"
+  }, {
+    "source" : "v1",
+    "target" : "85ced650-6b9b-4f99-b6fa-e51c075305c9"
   } ],
   "vertexHashMap" : {
     "423b314c-4185-45d4-913f-281ca3f23c90" : {
@@ -157,7 +160,7 @@
         "assertion" : {
           "continueOnError" : false
         },
-        "flowVertexes" : [ "25440fac-8cdc-48b4-b2a2-dfe1cf1e9ab8" ]
+        "flowVertexes" : [ "bff52b16-e6a1-4fd0-8a54-3642fb8b35b2" ]
       } ]
     },
     "e7e84b7b-fb7b-449b-8fab-cdaddbcd1684" : {
@@ -182,6 +185,58 @@
         "type" : "string",
         "source" : "headers"
       } ]
+    },
+    "bff52b16-e6a1-4fd0-8a54-3642fb8b35b2" : {
+      "vertexId" : "bff52b16-e6a1-4fd0-8a54-3642fb8b35b2",
+      "vertexType" : "TARGET",
+      "name" : "Graphql",
+      "target" : {
+        "name" : "Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "spacex-production.up.railway.app",
+          "path" : "/",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "Accept",
+            "value" : "*/*"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\"query\":\"query ExampleQuery {\\n    company {\\n        ceo\\n    }\\n    roadster {\\n        apoapsis_au\\n    }\\n}\\n\",\"variables\":{}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "ceoName",
+            "reference" : "body",
+            "value" : "$.data.company.ceo",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      }
     },
     "99bfd90a-4230-43d7-b147-824306326c9d" : {
       "vertexId" : "99bfd90a-4230-43d7-b147-824306326c9d",
@@ -409,6 +464,11 @@
   }, {
     "commitId" : "f1b9fb58c3520dd4445355c1c48debbb1cefef10",
     "timeStamp" : 1715678217823,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "160ed97bfc0d3d10808ebe5d20af2fbcb459de9e",
+    "timeStamp" : 1715678484844,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
