@@ -1,11 +1,11 @@
 {
-  "cts" : 1715781258027,
+  "cts" : 1715781957370,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715781258027,
+  "mts" : 1715781957370,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644be8aa16c946c03a21767",
+  "proxyId" : "6644c145a16c946c03a21769",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -125,7 +125,13 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "capture data",
-      "requestVariables" : [ ]
+      "requestVariables" : [ {
+        "name" : "id",
+        "reference" : "path-variable",
+        "value" : "id",
+        "active" : true,
+        "hide" : false
+      } ]
     },
     "v2" : {
       "vertexId" : "v2",
@@ -274,7 +280,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715781258027,
+    "cts" : 1715781957370,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
