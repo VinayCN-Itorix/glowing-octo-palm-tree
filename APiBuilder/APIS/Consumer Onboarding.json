@@ -1,0 +1,180 @@
+{
+  "cts" : 1715765759909,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715765759909,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "664481ffd9e8bc47a1617449",
+  "revision" : 1,
+  "name" : "Consumer Onboarding",
+  "description" : "Enable consumers to self-onboard by creating consumer account, logging in and fetching their account details.",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/consumer-onboarding",
+  "pathArray" : [ "consumer-onboarding" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "v2"
+  }, {
+    "source" : "v3",
+    "target" : "v4"
+  }, {
+    "source" : "v2",
+    "target" : "v3"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "capture consumer data",
+      "requestVariables" : [ {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : false,
+        "hide" : false
+      } ]
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Get OAuth Token",
+      "target" : {
+        "name" : "Get OAuth Token",
+        "description" : "Fetch the access token from Kong Authorization server.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "accessToken",
+            "reference" : "body",
+            "value" : "access_token",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"Token call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "TARGET",
+      "name" : "Create Consumer Account",
+      "target" : {
+        "name" : "Create Consumer Account",
+        "description" : "The first step in consumer onboarding is to create a account for the consumer",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "consumerAccountId",
+            "reference" : "body",
+            "value" : "id",
+            "active" : false,
+            "hide" : false
+          }, {
+            "name" : "consumerAccountUsername",
+            "reference" : "body",
+            "value" : "username",
+            "active" : false,
+            "hide" : false
+          }, {
+            "name" : "consumerAccountPassword",
+            "reference" : "body",
+            "value" : "password",
+            "active" : false,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"Create Consumer Account call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v4" : {
+      "vertexId" : "v4",
+      "vertexType" : "STOP",
+      "name" : "response",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\"output\":\"Workflow comleted successfully.\"}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715765759909,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
