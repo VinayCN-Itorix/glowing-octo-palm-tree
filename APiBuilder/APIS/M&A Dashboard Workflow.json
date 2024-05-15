@@ -1,18 +1,18 @@
 {
-  "cts" : 1715781216137,
+  "cts" : 1715781258027,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715781216137,
+  "mts" : 1715781258027,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644be60a16c946c03a21765",
+  "proxyId" : "6644be8aa16c946c03a21767",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/M-A-Dashboard",
-  "pathArray" : [ "M-A-Dashboard" ],
+  "path" : "/M-A-Dashboard/{id}",
+  "pathArray" : [ "M-A-Dashboard", "*" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -116,7 +116,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"variablesCapture\" : \"{{{status}}}\",\n    \"DashboardData\" : \"{{{DashboardData}}}\"\n}",
+          "data" : "{\n    \"id\" : \"{{id}}\",\n \"variablesCapture\" : \"{{{status}}}\",\n    \"DashboardData\" : \"{{{DashboardData}}}\"\n}",
           "type" : "json"
         }
       }
@@ -274,7 +274,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715781216137,
+    "cts" : 1715781258027,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
