@@ -1,11 +1,11 @@
 {
-  "cts" : 1715778628199,
+  "cts" : 1715779221782,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715778628199,
+  "mts" : 1715779221782,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644b444a16c946c03a21758",
+  "proxyId" : "6644b695a16c946c03a2175a",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -17,11 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v4",
-    "target" : "v6"
-  }, {
     "source" : "v3",
     "target" : "v4"
+  }, {
+    "source" : "v4",
+    "target" : "v7"
   }, {
     "source" : "v2",
     "target" : "v3"
@@ -32,6 +32,52 @@
   "vertexHashMap" : {
     "v6" : {
       "vertexId" : "v6",
+      "vertexType" : "TARGET",
+      "name" : "Analyze M&A API",
+      "target" : {
+        "name" : "Analyze M&A API",
+        "description" : "Analyze M&A API",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/mergers-acquisitions/analyze",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\"companies\":[\"{{companyName}}\"]}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"Analyze call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v7" : {
+      "vertexId" : "v7",
       "vertexType" : "STOP",
       "name" : "Consumer Onboarding Response",
       "proxyResponse" : {
@@ -165,63 +211,28 @@
           "value" : "company",
           "active" : true,
           "hide" : false
+        }, {
+          "name" : "arr",
+          "reference" : "body",
+          "value" : "arrInMillionUSD",
+          "active" : true,
+          "hide" : false
         } ],
         "listType" : "json",
         "listName" : "Companies list",
         "startingVertex" : [ "v5" ],
-        "loopVertexes" : [ "v5" ]
+        "loopVertexes" : [ "v5", "v6" ]
       }
     },
     "v5" : {
       "vertexId" : "v5",
-      "vertexType" : "TARGET",
-      "name" : "Analyze M&A API",
-      "target" : {
-        "name" : "Analyze M&A API",
-        "description" : "Analyze M&A API",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "acmebank-app.apiwiz.io",
-          "path" : "/v3/corporate/mergers-acquisitions/analyze",
-          "headerParams" : [ {
-            "name" : "Authorization",
-            "description" : "Access Token",
-            "value" : "{{accessToken}}"
-          }, {
-            "name" : "Content-Type",
-            "description" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\"companies\":[\"{{companyName}}\"]}",
-            "type" : "json"
-          }
-        },
-        "response" : {
-          "statusCode" : 0,
-          "variables" : [ ]
-        },
-        "timeout" : 1000,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 408,
-          "headers" : {
-            "Content-Type" : "application/json"
-          },
-          "body" : {
-            "data" : "{\"message\":\"Analyze call timed out\"}",
-            "type" : "json"
-          }
-        }
-      }
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "CONDITIONAL FLOW node"
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715778628199,
+    "cts" : 1715779221782,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
