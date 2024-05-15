@@ -1,11 +1,11 @@
 {
-  "cts" : 1715769536135,
+  "cts" : 1715770427243,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715769536135,
+  "mts" : 1715770427243,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "664490c0d9e8bc47a161744e",
+  "proxyId" : "6644943bca8fdc6aebefd6ae",
   "revision" : 1,
   "name" : "Consumer Onboarding",
   "description" : "Enable consumers to self-onboard by creating consumer account, logging in and fetching their account details.",
@@ -17,14 +17,20 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "v4",
+    "target" : "v5"
+  }, {
+    "source" : "v3",
+    "target" : "v4"
+  }, {
     "source" : "v2",
     "target" : "v3"
   }, {
     "source" : "v1",
     "target" : "v2"
   }, {
-    "source" : "v3",
-    "target" : "v4"
+    "source" : "v5",
+    "target" : "v6"
   } ],
   "vertexHashMap" : {
     "v6" : {
@@ -271,7 +277,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715769536135,
+    "cts" : 1715770427243,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
