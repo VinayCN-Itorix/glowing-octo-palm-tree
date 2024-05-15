@@ -1,0 +1,233 @@
+{
+  "cts" : 1715777823141,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715777823141,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6644b11fa16c946c03a21754",
+  "revision" : 1,
+  "name" : "M&A Dashboard Workflow",
+  "description" : "Load M&A Dashboard Workflow.",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/M-A-Dashboard",
+  "pathArray" : [ "M-A-Dashboard" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v4",
+    "target" : "v5"
+  }, {
+    "source" : "v3",
+    "target" : "v4"
+  }, {
+    "source" : "v2",
+    "target" : "v3"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
+  }, {
+    "source" : "v5",
+    "target" : "v6"
+  } ],
+  "vertexHashMap" : {
+    "v6" : {
+      "vertexId" : "v6",
+      "vertexType" : "STOP",
+      "name" : "Consumer Onboarding Response",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{DashboardData}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "capture data",
+      "requestVariables" : [ ]
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Get OAuth Token",
+      "target" : {
+        "name" : "Get OAuth Token",
+        "description" : "Fetch the access token from Kong Authorization server.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "accessToken",
+            "reference" : "body",
+            "value" : "access_token",
+            "active" : true,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"Token call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "TARGET",
+      "name" : "M & A DashboardData",
+      "target" : {
+        "name" : "M & A DashboardData",
+        "description" : "get M & A DashboardData",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/dashboard",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "DashboardData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"M & A Dashboard call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v4" : {
+      "vertexId" : "v4",
+      "vertexType" : "LOOP",
+      "name" : "LOOP M & A DashboardData",
+      "loopData" : {
+        "listVariableSource" : "DashboardData",
+        "variables" : [ {
+          "name" : "companyName",
+          "reference" : "body",
+          "value" : "company",
+          "active" : true,
+          "hide" : false
+        } ],
+        "listType" : "json",
+        "listName" : "Companies list",
+        "startingVertex" : [ "v5" ],
+        "loopVertexes" : [ "v5" ]
+      }
+    },
+    "v5" : {
+      "vertexId" : "v5",
+      "vertexType" : "TARGET",
+      "name" : "Analyze M&A API",
+      "target" : {
+        "name" : "Analyze M&A API",
+        "description" : "Analyze M&A API",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/mergers-acquisitions/analyze",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\"companies\":[\"{{companyName}}\"]}",
+            "type" : "json"
+          }
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"Analyze call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715777823141,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
