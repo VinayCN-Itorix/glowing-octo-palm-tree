@@ -1,11 +1,11 @@
 {
-  "cts" : 1715765759909,
+  "cts" : 1715767069030,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715765759909,
+  "mts" : 1715767069030,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "664481ffd9e8bc47a1617449",
+  "proxyId" : "6644871dd9e8bc47a161744c",
   "revision" : 1,
   "name" : "Consumer Onboarding",
   "description" : "Enable consumers to self-onboard by creating consumer account, logging in and fetching their account details.",
@@ -17,11 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "v2"
-  }, {
     "source" : "v3",
     "target" : "v4"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
   }, {
     "source" : "v2",
     "target" : "v3"
@@ -35,7 +35,7 @@
         "name" : "requestBody",
         "reference" : "body",
         "value" : "$",
-        "active" : false,
+        "active" : true,
         "hide" : false
       } ]
     },
@@ -69,7 +69,7 @@
             "name" : "accessToken",
             "reference" : "body",
             "value" : "access_token",
-            "active" : false,
+            "active" : true,
             "hide" : false
           } ]
         },
@@ -121,19 +121,19 @@
             "name" : "consumerAccountId",
             "reference" : "body",
             "value" : "id",
-            "active" : false,
+            "active" : true,
             "hide" : false
           }, {
             "name" : "consumerAccountUsername",
             "reference" : "body",
             "value" : "username",
-            "active" : false,
+            "active" : true,
             "hide" : false
           }, {
             "name" : "consumerAccountPassword",
             "reference" : "body",
             "value" : "password",
-            "active" : false,
+            "active" : true,
             "hide" : false
           } ]
         },
@@ -171,7 +171,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715765759909,
+    "cts" : 1715767069030,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
