@@ -1,11 +1,11 @@
 {
-  "cts" : 1715767069030,
+  "cts" : 1715769536135,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715767069030,
+  "mts" : 1715769536135,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644871dd9e8bc47a161744c",
+  "proxyId" : "664490c0d9e8bc47a161744e",
   "revision" : 1,
   "name" : "Consumer Onboarding",
   "description" : "Enable consumers to self-onboard by creating consumer account, logging in and fetching their account details.",
@@ -17,16 +17,33 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v3",
-    "target" : "v4"
+    "source" : "v2",
+    "target" : "v3"
   }, {
     "source" : "v1",
     "target" : "v2"
   }, {
-    "source" : "v2",
-    "target" : "v3"
+    "source" : "v3",
+    "target" : "v4"
   } ],
   "vertexHashMap" : {
+    "v6" : {
+      "vertexId" : "v6",
+      "vertexType" : "STOP",
+      "name" : "Consumer Onboarding Response",
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler",
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{loginConsumerAccountBody}}}",
+          "type" : "json"
+        }
+      }
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -99,7 +116,7 @@
           "apiMethod" : "POST",
           "scheme" : "https",
           "host" : "acmebank-app.apiwiz.io",
-          "path" : "/itorix/v2/swaggers/history",
+          "path" : "/v3/consumer/accounts",
           "headerParams" : [ {
             "name" : "Authorization",
             "description" : "Access Token",
@@ -153,25 +170,108 @@
     },
     "v4" : {
       "vertexId" : "v4",
-      "vertexType" : "STOP",
-      "name" : "response",
-      "proxyResponse" : {
-        "statusCode" : 202,
-        "headers" : {
-          "time" : "1708526031457",
-          "x-agent" : "apibuiler",
-          "Content-Type" : "application/json"
+      "vertexType" : "TARGET",
+      "name" : "Consumer Account Login",
+      "target" : {
+        "name" : "Consumer Account Login",
+        "description" : "Login into Consumer Account",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/consumer/accounts/login",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\"username\":\"{{consumerAccountUsername}}\",\"password\":\"{{consumerAccountPassword}}\"}",
+            "type" : "json"
+          }
         },
-        "body" : {
-          "data" : "{\"output\":\"Workflow comleted successfully.\"}",
-          "type" : "json"
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "loginConsumerAccountId",
+            "reference" : "body",
+            "value" : "id",
+            "active" : true,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"login Consumer Account call timed out\"}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "v5" : {
+      "vertexId" : "v5",
+      "vertexType" : "TARGET",
+      "name" : "Get Consumer Account Info",
+      "target" : {
+        "name" : "Get Consumer Account Info",
+        "description" : "Get Consumer Account Info using the Consumer Account ID.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/consumer/accounts/{{loginConsumerAccountId}}",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "description" : "Access Token",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "Content-Type",
+            "description" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "loginConsumerAccountBody",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 1000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\"message\":\"login Consumer Account call timed out\"}",
+            "type" : "json"
+          }
         }
       }
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715767069030,
+    "cts" : 1715769536135,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
