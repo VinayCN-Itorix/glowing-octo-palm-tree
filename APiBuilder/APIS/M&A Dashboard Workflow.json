@@ -1,11 +1,11 @@
 {
-  "cts" : 1715780400249,
+  "cts" : 1715781216137,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715780400249,
+  "mts" : 1715781216137,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644bb30a16c946c03a21761",
+  "proxyId" : "6644be60a16c946c03a21765",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -19,6 +19,12 @@
   "edgeSet" : [ {
     "source" : "v3",
     "target" : "v4"
+  }, {
+    "source" : "v7",
+    "target" : "v8"
+  }, {
+    "source" : "v8",
+    "target" : "v20"
   }, {
     "source" : "v4",
     "target" : "v7"
@@ -81,6 +87,25 @@
     },
     "v7" : {
       "vertexId" : "v7",
+      "vertexType" : "DELAY",
+      "name" : "DELAY node",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 10
+      }
+    },
+    "v8" : {
+      "vertexId" : "v8",
+      "vertexType" : "VARIABLES",
+      "name" : "Variables node",
+      "runtimeVariableList" : [ {
+        "name" : "status",
+        "value" : "{\n    \"name\" : \"cert\",\n    \"description\" : \"cert desc\",\n    \"content\" : null,\n    \"password\" : \"34rt34567swedgs\",\n    \"alias\" : \"certificate\",\n    \"status\" : \"APPROVED\",\n    \"updateDescription\" : \"updating\"\n}",
+        "type" : "json"
+      } ]
+    },
+    "v20" : {
+      "vertexId" : "v20",
       "vertexType" : "STOP",
       "name" : "Consumer Onboarding Response",
       "proxyResponse" : {
@@ -91,7 +116,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{{{DashboardData}}}",
+          "data" : "{\n    \"variablesCapture\" : \"{{{status}}}\",\n    \"DashboardData\" : \"{{{DashboardData}}}\"\n}",
           "type" : "json"
         }
       }
@@ -249,7 +274,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715780400249,
+    "cts" : 1715781216137,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
