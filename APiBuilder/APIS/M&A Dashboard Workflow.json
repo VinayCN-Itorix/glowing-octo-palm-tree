@@ -1,11 +1,11 @@
 {
-  "cts" : 1715781957370,
+  "cts" : 1715783274593,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715781957370,
+  "mts" : 1715783274593,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644c145a16c946c03a21769",
+  "proxyId" : "6644c66aa16c946c03a2176b",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -100,7 +100,7 @@
       "name" : "Variables node",
       "runtimeVariableList" : [ {
         "name" : "status",
-        "value" : "{\n    \"name\" : \"cert\",\n    \"description\" : \"cert desc\",\n    \"content\" : null,\n    \"password\" : \"34rt34567swedgs\",\n    \"alias\" : \"certificate\",\n    \"status\" : \"APPROVED\",\n    \"updateDescription\" : \"updating\"\n}",
+        "value" : "{\n \"status\" : \"APPROVED\",\n    \"updateDescription\" : \"updating\"\n}",
         "type" : "json"
       } ]
     },
@@ -116,7 +116,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"id\" : \"{{id}}\",\n \"variablesCapture\" : \"{{{status}}}\",\n    \"DashboardData\" : \"{{{DashboardData}}}\"\n}",
+          "data" : "{\n    \"id\" : \"{{id}}\",\n \"variablesCapture\" : {{{status}}},\n    \"DashboardData\" : {{{DashboardData}}} \n}",
           "type" : "json"
         }
       }
@@ -280,7 +280,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715781957370,
+    "cts" : 1715783274593,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
