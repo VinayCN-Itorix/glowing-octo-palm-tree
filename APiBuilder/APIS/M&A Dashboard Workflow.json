@@ -1,11 +1,11 @@
 {
-  "cts" : 1715779589363,
+  "cts" : 1715779960535,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715779589363,
+  "mts" : 1715779960535,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644b805a16c946c03a2175d",
+  "proxyId" : "6644b978a16c946c03a2175f",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -230,12 +230,26 @@
     "v5" : {
       "vertexId" : "v5",
       "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "CONDITIONAL FLOW node"
+      "name" : "CONDITIONAL FLOW node",
+      "conditionalFlow" : [ {
+        "condition" : "if-else",
+        "assertion" : {
+          "expression" : "{0}",
+          "placeHolders" : [ {
+            "rule" : "GREATER_THAN",
+            "key" : "variables.arr",
+            "value" : "500",
+            "valueDataType" : "INTEGER"
+          } ],
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "v6" ]
+      } ]
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715779589363,
+    "cts" : 1715779960535,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
