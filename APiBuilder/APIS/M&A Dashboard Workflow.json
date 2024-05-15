@@ -1,11 +1,11 @@
 {
-  "cts" : 1715779960535,
+  "cts" : 1715780400249,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715779960535,
+  "mts" : 1715780400249,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6644b978a16c946c03a2175f",
+  "proxyId" : "6644bb30a16c946c03a21761",
   "revision" : 1,
   "name" : "M&A Dashboard Workflow",
   "description" : "Load M&A Dashboard Workflow.",
@@ -232,7 +232,7 @@
       "vertexType" : "CONDITIONAL_FLOW",
       "name" : "CONDITIONAL FLOW node",
       "conditionalFlow" : [ {
-        "condition" : "if-else",
+        "condition" : "if",
         "assertion" : {
           "expression" : "{0}",
           "placeHolders" : [ {
@@ -249,7 +249,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1715779960535,
+    "cts" : 1715780400249,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
