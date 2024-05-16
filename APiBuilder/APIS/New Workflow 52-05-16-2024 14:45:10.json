@@ -1,0 +1,50 @@
+{
+  "cts" : 1715870710172,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715870710172,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66461bf6fa6f69314e410b85",
+  "revision" : 1,
+  "name" : "New Workflow 52-05-16-2024 14:45:10",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : false,
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "c458ed51-7061-4cad-8fe3-31e3020607f6"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "c458ed51-7061-4cad-8fe3-31e3020607f6" : {
+      "vertexId" : "c458ed51-7061-4cad-8fe3-31e3020607f6",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "changeLogs" : [ {
+    "commitId" : "7d585c20e5723c1649e2f56f71935f4c04d0d127",
+    "timeStamp" : 1715868946433,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
