@@ -1,8 +1,9 @@
 {
+  "id" : "6645f05c2a3d1f50f3c28b66",
   "cts" : 1715859546555,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715859546555,
+  "mts" : 1715862868340,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6645f05a2a3d1f50f3c28b65",
@@ -16,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "4aaf7691-7893-4df5-a472-dc1bf66f820a",
     "target" : "731d5b15-bfeb-4b2c-ba49-4c840efae8f9"
+  }, {
+    "source" : "v1",
+    "target" : "4aaf7691-7893-4df5-a472-dc1bf66f820a"
   } ],
   "vertexHashMap" : {
     "731d5b15-bfeb-4b2c-ba49-4c840efae8f9" : {
@@ -32,11 +36,39 @@
         }
       }
     },
+    "4aaf7691-7893-4df5-a472-dc1bf66f820a" : {
+      "vertexId" : "4aaf7691-7893-4df5-a472-dc1bf66f820a",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "headers" : {
+            "error" : "error occured"
+          },
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "uhuhh",
+        "reference" : "headers",
+        "value" : "jhbhj",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      } ],
       "imported" : false
     }
   },
@@ -45,6 +77,12 @@
     "cts" : 1715859546555,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "dc87a5683d05454a5d1aab515d1bfaf1d03e1905",
+    "timeStamp" : 1715859546555,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "deployed" : false
