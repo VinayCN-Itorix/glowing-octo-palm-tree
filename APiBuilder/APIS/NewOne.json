@@ -1,0 +1,170 @@
+{
+  "id" : "66461514a7b36524bc5b9bce",
+  "cts" : 1715868946433,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715880026225,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66461512a7b36524bc5b9bcd",
+  "revision" : 1,
+  "name" : "NewOne",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/open-banking/v3.1/pisp/file-payment-consents/{ConsentId}/file",
+  "pathArray" : [ "open-banking", "v3.1", "pisp", "file-payment-consents", "*", "file" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "5d615817-945a-49ff-aa9a-fcef1c91730f",
+    "target" : "c458ed51-7061-4cad-8fe3-31e3020607f6"
+  }, {
+    "source" : "v1",
+    "target" : "5d615817-945a-49ff-aa9a-fcef1c91730f"
+  } ],
+  "vertexHashMap" : {
+    "5d615817-945a-49ff-aa9a-fcef1c91730f" : {
+      "vertexId" : "5d615817-945a-49ff-aa9a-fcef1c91730f",
+      "vertexType" : "TARGET",
+      "name" : "sdlfjasdlfka sdlfja lsdkfjlaksjdf lakjsflkas dflakjsdflkajsldfkjasdfa",
+      "target" : {
+        "name" : "sdlfjasdlfka sdlfja lsdkfjlaksjdf lakjsflkas dflakjsdflkajsldfkjasdfa",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "gogo",
+          "path" : "asdf",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "x-fapi-financial-id",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-customer-last-logged-time",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-customer-ip-address",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-interaction-id",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "Authorization",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-idempotency-key",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-jws-signature",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-customer-user-agent",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "ConsentId",
+        "reference" : "path-variable",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      } ],
+      "imported" : true,
+      "requestBody" : "\"string\""
+    },
+    "c458ed51-7061-4cad-8fe3-31e3020607f6" : {
+      "vertexId" : "c458ed51-7061-4cad-8fe3-31e3020607f6",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1715870776727,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "review"
+  }, {
+    "status" : "Draft",
+    "cts" : 1715870750645,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "change to draft"
+  }, {
+    "status" : "Draft",
+    "cts" : 1715868946433,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "7d585c20e5723c1649e2f56f71935f4c04d0d127",
+    "timeStamp" : 1715868946433,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "25e57692cbbc8bd6be549600984f4fa6ca71d014",
+    "timeStamp" : 1715879052445,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : true,
+  "deployed" : false
+}
