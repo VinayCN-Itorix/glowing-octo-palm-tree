@@ -1,0 +1,107 @@
+{
+  "id" : "6645a40d54a51f3410b12e76",
+  "cts" : 1715840010148,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715853454836,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6645a40a54a51f3410b12e71",
+  "revision" : 1,
+  "name" : "POST",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/open-banking/v3.1/pisp/domestic-payment-consents",
+  "pathArray" : [ "open-banking", "v3.1", "pisp", "domestic-payment-consents" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "2fb2b5af-c9bf-4bab-89bb-c2480976189c"
+  } ],
+  "vertexHashMap" : {
+    "2fb2b5af-c9bf-4bab-89bb-c2480976189c" : {
+      "vertexId" : "2fb2b5af-c9bf-4bab-89bb-c2480976189c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "x-fapi-financial-id",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-customer-last-logged-time",
+        "reference" : "headers",
+        "value" : "testing",
+        "active" : true,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-customer-ip-address",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fapi-interaction-id",
+        "reference" : "headers",
+        "value" : "test",
+        "active" : true,
+        "hide" : false
+      }, {
+        "name" : "Authorization",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-idempotency-key",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-jws-signature",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-customer-user-agent",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      } ],
+      "imported" : true,
+      "requestBody" : "{\n\t\"Data\": {\n\t\t\"Initiation\": {\n\t\t\t\"InstructionIdentification\": \"string\",\n\t\t\t\"EndToEndIdentification\": \"string\",\n\t\t\t\"LocalInstrument\": \"string\",\n\t\t\t\"InstructedAmount\": {\n\t\t\t\t\"Amount\": \"string\",\n\t\t\t\t\"Currency\": \"string\"\n\t\t\t},\n\t\t\t\"DebtorAccount\": {\n\t\t\t\t\"SchemeName\": \"string\",\n\t\t\t\t\"Identification\": \"string\",\n\t\t\t\t\"Name\": \"string\",\n\t\t\t\t\"SecondaryIdentification\": \"string\"\n\t\t\t},\n\t\t\t\"CreditorAccount\": {\n\t\t\t\t\"SchemeName\": \"string\",\n\t\t\t\t\"Identification\": \"string\",\n\t\t\t\t\"Name\": \"string\",\n\t\t\t\t\"SecondaryIdentification\": \"string\"\n\t\t\t},\n\t\t\t\"CreditorPostalAddress\": {\n\t\t\t\t\"AddressType\": \"string\",\n\t\t\t\t\"Department\": \"string\",\n\t\t\t\t\"SubDepartment\": \"string\",\n\t\t\t\t\"StreetName\": \"string\",\n\t\t\t\t\"BuildingNumber\": \"string\",\n\t\t\t\t\"PostCode\": \"string\",\n\t\t\t\t\"TownName\": \"string\",\n\t\t\t\t\"CountrySubDivision\": \"string\",\n\t\t\t\t\"Country\": \"string\",\n\t\t\t\t\"AddressLine\": [\n\t\t\t\t\t\"string\"\n\t\t\t\t]\n\t\t\t},\n\t\t\t\"RemittanceInformation\": {\n\t\t\t\t\"Unstructured\": \"string\",\n\t\t\t\t\"Reference\": \"string\"\n\t\t\t},\n\t\t\t\"SupplementaryData\": {}\n\t\t},\n\t\t\"Authorisation\": {\n\t\t\t\"AuthorisationType\": \"string\",\n\t\t\t\"CompletionDateTime\": \"string\"\n\t\t}\n\t},\n\t\"Risk\": {\n\t\t\"PaymentContextCode\": \"string\",\n\t\t\"MerchantCategoryCode\": \"string\",\n\t\t\"MerchantCustomerIdentification\": \"string\",\n\t\t\"DeliveryAddress\": {\n\t\t\t\"AddressLine\": [\n\t\t\t\t\"string\"\n\t\t\t],\n\t\t\t\"StreetName\": \"string\",\n\t\t\t\"BuildingNumber\": \"string\",\n\t\t\t\"PostCode\": \"string\",\n\t\t\t\"TownName\": \"string\",\n\t\t\t\"CountrySubDivision\": [\n\t\t\t\t\"string\"\n\t\t\t],\n\t\t\t\"Country\": \"string\"\n\t\t}\n\t}\n}"
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715840010148,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8eae18e7da4e7935753a5432db8e187147636af9",
+    "timeStamp" : 1715840010148,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
