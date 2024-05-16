@@ -1,0 +1,59 @@
+{
+  "id" : "6645a40d54a51f3410b12e77",
+  "cts" : 1715840011145,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715853351948,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6645a40b54a51f3410b12e72",
+  "revision" : 1,
+  "name" : "addUser",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "4638d6a7-b36f-4c20-aa35-f2621aa6e9cc"
+  } ],
+  "vertexHashMap" : {
+    "4638d6a7-b36f-4c20-aa35-f2621aa6e9cc" : {
+      "vertexId" : "4638d6a7-b36f-4c20-aa35-f2621aa6e9cc",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true,
+      "requestBody" : "\"mutation addUser($name: String!){\\n    addUser(name: $name){\\n        id\\n        name\\n    }\\n}\""
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715840011145,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "9047d91e4e2c479440950a5a47774cb128a55d37",
+    "timeStamp" : 1715840011145,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
