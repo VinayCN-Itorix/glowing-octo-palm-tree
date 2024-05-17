@@ -1,12 +1,13 @@
 {
-  "cts" : 1715926717203,
+  "id" : "6646f6adcee9524a83f6a477",
+  "cts" : 1715926700357,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715926717203,
+  "mts" : 1715926754128,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6646f59acee9524a83f6a473",
-  "revision" : 5,
+  "revision" : 4,
   "name" : "New Workflow 54",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -16,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "74f7aae0-0579-4771-99a1-8623ed25a08e",
     "target" : "02c2d980-e751-41cc-8361-b6feefcff540"
+  }, {
+    "source" : "v1",
+    "target" : "74f7aae0-0579-4771-99a1-8623ed25a08e"
   } ],
   "vertexHashMap" : {
     "v1" : {
@@ -38,8 +42,24 @@
           "type" : "JSON"
         }
       }
+    },
+    "74f7aae0-0579-4771-99a1-8623ed25a08e" : {
+      "vertexId" : "74f7aae0-0579-4771-99a1-8623ed25a08e",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "imported" : false
     }
   },
+  "changeLogs" : [ {
+    "commitId" : "2a208ef8dfc331ef59f42be121ffa578876b928a",
+    "timeStamp" : 1715926700357,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
   "enableTracing" : false,
   "deployed" : false
 }
