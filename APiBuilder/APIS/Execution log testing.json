@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715945665881,
+  "mts" : 1715945948131,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -221,14 +221,20 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "dummyjson.com",
-          "path" : "/products/1",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v2/swaggers/history",
           "headerParams" : [ {
             "name" : "content-type",
             "value" : "application/json"
           }, {
             "name" : "Accept",
             "value" : "*/*"
+          }, {
+            "name" : "jesessionId",
+            "value" : "6646e7c49ce22d706bdc569c"
+          }, {
+            "name" : "x-apikey",
+            "value" : "XeX0u28Ya1a3CBm5tihMQFteeA6fZTy8avUIsJ0WnNOaEAM90Hcv9G2xo5z5hI4WMyHffxTAbP2LcXK4u6n5Pw=="
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -288,6 +294,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1715945877189,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
+    "status" : "Approved",
+    "cts" : 1715945745452,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "tes"
+  }, {
     "status" : "Review",
     "cts" : 1715945244654,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -396,6 +412,11 @@
   }, {
     "commitId" : "b9e56458a97e6a9ea2c99688bdcb1771fd3a0dac",
     "timeStamp" : 1715944508343,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "33b608717c864c8f8a5f8538c803b6f2419b9cc3",
+    "timeStamp" : 1715945665881,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
   } ],
