@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715945948131,
+  "mts" : 1715946000361,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -184,7 +184,7 @@
     "87e68e7f-e62e-4738-875b-0717eb789272" : {
       "vertexId" : "87e68e7f-e62e-4738-875b-0717eb789272",
       "vertexType" : "LOOP",
-      "name" : "For Loop",
+      "name" : "",
       "loopData" : {
         "listVariableSource" : "dummy",
         "variables" : [ ],
@@ -259,6 +259,12 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "dummy",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    }\n  }\n}"
         },
@@ -417,6 +423,11 @@
   }, {
     "commitId" : "33b608717c864c8f8a5f8538c803b6f2419b9cc3",
     "timeStamp" : 1715945665881,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "a1e91b46496484836615625096b4fed80bce5069",
+    "timeStamp" : 1715945948131,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
   } ],
