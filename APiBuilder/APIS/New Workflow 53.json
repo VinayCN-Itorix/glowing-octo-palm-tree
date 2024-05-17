@@ -1,0 +1,51 @@
+{
+  "cts" : 1715923635231,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715923635231,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6646eab381b812295568b6d7",
+  "revision" : 1,
+  "name" : "New Workflow 53",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "97644651-19fc-428b-abbf-c0a236b3556c"
+  } ],
+  "vertexHashMap" : {
+    "97644651-19fc-428b-abbf-c0a236b3556c" : {
+      "vertexId" : "97644651-19fc-428b-abbf-c0a236b3556c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715923635231,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
