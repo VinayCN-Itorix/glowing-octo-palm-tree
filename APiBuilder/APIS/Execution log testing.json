@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715939238598,
+  "mts" : 1715942256548,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -13,7 +13,7 @@
   "apiMethod" : "GET",
   "path" : "/products/1",
   "pathArray" : [ "products", "1" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -87,7 +87,8 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          } ]
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -99,6 +100,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1715939570882,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1715939271973,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
     "status" : "Draft",
     "cts" : 1715939109931,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -152,6 +163,11 @@
   }, {
     "commitId" : "287ff56076d224b2e161d373d0ae7eba47fb38c7",
     "timeStamp" : 1715939234398,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "3913005ed3f867df3ee7badef10ba601ed4a0897",
+    "timeStamp" : 1715939238598,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
