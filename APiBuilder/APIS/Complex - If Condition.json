@@ -3,7 +3,7 @@
   "cts" : 1715963850522,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715963893143,
+  "mts" : 1715964289375,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664787ca6c096705c935e0ea",
@@ -17,8 +17,35 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "4e45e597-143c-4bb5-8d6d-83b942e7e2ef",
+    "target" : "15c4aff8-fb94-4748-b13d-4ca91ba972af"
+  }, {
+    "source" : "7fe94237-d2eb-421e-9c4b-ef0651149140",
+    "target" : "878db17a-dd1f-4122-ac40-609bf75b4b2b"
+  }, {
+    "source" : "854380ec-0486-4f45-9ce1-b3ea8672a5a1",
     "target" : "8db4e99c-4263-42e4-b136-1a2813fc2fb1"
+  }, {
+    "source" : "4e45e597-143c-4bb5-8d6d-83b942e7e2ef",
+    "target" : "e6c9adec-e7da-47d2-bbab-2f19e9ffd0e0"
+  }, {
+    "source" : "854380ec-0486-4f45-9ce1-b3ea8672a5a1",
+    "target" : "7fe94237-d2eb-421e-9c4b-ef0651149140"
+  }, {
+    "source" : "7fe94237-d2eb-421e-9c4b-ef0651149140",
+    "target" : "337b6438-2d8b-43cf-83a3-df2276a736fd"
+  }, {
+    "source" : "v1",
+    "target" : "854380ec-0486-4f45-9ce1-b3ea8672a5a1"
+  }, {
+    "source" : "4e45e597-143c-4bb5-8d6d-83b942e7e2ef",
+    "target" : "f95160ad-1563-47bb-8da8-c4053d88e25a"
+  }, {
+    "source" : "7fe94237-d2eb-421e-9c4b-ef0651149140",
+    "target" : "12294240-6d8a-4b37-b5cc-0e7309f8c386"
+  }, {
+    "source" : "854380ec-0486-4f45-9ce1-b3ea8672a5a1",
+    "target" : "4e45e597-143c-4bb5-8d6d-83b942e7e2ef"
   } ],
   "vertexHashMap" : {
     "8db4e99c-4263-42e4-b136-1a2813fc2fb1" : {
@@ -33,12 +60,292 @@
         }
       }
     },
+    "7fe94237-d2eb-421e-9c4b-ef0651149140" : {
+      "vertexId" : "7fe94237-d2eb-421e-9c4b-ef0651149140",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "337b6438-2d8b-43cf-83a3-df2276a736fd" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "878db17a-dd1f-4122-ac40-609bf75b4b2b" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "12294240-6d8a-4b37-b5cc-0e7309f8c386" ]
+      } ],
+      "imported" : false
+    },
+    "12294240-6d8a-4b37-b5cc-0e7309f8c386" : {
+      "vertexId" : "12294240-6d8a-4b37-b5cc-0e7309f8c386",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "878db17a-dd1f-4122-ac40-609bf75b4b2b" : {
+      "vertexId" : "878db17a-dd1f-4122-ac40-609bf75b4b2b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "854380ec-0486-4f45-9ce1-b3ea8672a5a1" : {
+      "vertexId" : "854380ec-0486-4f45-9ce1-b3ea8672a5a1",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "8db4e99c-4263-42e4-b136-1a2813fc2fb1" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "7fe94237-d2eb-421e-9c4b-ef0651149140" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "4e45e597-143c-4bb5-8d6d-83b942e7e2ef" ]
+      } ],
+      "imported" : false
+    },
+    "15c4aff8-fb94-4748-b13d-4ca91ba972af" : {
+      "vertexId" : "15c4aff8-fb94-4748-b13d-4ca91ba972af",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "e6c9adec-e7da-47d2-bbab-2f19e9ffd0e0" : {
+      "vertexId" : "e6c9adec-e7da-47d2-bbab-2f19e9ffd0e0",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "4e45e597-143c-4bb5-8d6d-83b942e7e2ef" : {
+      "vertexId" : "4e45e597-143c-4bb5-8d6d-83b942e7e2ef",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f95160ad-1563-47bb-8da8-c4053d88e25a" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "15c4aff8-fb94-4748-b13d-4ca91ba972af" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "testing",
+            "value" : "testing",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "e6c9adec-e7da-47d2-bbab-2f19e9ffd0e0" ]
+      } ],
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "testing",
+        "reference" : "path-variable",
+        "value" : "testing",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      } ],
       "imported" : true
+    },
+    "f95160ad-1563-47bb-8da8-c4053d88e25a" : {
+      "vertexId" : "f95160ad-1563-47bb-8da8-c4053d88e25a",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "337b6438-2d8b-43cf-83a3-df2276a736fd" : {
+      "vertexId" : "337b6438-2d8b-43cf-83a3-df2276a736fd",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
     }
   },
   "statusHistory" : [ {
@@ -50,6 +357,11 @@
   "changeLogs" : [ {
     "commitId" : "14b771abc8b2fdcbdf0ce291898352c163036a78",
     "timeStamp" : 1715963850522,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0da61cc23c92a4751c04ecb097bf50958295295d",
+    "timeStamp" : 1715963893143,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
