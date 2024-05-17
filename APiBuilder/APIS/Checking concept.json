@@ -1,0 +1,149 @@
+{
+  "id" : "6646eab481b812295568b6d8",
+  "cts" : 1715923635231,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1715925197755,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6646eab381b812295568b6d7",
+  "revision" : 1,
+  "name" : "Checking concept",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/v1/acmebank/transactions/primary-transaction",
+  "pathArray" : [ "v1", "acmebank", "transactions", "primary-transaction" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "97644651-19fc-428b-abbf-c0a236b3556c"
+  } ],
+  "vertexHashMap" : {
+    "97644651-19fc-428b-abbf-c0a236b3556c" : {
+      "vertexId" : "97644651-19fc-428b-abbf-c0a236b3556c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "x-fin-acme",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-apikey",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-fin-res",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "Content-Type",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-tenant",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-b3-sampled",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "host",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-b3-traceid",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-b3-spanid",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "connection",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "user-agent",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "accept-encoding",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-b3-parentspanid",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "content-length",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "accept",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      } ],
+      "imported" : true,
+      "requestBody" : "\"Employee_History\""
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715923635231,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "da7657fa10398cf4bb06573a1bc78333e02c8737",
+    "timeStamp" : 1715923635231,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
