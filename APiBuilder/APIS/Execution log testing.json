@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715944508343,
+  "mts" : 1715945665881,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -223,7 +223,13 @@
           "scheme" : "https",
           "host" : "dummyjson.com",
           "path" : "/products/1",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "Accept",
+            "value" : "*/*"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "type" : "json"
@@ -247,12 +253,6 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          }, {
-            "name" : "dummy",
-            "reference" : "body",
-            "value" : "$.data",
-            "active" : true,
-            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    }\n  }\n}"
         },
@@ -288,6 +288,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1715945244654,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sfsd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1715944774484,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "testing"
+  }, {
     "status" : "Review",
     "cts" : 1715939570882,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -383,6 +393,11 @@
     "timeStamp" : 1715943869619,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "b9e56458a97e6a9ea2c99688bdcb1771fd3a0dac",
+    "timeStamp" : 1715944508343,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : true,
