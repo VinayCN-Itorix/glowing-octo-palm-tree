@@ -3,7 +3,7 @@
   "cts" : 1715923635231,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715925431741,
+  "mts" : 1715925609102,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6646eab381b812295568b6d7",
@@ -42,7 +42,8 @@
       "name" : "Set Variable",
       "runtimeVariableList" : [ {
         "name" : "x-fin-acme",
-        "value" : "123"
+        "value" : "asdlfkj",
+        "type" : "json"
       } ],
       "imported" : false
     },
@@ -161,6 +162,11 @@
     "timeStamp" : 1715925197755,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "dbc11bea398b65d7aae130405f2e09ac1a3972de",
+    "timeStamp" : 1715925431741,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "deployed" : false
