@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715943869619,
+  "mts" : 1715944508343,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -20,6 +20,9 @@
     "source" : "e9bccb63-d5c7-4b4b-97da-542aa41c6d62",
     "target" : "87e68e7f-e62e-4738-875b-0717eb789272"
   }, {
+    "source" : "02c3d43d-9fbe-43b7-89f2-37f768c98392",
+    "target" : "ac45a683-64d3-4ba5-9bf0-1dac569cbedb"
+  }, {
     "source" : "87e68e7f-e62e-4738-875b-0717eb789272",
     "target" : "60e5160c-01a3-46c4-8c98-5b63f61595d7"
   }, {
@@ -28,8 +31,96 @@
   }, {
     "source" : "87e68e7f-e62e-4738-875b-0717eb789272",
     "target" : "aeb4f04b-e510-4c72-829b-01463887b472"
+  }, {
+    "source" : "02c3d43d-9fbe-43b7-89f2-37f768c98392",
+    "target" : "cd87471c-e823-48b6-8d58-9a0e77519922"
+  }, {
+    "source" : "60e5160c-01a3-46c4-8c98-5b63f61595d7",
+    "target" : "02c3d43d-9fbe-43b7-89f2-37f768c98392"
+  }, {
+    "source" : "02c3d43d-9fbe-43b7-89f2-37f768c98392",
+    "target" : "5b035c13-e09d-4dae-bfe9-7a631da97e0e"
   } ],
   "vertexHashMap" : {
+    "02c3d43d-9fbe-43b7-89f2-37f768c98392" : {
+      "vertexId" : "02c3d43d-9fbe-43b7-89f2-37f768c98392",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "trying",
+            "value" : "$.title",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "cd87471c-e823-48b6-8d58-9a0e77519922" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "trying",
+            "value" : "$.title",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "ac45a683-64d3-4ba5-9bf0-1dac569cbedb" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "trying",
+            "value" : "$.title",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "5b035c13-e09d-4dae-bfe9-7a631da97e0e" ]
+      } ],
+      "parentVertex" : "87e68e7f-e62e-4738-875b-0717eb789272",
+      "imported" : false
+    },
+    "ac45a683-64d3-4ba5-9bf0-1dac569cbedb" : {
+      "vertexId" : "ac45a683-64d3-4ba5-9bf0-1dac569cbedb",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "87e68e7f-e62e-4738-875b-0717eb789272",
+      "imported" : false
+    },
     "60e5160c-01a3-46c4-8c98-5b63f61595d7" : {
       "vertexId" : "60e5160c-01a3-46c4-8c98-5b63f61595d7",
       "vertexType" : "TARGET",
@@ -102,7 +193,7 @@
         "listName" : "",
         "startingVertex" : [ "60e5160c-01a3-46c4-8c98-5b63f61595d7" ],
         "listVariableVertexId" : "e9bccb63-d5c7-4b4b-97da-542aa41c6d62",
-        "loopVertexes" : [ "60e5160c-01a3-46c4-8c98-5b63f61595d7" ]
+        "loopVertexes" : [ "60e5160c-01a3-46c4-8c98-5b63f61595d7", "02c3d43d-9fbe-43b7-89f2-37f768c98392", "b2dba5e6-269a-4da1-b23f-8a513b366e5e", "1f3623f4-cb30-46d9-9256-8897b8a2c50b", "9580d495-8538-475a-b9e1-c1c3b4c9c1f2", "cd87471c-e823-48b6-8d58-9a0e77519922", "ac45a683-64d3-4ba5-9bf0-1dac569cbedb", "5b035c13-e09d-4dae-bfe9-7a631da97e0e" ]
       },
       "imported" : false
     },
@@ -171,6 +262,28 @@
           "statusCode" : 0
         }
       },
+      "imported" : false
+    },
+    "5b035c13-e09d-4dae-bfe9-7a631da97e0e" : {
+      "vertexId" : "5b035c13-e09d-4dae-bfe9-7a631da97e0e",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "87e68e7f-e62e-4738-875b-0717eb789272",
+      "imported" : false
+    },
+    "cd87471c-e823-48b6-8d58-9a0e77519922" : {
+      "vertexId" : "cd87471c-e823-48b6-8d58-9a0e77519922",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "87e68e7f-e62e-4738-875b-0717eb789272",
       "imported" : false
     }
   },
@@ -263,6 +376,11 @@
   }, {
     "commitId" : "f30341a7413a8c08b23f47880fc7c1230cf754fa",
     "timeStamp" : 1715943375281,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "aed6f23837e78cba3e62ae4985e9d07fc012077b",
+    "timeStamp" : 1715943869619,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
