@@ -1,12 +1,12 @@
 {
-  "cts" : 1715926426489,
+  "cts" : 1715926528851,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715926426489,
+  "mts" : 1715926528851,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6646f59acee9524a83f6a473",
-  "revision" : 1,
+  "revision" : 2,
   "name" : "New Workflow 54",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -40,12 +40,6 @@
       }
     }
   },
-  "statusHistory" : [ {
-    "status" : "Draft",
-    "cts" : 1715926426489,
-    "lastModifiedBy" : "vidya.wiz vidya.wiz",
-    "description" : "Created new proxy"
-  } ],
   "enableTracing" : false,
   "deployed" : false
 }
