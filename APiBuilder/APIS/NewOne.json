@@ -3,7 +3,7 @@
   "cts" : 1715868946433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715922412047,
+  "mts" : 1715922430785,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66461512a7b36524bc5b9bcd",
@@ -169,7 +169,7 @@
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
-        "listName" : "test",
+        "listName" : "Custom arraay",
         "startingVertex" : [ ]
       },
       "imported" : false
@@ -224,6 +224,11 @@
   }, {
     "commitId" : "4fecf89ca507a16ee8821cb0fff6ff422c03003d",
     "timeStamp" : 1715922402845,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "e7cf9328cad473274e77d0b031f5cf534063066f",
+    "timeStamp" : 1715922412047,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
