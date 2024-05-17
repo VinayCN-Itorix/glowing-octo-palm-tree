@@ -3,7 +3,7 @@
   "cts" : 1715923635231,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715925197755,
+  "mts" : 1715925431741,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6646eab381b812295568b6d7",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "e0a0ec96-8232-4205-9824-7f452e4ba858",
     "target" : "97644651-19fc-428b-abbf-c0a236b3556c"
+  }, {
+    "source" : "v1",
+    "target" : "e0a0ec96-8232-4205-9824-7f452e4ba858"
   } ],
   "vertexHashMap" : {
     "97644651-19fc-428b-abbf-c0a236b3556c" : {
@@ -32,6 +35,16 @@
           "type" : "JSON"
         }
       }
+    },
+    "e0a0ec96-8232-4205-9824-7f452e4ba858" : {
+      "vertexId" : "e0a0ec96-8232-4205-9824-7f452e4ba858",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "x-fin-acme",
+        "value" : "123"
+      } ],
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -141,6 +154,11 @@
   "changeLogs" : [ {
     "commitId" : "da7657fa10398cf4bb06573a1bc78333e02c8737",
     "timeStamp" : 1715923635231,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "a18893bbffb2ee76c56aa8da39b34f5e5559bd2d",
+    "timeStamp" : 1715925197755,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
