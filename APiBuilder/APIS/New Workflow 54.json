@@ -1,13 +1,13 @@
 {
-  "id" : "6646f6adcee9524a83f6a477",
-  "cts" : 1715926700357,
+  "id" : "6646f59ccee9524a83f6a474",
+  "cts" : 1715926426489,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715926754128,
+  "mts" : 1715926767352,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6646f59acee9524a83f6a473",
-  "revision" : 4,
+  "revision" : 1,
   "name" : "New Workflow 54",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -17,11 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "74f7aae0-0579-4771-99a1-8623ed25a08e",
-    "target" : "02c2d980-e751-41cc-8361-b6feefcff540"
-  }, {
     "source" : "v1",
-    "target" : "74f7aae0-0579-4771-99a1-8623ed25a08e"
+    "target" : "122b5a0f-8e59-44cb-a1c6-81285e427b20"
+  }, {
+    "source" : "122b5a0f-8e59-44cb-a1c6-81285e427b20",
+    "target" : "02c2d980-e751-41cc-8361-b6feefcff540"
   } ],
   "vertexHashMap" : {
     "v1" : {
@@ -29,6 +29,13 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
+      "imported" : false
+    },
+    "122b5a0f-8e59-44cb-a1c6-81285e427b20" : {
+      "vertexId" : "122b5a0f-8e59-44cb-a1c6-81285e427b20",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ ],
       "imported" : false
     },
     "02c2d980-e751-41cc-8361-b6feefcff540" : {
@@ -42,21 +49,17 @@
           "type" : "JSON"
         }
       }
-    },
-    "74f7aae0-0579-4771-99a1-8623ed25a08e" : {
-      "vertexId" : "74f7aae0-0579-4771-99a1-8623ed25a08e",
-      "vertexType" : "DELAY",
-      "name" : "Delay",
-      "delayData" : {
-        "delayUnit" : "SECONDS",
-        "delayAmount" : 0
-      },
-      "imported" : false
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1715926426489,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
   "changeLogs" : [ {
-    "commitId" : "2a208ef8dfc331ef59f42be121ffa578876b928a",
-    "timeStamp" : 1715926700357,
+    "commitId" : "8aa6bcbdc943d378ef99a7a358d4395896fa4a98",
+    "timeStamp" : 1715926426489,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
