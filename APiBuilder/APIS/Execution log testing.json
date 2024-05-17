@@ -3,7 +3,7 @@
   "cts" : 1715929451104,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715946000361,
+  "mts" : 1715946386965,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647016bcee9524a83f6a47d",
@@ -230,7 +230,7 @@
             "name" : "Accept",
             "value" : "*/*"
           }, {
-            "name" : "jesessionId",
+            "name" : "jsessionId",
             "value" : "6646e7c49ce22d706bdc569c"
           }, {
             "name" : "x-apikey",
@@ -246,6 +246,12 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "dummy",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          }, {
             "name" : "",
             "reference" : "headers",
             "value" : "",
@@ -259,12 +265,6 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          }, {
-            "name" : "dummy",
-            "reference" : "body",
-            "value" : "$.data",
-            "active" : true,
-            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\"\n      }\n    }\n  }\n}"
         },
@@ -300,6 +300,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1715946363336,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "dsf"
+  }, {
+    "status" : "Approved",
+    "cts" : 1715946152259,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
     "status" : "Review",
     "cts" : 1715945877189,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -428,6 +438,11 @@
   }, {
     "commitId" : "a1e91b46496484836615625096b4fed80bce5069",
     "timeStamp" : 1715945948131,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "92cdc12aa7de2865d43f98f3a140ed3afa2f375e",
+    "timeStamp" : 1715946000361,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
   } ],
