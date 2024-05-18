@@ -3,7 +3,7 @@
   "cts" : 1716033004244,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716033928372,
+  "mts" : 1716039450245,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664895ec4224264ab5415afd",
@@ -45,10 +45,10 @@
         "name" : "Soap Target",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "POST",
+          "apiMethod" : "GET",
           "scheme" : "http",
-          "host" : "webservices.oorsprong.org",
-          "path" : "/websamples.countryinfo/CountryInfoService.wso",
+          "host" : "www.crcind.com",
+          "path" : "/csp/samples/SOAP.Demo.cls?soap_method=FindPerson&id=3",
           "headerParams" : [ {
             "name" : "content-type",
             "value" : "text/xml"
@@ -89,6 +89,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716039407229,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716033938890,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
     "status" : "Review",
     "cts" : 1716033913226,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -142,6 +152,11 @@
   }, {
     "commitId" : "c5d2729a2e0083f69020461fce8a9994264961da",
     "timeStamp" : 1716033680039,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "e99cd5bcc0b26ac66323064924954e36dccaab69",
+    "timeStamp" : 1716033928372,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
