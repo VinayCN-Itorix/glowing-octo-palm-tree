@@ -1,8 +1,9 @@
 {
+  "id" : "664895f44224264ab5415afe",
   "cts" : 1716033004244,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716033004244,
+  "mts" : 1716033075671,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664895ec4224264ab5415afd",
@@ -26,9 +27,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "<note>\n\t<script/>\n\t<to>Tove</to>\n\t<from>Jani</from>\n\t<heading>Reminder</heading>\n\t<body>Don't forget me this weekend!</body>\n</note>",
+          "type" : "xml"
         }
       }
     },
@@ -45,6 +47,12 @@
     "cts" : 1716033004244,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8062c8e853bf75d36d28379bc8c716492efcc1bd",
+    "timeStamp" : 1716033004244,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "deployed" : false
