@@ -1,0 +1,64 @@
+{
+  "id" : "664895f44224264ab5415afe",
+  "cts" : 1716033004244,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1716033109030,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "664895ec4224264ab5415afd",
+  "revision" : 1,
+  "name" : "xml-reponse testing",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/xml-reponse",
+  "pathArray" : [ "xml-reponse" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "bd2eba49-81b4-4533-a8d4-ebee3ef5ae04"
+  } ],
+  "vertexHashMap" : {
+    "bd2eba49-81b4-4533-a8d4-ebee3ef5ae04" : {
+      "vertexId" : "bd2eba49-81b4-4533-a8d4-ebee3ef5ae04",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "<note>\n\t<script/>\n\t<to>Tove</to>\n\t<from>Jani</from>\n\t<heading>Reminder</heading>\n\t<body>Don't forget me this weekend!</body>\n</note>",
+          "type" : "xml"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716033004244,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8062c8e853bf75d36d28379bc8c716492efcc1bd",
+    "timeStamp" : 1716033004244,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "5b0634d1937080e931a0ea03338f9cbebec6f92a",
+    "timeStamp" : 1716033075671,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : true,
+  "deployed" : false
+}
