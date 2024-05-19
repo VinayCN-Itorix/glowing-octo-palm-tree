@@ -3,7 +3,7 @@
   "cts" : 1715941739278,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1715944923921,
+  "mts" : 1716096125741,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6647316bcee9524a83f6a4ca",
@@ -17,6 +17,9 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "2d0aa25b-3147-40a2-872d-31ed56c116a4"
+  }, {
     "source" : "v1",
     "target" : "2ab6dae3-4fa9-479e-91bb-06d54f63475c"
   }, {
@@ -35,6 +38,24 @@
           "type" : "JSON"
         }
       }
+    },
+    "2d0aa25b-3147-40a2-872d-31ed56c116a4" : {
+      "vertexId" : "2d0aa25b-3147-40a2-872d-31ed56c116a4",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -104,6 +125,11 @@
   }, {
     "commitId" : "6227f8343f3ae9419449fd6ecffedf9e73a3ae8e",
     "timeStamp" : 1715944900369,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "53d87194ac7aaf9cddb9ec261ac3da437e79c145",
+    "timeStamp" : 1715944923921,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
