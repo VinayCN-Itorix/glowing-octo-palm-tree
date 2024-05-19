@@ -3,7 +3,7 @@
   "cts" : 1716097578279,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716097612697,
+  "mts" : 1716097666723,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6649922a4224264ab5415b08",
@@ -17,10 +17,26 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "b56a4354-b48b-40c1-b913-90f31e0d3637",
     "target" : "926806f7-803b-48aa-b342-fd0ea269d9d2"
+  }, {
+    "source" : "v1",
+    "target" : "b56a4354-b48b-40c1-b913-90f31e0d3637"
   } ],
   "vertexHashMap" : {
+    "b56a4354-b48b-40c1-b913-90f31e0d3637" : {
+      "vertexId" : "b56a4354-b48b-40c1-b913-90f31e0d3637",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ "\"0123-4567-8888\"", "\"0123-4567-9999\"" ],
+        "listName" : "Custom",
+        "startingVertex" : [ ]
+      },
+      "imported" : false
+    },
     "926806f7-803b-48aa-b342-fd0ea269d9d2" : {
       "vertexId" : "926806f7-803b-48aa-b342-fd0ea269d9d2",
       "vertexType" : "STOP",
@@ -50,6 +66,11 @@
   "changeLogs" : [ {
     "commitId" : "9c634d566f16d08be6c1e19abc841803bcd61a42",
     "timeStamp" : 1716097578279,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "fea5d58ed412fa9a71a58be49bcbc47e87640ff5",
+    "timeStamp" : 1716097612697,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
