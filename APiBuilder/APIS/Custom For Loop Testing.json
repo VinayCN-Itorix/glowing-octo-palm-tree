@@ -3,7 +3,7 @@
   "cts" : 1716097578279,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716097666723,
+  "mts" : 1716097771487,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6649922a4224264ab5415b08",
@@ -20,6 +20,9 @@
     "source" : "b56a4354-b48b-40c1-b913-90f31e0d3637",
     "target" : "926806f7-803b-48aa-b342-fd0ea269d9d2"
   }, {
+    "source" : "b56a4354-b48b-40c1-b913-90f31e0d3637",
+    "target" : "82fbb805-24df-4cda-a419-a8562514289a"
+  }, {
     "source" : "v1",
     "target" : "b56a4354-b48b-40c1-b913-90f31e0d3637"
   } ],
@@ -33,8 +36,49 @@
         "listType" : "json",
         "loopList" : [ "\"0123-4567-8888\"", "\"0123-4567-9999\"" ],
         "listName" : "Custom",
-        "startingVertex" : [ ]
+        "startingVertex" : [ "82fbb805-24df-4cda-a419-a8562514289a" ],
+        "loopVertexes" : [ "82fbb805-24df-4cda-a419-a8562514289a" ]
       },
+      "imported" : false
+    },
+    "82fbb805-24df-4cda-a419-a8562514289a" : {
+      "vertexId" : "82fbb805-24df-4cda-a419-a8562514289a",
+      "vertexType" : "TARGET",
+      "name" : "Inside Target",
+      "target" : {
+        "name" : "Inside Target",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dummyjson.com",
+          "path" : "/products/1",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "parentVertex" : "b56a4354-b48b-40c1-b913-90f31e0d3637",
       "imported" : false
     },
     "926806f7-803b-48aa-b342-fd0ea269d9d2" : {
@@ -43,9 +87,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"status\": \"OK\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -73,6 +118,11 @@
     "timeStamp" : 1716097612697,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "c14ded9c2fb51d7cd6d2bed468f1fb5d28d560f8",
+    "timeStamp" : 1716097666723,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : true,
   "deployed" : false
