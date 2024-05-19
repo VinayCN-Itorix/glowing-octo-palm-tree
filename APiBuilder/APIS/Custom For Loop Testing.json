@@ -3,7 +3,7 @@
   "cts" : 1716097578279,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716097776810,
+  "mts" : 1716098997166,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6649922a4224264ab5415b08",
@@ -11,8 +11,8 @@
   "name" : "Custom For Loop Testing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "",
-  "pathArray" : [ ],
+  "path" : "/for-loop-testing",
+  "pathArray" : [ "for-loop-testing" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -104,6 +104,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1716098976056,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "ds"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716097787610,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
     "cts" : 1716097578279,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
@@ -128,7 +138,13 @@
     "timeStamp" : 1716097771487,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "cfa60e1bb39d16a26e6119ceb058f37454dec127",
+    "timeStamp" : 1716097776810,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "deployed" : false
 }
