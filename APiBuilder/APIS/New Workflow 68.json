@@ -3,7 +3,7 @@
   "cts" : 1716179529279,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716182180845,
+  "mts" : 1716182494505,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664ad249e5166276de865771",
@@ -22,8 +22,26 @@
   }, {
     "source" : "v1",
     "target" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35"
+  }, {
+    "source" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35",
+    "target" : "e244cf19-da2b-4456-8486-26411b6e0cec"
   } ],
   "vertexHashMap" : {
+    "e244cf19-da2b-4456-8486-26411b6e0cec" : {
+      "vertexId" : "e244cf19-da2b-4456-8486-26411b6e0cec",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : ""
+      },
+      "imported" : false
+    },
     "d763cc8e-6dd9-4813-8696-3d46cf97ca35" : {
       "vertexId" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35",
       "vertexType" : "TARGET",
@@ -60,7 +78,22 @@
             "active" : false,
             "source" : "headers",
             "hide" : false
-          } ]
+          }, {
+            "name" : "parallelflow",
+            "reference" : "headers",
+            "value" : "parallelflow",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"pagination\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total\": {\n          \"type\": \"integer\"\n        },\n        \"offset\": {\n          \"type\": \"integer\"\n        },\n        \"pageSize\": {\n          \"type\": \"integer\"\n        }\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": {\n            \"type\": \"string\"\n          },\n          \"cts\": {\n            \"type\": \"integer\"\n          },\n          \"createdUserName\": {\n            \"type\": \"string\"\n          },\n          \"modifiedUserName\": {\n            \"type\": \"string\"\n          },\n          \"mts\": {\n            \"type\": \"integer\"\n          },\n          \"createdBy\": {\n            \"type\": \"string\"\n          },\n          \"modifiedBy\": {\n            \"type\": \"string\"\n          },\n          \"revision\": {\n            \"type\": \"integer\"\n          },\n          \"status\": {\n            \"type\": \"string\"\n          },\n          \"swaggerId\": {\n            \"type\": \"string\"\n          },\n          \"name\": {\n            \"type\": \"string\"\n          },\n          \"lock\": {\n            \"type\": \"boolean\"\n          },\n          \"lockedBy\": {\n            \"type\": \"string\"\n          },\n          \"lockedAt\": {\n            \"type\": \"integer\"\n          },\n          \"lockedByUserId\": {\n            \"type\": \"string\"\n          },\n          \"description\": {\n            \"type\": \"string\"\n          },\n          \"teams\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            }\n          },\n          \"roles\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            }\n          }\n        }\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -106,6 +139,11 @@
     "timeStamp" : 1716179605037,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "7a226ebcb329920a058a4eac186134e0857a924e",
+    "timeStamp" : 1716182180845,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "deployed" : false
