@@ -3,7 +3,7 @@
   "cts" : 1716179529279,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716179605037,
+  "mts" : 1716182180845,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664ad249e5166276de865771",
@@ -17,10 +17,59 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35",
     "target" : "628a2196-b130-460b-826f-85abbf7208ec"
+  }, {
+    "source" : "v1",
+    "target" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35"
   } ],
   "vertexHashMap" : {
+    "d763cc8e-6dd9-4813-8696-3d46cf97ca35" : {
+      "vertexId" : "d763cc8e-6dd9-4813-8696-3d46cf97ca35",
+      "vertexType" : "TARGET",
+      "name" : "test",
+      "target" : {
+        "name" : "test",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "test",
+          "path" : "test",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "parallelflow",
+            "reference" : "headers",
+            "value" : "parallelflow",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "imported" : false
+    },
     "628a2196-b130-460b-826f-85abbf7208ec" : {
       "vertexId" : "628a2196-b130-460b-826f-85abbf7208ec",
       "vertexType" : "STOP",
@@ -50,6 +99,11 @@
   "changeLogs" : [ {
     "commitId" : "72b225e745c2461bcda300ba2f0b273d5ec32507",
     "timeStamp" : 1716179529279,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "c70b1d9a2f3f73c5a69d89cd78cdfa279eeae759",
+    "timeStamp" : 1716179605037,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
