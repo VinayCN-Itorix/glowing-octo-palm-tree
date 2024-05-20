@@ -3,7 +3,7 @@
   "cts" : 1716186498443,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716186898851,
+  "mts" : 1716187256021,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664aed82394ed3085dc0ac40",
@@ -35,8 +35,9 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
+          "data" : "ok",
           "type" : "JSON"
         }
       }
@@ -56,6 +57,11 @@
   }, {
     "commitId" : "5ce90804c88cf4fb77cd6a7885eaee3372726b22",
     "timeStamp" : 1716186825324,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "b144c7b672d5152e434f87598be2f65c58c7380d",
+    "timeStamp" : 1716186898851,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
