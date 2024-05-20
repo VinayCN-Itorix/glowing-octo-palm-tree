@@ -3,16 +3,17 @@
   "cts" : 1716186498443,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716186825324,
+  "mts" : 1716186898851,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664aed82394ed3085dc0ac40",
   "revision" : 1,
   "name" : "test the how",
+  "description" : "how the test",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "",
-  "pathArray" : [ ],
+  "path" : "/spifer-jump",
+  "pathArray" : [ "spifer-jump" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -52,9 +53,14 @@
     "timeStamp" : 1716186498443,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "5ce90804c88cf4fb77cd6a7885eaee3372726b22",
+    "timeStamp" : 1716186825324,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
-  "enableTracing" : false,
-  "environmentName" : "",
-  "environmentId" : "",
+  "enableTracing" : true,
+  "environmentName" : "dev- test Environment",
+  "environmentId" : "6644b7b5a16c946c03a2175c",
   "deployed" : false
 }
