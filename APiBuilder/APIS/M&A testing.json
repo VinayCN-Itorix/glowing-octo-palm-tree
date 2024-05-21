@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716312792787,
+  "mts" : 1716313052739,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
     "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
+  }, {
+    "source" : "v1",
+    "target" : "a3f5ec0f-abe2-4db4-908b-f681620faee0"
   } ],
   "vertexHashMap" : {
     "f3bd4f15-81ee-4a2c-b627-c413467535ab" : {
@@ -33,6 +36,62 @@
           "type" : "JSON"
         }
       }
+    },
+    "a3f5ec0f-abe2-4db4-908b-f681620faee0" : {
+      "vertexId" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Get OAuth Token",
+      "target" : {
+        "name" : "Get OAuth Token",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "accessToken",
+            "reference" : "headers",
+            "value" : "access_token",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
+            "active" : false,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\": \"Token call timed out\"\n}"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -58,6 +117,11 @@
   "changeLogs" : [ {
     "commitId" : "2e8d58c645ffaf0cab4015023ea16fc3bed4d7c9",
     "timeStamp" : 1716312701047,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "74bb630db6854950ec871368f861bc88dd01a86e",
+    "timeStamp" : 1716312792787,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
