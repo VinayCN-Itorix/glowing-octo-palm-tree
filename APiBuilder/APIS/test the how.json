@@ -3,7 +3,7 @@
   "cts" : 1716186498443,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716187256021,
+  "mts" : 1716271905744,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664aed82394ed3085dc0ac40",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9"
+  }, {
+    "source" : "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9",
     "target" : "eb7cf191-5070-4bb0-882d-26b1b2e19360"
   } ],
   "vertexHashMap" : {
@@ -28,6 +31,21 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9" : {
+      "vertexId" : "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "Base_URL",
+        "value" : "https://api.example.com"
+      }, {
+        "name" : "check",
+        "value" : "checking is working",
+        "type" : "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9",
+        "source" : "72cd5e9a-f94e-4dce-84f8-4eaeaf6af0d9"
+      } ],
+      "imported" : false
     },
     "eb7cf191-5070-4bb0-882d-26b1b2e19360" : {
       "vertexId" : "eb7cf191-5070-4bb0-882d-26b1b2e19360",
@@ -44,6 +62,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716271870048,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "draft"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716188054522,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
+    "cts" : 1716187572224,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "fr"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716187272527,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "app"
+  }, {
     "status" : "Draft",
     "cts" : 1716186498443,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -64,7 +102,13 @@
     "timeStamp" : 1716186898851,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "9619b79e27c26b57fa71bdecbb78c890323817b3",
+    "timeStamp" : 1716187256021,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "dev- test Environment",
   "environmentId" : "6644b7b5a16c946c03a2175c",
