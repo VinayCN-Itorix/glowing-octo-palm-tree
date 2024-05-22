@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716339948351,
+  "mts" : 1716347637048,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -236,10 +236,10 @@
           "statusCode" : 200,
           "variables" : [ {
             "name" : "accessToken",
-            "reference" : "headers",
+            "reference" : "body",
             "value" : "access_token",
             "active" : true,
-            "source" : "headers",
+            "source" : "raw",
             "hide" : false
           } ]
         },
@@ -370,6 +370,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1716347591475,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "kj"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716339967237,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
     "cts" : 1716339830044,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "e"
@@ -477,6 +487,11 @@
   }, {
     "commitId" : "f4a2cc320c14a8c09e2cd334eb48510b59274041",
     "timeStamp" : 1716339847535,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "691944f86a15a0b12df04281f3b4f4f92c6fc9d0",
+    "timeStamp" : 1716339948351,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
