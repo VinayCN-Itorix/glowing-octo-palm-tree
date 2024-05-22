@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716336349040,
+  "mts" : 1716336443094,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -53,11 +53,15 @@
           "host" : "acmebank-app.apiwiz.io",
           "path" : "/v3/corporate/dashboard",
           "headerParams" : [ {
-            "name" : "",
-            "value" : ""
+            "name" : "Authorization",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
           } ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{{{requestBody}}}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -69,8 +73,15 @@
             "name" : "",
             "reference" : "headers",
             "value" : "",
-            "active" : false,
+            "active" : true,
             "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "DashboardData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
             "hide" : false
           } ]
         },
@@ -164,6 +175,11 @@
   }, {
     "commitId" : "128580615fd74f7a5db11b172025ec11b0da1631",
     "timeStamp" : 1716336070236,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "2078ee7e02e33cdd937e62fce4b23afe530cb875",
+    "timeStamp" : 1716336349040,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
