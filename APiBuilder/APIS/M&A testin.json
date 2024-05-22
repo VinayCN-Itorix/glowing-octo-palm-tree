@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716339847535,
+  "mts" : 1716339948351,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -194,7 +194,7 @@
           "variables" : [ {
             "name" : "M&ADashboardataa",
             "reference" : "body",
-            "value" : "$.data",
+            "value" : "data",
             "active" : true,
             "hide" : true
           } ],
@@ -472,6 +472,11 @@
   }, {
     "commitId" : "744a74bdb5572385ca02388fe09922bc9b6d7882",
     "timeStamp" : 1716339620286,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "f4a2cc320c14a8c09e2cd334eb48510b59274041",
+    "timeStamp" : 1716339847535,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
