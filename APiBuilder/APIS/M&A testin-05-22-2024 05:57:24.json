@@ -3,7 +3,7 @@
   "cts" : 1716357444470,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716357493348,
+  "mts" : 1716357606954,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664d894488aacb257de70bed",
@@ -51,46 +51,6 @@
       "vertexType" : "CONDITIONAL_FLOW",
       "name" : "Condition",
       "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : " ({0})",
-          "placeHolders" : [ {
-            "rule" : "GREATER_THAN",
-            "key" : "arr",
-            "value" : "500",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "a0b83e32-6dd3-429d-916e-773979782dd1", "a0b83e32-6dd3-429d-916e-773979782dd1" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "expression" : " ({0})",
-          "placeHolders" : [ {
-            "rule" : "EQUAL_TO",
-            "key" : "companyName",
-            "value" : "company",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" ]
-      }, {
         "condition" : "if",
         "assertion" : {
           "expression" : " ({0})",
@@ -298,7 +258,7 @@
         "listName" : "",
         "startingVertex" : [ "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ],
         "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730",
-        "loopVertexes" : [ "01d8fdd4-3b10-4d77-8426-06960c4b5d7e", "b87755c1-701e-44b4-9973-c5aa365c0bb3", "a0b83e32-6dd3-429d-916e-773979782dd1", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ]
+        "loopVertexes" : [ ]
       },
       "imported" : false
     },
@@ -371,6 +331,11 @@
   "changeLogs" : [ {
     "commitId" : "4ac478f9e4fe6888fa6d49cab2a3ce1d7664d05a",
     "timeStamp" : 1716357444470,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "abf119686e7be12914e3fe8939df15904effe281",
+    "timeStamp" : 1716357493348,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
