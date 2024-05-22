@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716336070236,
+  "mts" : 1716336349040,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -112,14 +112,7 @@
             "name" : "accessToken",
             "reference" : "headers",
             "value" : "access_token",
-            "active" : false,
-            "source" : "headers",
-            "hide" : false
-          }, {
-            "name" : "",
-            "reference" : "headers",
-            "value" : "",
-            "active" : false,
+            "active" : true,
             "source" : "headers",
             "hide" : false
           } ]
@@ -127,13 +120,7 @@
         "timeout" : 0,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 0,
-          "headers" : {
-            "content-type" : "application/json"
-          },
-          "body" : {
-            "data" : "{\n    \"message\": \"Token call timed out\"\n}"
-          }
+          "statusCode" : 0
         }
       },
       "imported" : false
@@ -174,6 +161,11 @@
     "timeStamp" : 1716313052739,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "128580615fd74f7a5db11b172025ec11b0da1631",
+    "timeStamp" : 1716336070236,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : true,
   "environmentName" : "",
