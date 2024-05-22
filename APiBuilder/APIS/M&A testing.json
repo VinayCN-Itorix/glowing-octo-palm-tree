@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716337453588,
+  "mts" : 1716338953266,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -138,12 +138,25 @@
       "name" : "For Loop",
       "loopData" : {
         "listVariableSource" : "M&ADashboardataa",
-        "variables" : [ ],
+        "variables" : [ {
+          "name" : "companyName",
+          "reference" : "body",
+          "value" : "company",
+          "active" : true,
+          "hide" : false
+        }, {
+          "name" : "arr",
+          "reference" : "body",
+          "value" : "arrInMillionUSD",
+          "active" : true,
+          "hide" : false
+        } ],
         "listType" : "json",
         "loopList" : [ ],
         "listName" : "",
         "startingVertex" : [ ],
-        "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730"
+        "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730",
+        "loopVertexes" : [ ]
       },
       "imported" : false
     },
@@ -216,6 +229,11 @@
   }, {
     "commitId" : "5b5772d994ab29fa4ca747059d98031e7902c97a",
     "timeStamp" : 1716337444583,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "f9ae108d545dc856bdaa31f5dbda94060e086b6e",
+    "timeStamp" : 1716337453588,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
