@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716338953266,
+  "mts" : 1716339108163,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -21,16 +21,113 @@
     "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
     "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
   }, {
+    "source" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+    "target" : "a0b83e32-6dd3-429d-916e-773979782dd1"
+  }, {
     "source" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
     "target" : "9662ce19-29c6-4e18-90e8-b864a999c730"
   }, {
     "source" : "9662ce19-29c6-4e18-90e8-b864a999c730",
     "target" : "eb074148-e1a7-40f2-9304-4377d05ad5bf"
   }, {
+    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+    "target" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091"
+  }, {
     "source" : "v1",
     "target" : "a3f5ec0f-abe2-4db4-908b-f681620faee0"
+  }, {
+    "source" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+    "target" : "0502bb4e-e81e-43a5-82a5-f00c5abc1f81"
   } ],
   "vertexHashMap" : {
+    "416cb5da-d1f3-4de4-9fe9-430c01d0d091" : {
+      "vertexId" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "GREATER_THAN",
+            "key" : "arr",
+            "value" : "500",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a0b83e32-6dd3-429d-916e-773979782dd1", "a0b83e32-6dd3-429d-916e-773979782dd1" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "companyName",
+            "value" : "company",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" ]
+      }, {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "GREATER_THAN",
+            "key" : "arr",
+            "value" : "500",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a0b83e32-6dd3-429d-916e-773979782dd1", "a0b83e32-6dd3-429d-916e-773979782dd1" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "companyName",
+            "value" : "company",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" ]
+      } ],
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "imported" : false
+    },
     "f3bd4f15-81ee-4a2c-b627-c413467535ab" : {
       "vertexId" : "f3bd4f15-81ee-4a2c-b627-c413467535ab",
       "vertexType" : "STOP",
@@ -154,10 +251,61 @@
         "listType" : "json",
         "loopList" : [ ],
         "listName" : "",
-        "startingVertex" : [ ],
+        "startingVertex" : [ "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ],
         "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730",
-        "loopVertexes" : [ ]
+        "loopVertexes" : [ "01d8fdd4-3b10-4d77-8426-06960c4b5d7e", "b87755c1-701e-44b4-9973-c5aa365c0bb3", "a0b83e32-6dd3-429d-916e-773979782dd1", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ]
       },
+      "imported" : false
+    },
+    "a0b83e32-6dd3-429d-916e-773979782dd1" : {
+      "vertexId" : "a0b83e32-6dd3-429d-916e-773979782dd1",
+      "vertexType" : "TARGET",
+      "name" : "Analyze M&A API",
+      "target" : {
+        "name" : "Analyze M&A API",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/mergers-acquisitions/analyze",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application-json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"companies\": \"{{companyName}}\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "imported" : false
+    },
+    "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" : {
+      "vertexId" : "0502bb4e-e81e-43a5-82a5-f00c5abc1f81",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
       "imported" : false
     },
     "v1" : {
@@ -234,6 +382,11 @@
   }, {
     "commitId" : "f9ae108d545dc856bdaa31f5dbda94060e086b6e",
     "timeStamp" : 1716337453588,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "616d16807e9d4d30fa014f198726039a1937e640",
+    "timeStamp" : 1716338953266,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
