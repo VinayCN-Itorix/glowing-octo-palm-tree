@@ -1,0 +1,483 @@
+{
+  "id" : "664cda7f8ac11a73dcf3eb92",
+  "cts" : 1716312701047,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1716339847535,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "664cda7d8ac11a73dcf3eb91",
+  "revision" : 1,
+  "name" : "M&A testin",
+  "description" : "testing",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/M-A-Dashboard/testing/{id}",
+  "pathArray" : [ "M-A-Dashboard", "testing", "*" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+    "target" : "a0b83e32-6dd3-429d-916e-773979782dd1"
+  }, {
+    "source" : "be4036f7-9588-44bf-8895-4482baec8c97",
+    "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
+  }, {
+    "source" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e",
+    "target" : "be4036f7-9588-44bf-8895-4482baec8c97"
+  }, {
+    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+    "target" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e"
+  }, {
+    "source" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
+    "target" : "9662ce19-29c6-4e18-90e8-b864a999c730"
+  }, {
+    "source" : "9662ce19-29c6-4e18-90e8-b864a999c730",
+    "target" : "eb074148-e1a7-40f2-9304-4377d05ad5bf"
+  }, {
+    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+    "target" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091"
+  }, {
+    "source" : "v1",
+    "target" : "a3f5ec0f-abe2-4db4-908b-f681620faee0"
+  }, {
+    "source" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+    "target" : "0502bb4e-e81e-43a5-82a5-f00c5abc1f81"
+  } ],
+  "vertexHashMap" : {
+    "416cb5da-d1f3-4de4-9fe9-430c01d0d091" : {
+      "vertexId" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "GREATER_THAN",
+            "key" : "arr",
+            "value" : "500",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a0b83e32-6dd3-429d-916e-773979782dd1", "a0b83e32-6dd3-429d-916e-773979782dd1" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "companyName",
+            "value" : "company",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" ]
+      }, {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "GREATER_THAN",
+            "key" : "arr",
+            "value" : "500",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a0b83e32-6dd3-429d-916e-773979782dd1", "a0b83e32-6dd3-429d-916e-773979782dd1" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "companyName",
+            "value" : "company",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" ]
+      } ],
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "imported" : false
+    },
+    "8191f4b8-111f-4c2d-b406-f07e28c4e89e" : {
+      "vertexId" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 10
+      },
+      "imported" : false
+    },
+    "f3bd4f15-81ee-4a2c-b627-c413467535ab" : {
+      "vertexId" : "f3bd4f15-81ee-4a2c-b627-c413467535ab",
+      "vertexType" : "STOP",
+      "name" : "Consumer Onboarding Response",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 202,
+        "headers" : {
+          "content-type" : "application/json",
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler"
+        },
+        "body" : {
+          "data" : "{\n    \"id\": \"{{id}}\",\n    \"variablesCapture\": {{{status}}},\n    \"DashboardData\": {{{DashboardData}}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "9662ce19-29c6-4e18-90e8-b864a999c730" : {
+      "vertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730",
+      "vertexType" : "TARGET",
+      "name" : "M & A Dashboard ataa",
+      "target" : {
+        "name" : "M & A Dashboard ataa",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/dashboard",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "M&ADashboardataa",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "imported" : false
+    },
+    "a3f5ec0f-abe2-4db4-908b-f681620faee0" : {
+      "vertexId" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Get OAuth Token",
+      "target" : {
+        "name" : "Get OAuth Token",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "accessToken",
+            "reference" : "headers",
+            "value" : "access_token",
+            "active" : true,
+            "source" : "headers",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "imported" : false
+    },
+    "be4036f7-9588-44bf-8895-4482baec8c97" : {
+      "vertexId" : "be4036f7-9588-44bf-8895-4482baec8c97",
+      "vertexType" : "VARIABLES",
+      "name" : "Variables node",
+      "runtimeVariableList" : [ {
+        "name" : "M&ADashboardataa",
+        "value" : "$.data"
+      }, {
+        "name" : "accessToken",
+        "value" : "access_token",
+        "source" : "headers"
+      }, {
+        "name" : "id",
+        "value" : "id",
+        "source" : "path-variable"
+      }, {
+        "name" : "status",
+        "value" : "{\n    \"status\": \"APPROVED\",\n    \"updateDescription\": \"updating\"\n}",
+        "type" : "json",
+        "source" : "be4036f7-9588-44bf-8895-4482baec8c97"
+      } ],
+      "imported" : false
+    },
+    "eb074148-e1a7-40f2-9304-4377d05ad5bf" : {
+      "vertexId" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "M&ADashboardataa",
+        "variables" : [ {
+          "name" : "companyName",
+          "reference" : "body",
+          "value" : "company",
+          "active" : true,
+          "hide" : false
+        }, {
+          "name" : "arr",
+          "reference" : "body",
+          "value" : "arrInMillionUSD",
+          "active" : true,
+          "hide" : false
+        } ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ],
+        "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730",
+        "loopVertexes" : [ "01d8fdd4-3b10-4d77-8426-06960c4b5d7e", "b87755c1-701e-44b4-9973-c5aa365c0bb3", "a0b83e32-6dd3-429d-916e-773979782dd1", "0502bb4e-e81e-43a5-82a5-f00c5abc1f81", "416cb5da-d1f3-4de4-9fe9-430c01d0d091" ]
+      },
+      "imported" : false
+    },
+    "a0b83e32-6dd3-429d-916e-773979782dd1" : {
+      "vertexId" : "a0b83e32-6dd3-429d-916e-773979782dd1",
+      "vertexType" : "TARGET",
+      "name" : "Analyze M&A API",
+      "target" : {
+        "name" : "Analyze M&A API",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/v3/corporate/mergers-acquisitions/analyze",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "value" : "{{accessToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application-json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"companies\": \"{{companyName}}\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0
+        }
+      },
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "imported" : false
+    },
+    "0502bb4e-e81e-43a5-82a5-f00c5abc1f81" : {
+      "vertexId" : "0502bb4e-e81e-43a5-82a5-f00c5abc1f81",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "id",
+        "reference" : "path-variable",
+        "value" : "id",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716339830044,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "e"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716339628341,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1716339604546,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716339571829,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
+    "cts" : 1716312701047,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "2e8d58c645ffaf0cab4015023ea16fc3bed4d7c9",
+    "timeStamp" : 1716312701047,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "74bb630db6854950ec871368f861bc88dd01a86e",
+    "timeStamp" : 1716312792787,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "21d5001a1db069e663c4e93ff3326136df0bbcc5",
+    "timeStamp" : 1716313052739,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "128580615fd74f7a5db11b172025ec11b0da1631",
+    "timeStamp" : 1716336070236,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "2078ee7e02e33cdd937e62fce4b23afe530cb875",
+    "timeStamp" : 1716336349040,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "3b4bb30f9d392f24c4e35144ddbd06d037aa7dd0",
+    "timeStamp" : 1716336443094,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "ffa48b1ee3935ff3580d4112769c830be6e0d284",
+    "timeStamp" : 1716336741950,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "0c9d446ebfcc9a0d74a78d01bf2350e4925bf978",
+    "timeStamp" : 1716337170533,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "f2dfee14d8e13c35466983bcdfdea814f3b813b7",
+    "timeStamp" : 1716337338070,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "5b5772d994ab29fa4ca747059d98031e7902c97a",
+    "timeStamp" : 1716337444583,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "f9ae108d545dc856bdaa31f5dbda94060e086b6e",
+    "timeStamp" : 1716337453588,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "616d16807e9d4d30fa014f198726039a1937e640",
+    "timeStamp" : 1716338953266,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "33296db7e2cf3663811d91916465fb2bf8b9c001",
+    "timeStamp" : 1716339108163,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "055e68ca484cc8f74610b78be20fd1fc5928662e",
+    "timeStamp" : 1716339411160,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "257dd1e2de95f4806471df6771a2a3f4a4ec5b8c",
+    "timeStamp" : 1716339556980,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "744a74bdb5572385ca02388fe09922bc9b6d7882",
+    "timeStamp" : 1716339620286,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
