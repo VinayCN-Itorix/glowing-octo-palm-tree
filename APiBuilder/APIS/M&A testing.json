@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716339108163,
+  "mts" : 1716339411160,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -18,11 +18,17 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
-    "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
-  }, {
     "source" : "416cb5da-d1f3-4de4-9fe9-430c01d0d091",
     "target" : "a0b83e32-6dd3-429d-916e-773979782dd1"
+  }, {
+    "source" : "be4036f7-9588-44bf-8895-4482baec8c97",
+    "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
+  }, {
+    "source" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e",
+    "target" : "be4036f7-9588-44bf-8895-4482baec8c97"
+  }, {
+    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+    "target" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e"
   }, {
     "source" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
     "target" : "9662ce19-29c6-4e18-90e8-b864a999c730"
@@ -128,6 +134,16 @@
       "parentVertex" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
       "imported" : false
     },
+    "8191f4b8-111f-4c2d-b406-f07e28c4e89e" : {
+      "vertexId" : "8191f4b8-111f-4c2d-b406-f07e28c4e89e",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 10
+      },
+      "imported" : false
+    },
     "f3bd4f15-81ee-4a2c-b627-c413467535ab" : {
       "vertexId" : "f3bd4f15-81ee-4a2c-b627-c413467535ab",
       "vertexType" : "STOP",
@@ -227,6 +243,29 @@
           "statusCode" : 0
         }
       },
+      "imported" : false
+    },
+    "be4036f7-9588-44bf-8895-4482baec8c97" : {
+      "vertexId" : "be4036f7-9588-44bf-8895-4482baec8c97",
+      "vertexType" : "VARIABLES",
+      "name" : "Variables node",
+      "runtimeVariableList" : [ {
+        "name" : "M&ADashboardataa",
+        "value" : "$.data"
+      }, {
+        "name" : "accessToken",
+        "value" : "access_token",
+        "source" : "headers"
+      }, {
+        "name" : "id",
+        "value" : "id",
+        "source" : "path-variable"
+      }, {
+        "name" : "status",
+        "value" : "{\n    \"status\": \"APPROVED\",\n    \"updateDescription\": \"updating\"\n}",
+        "type" : "json",
+        "source" : "be4036f7-9588-44bf-8895-4482baec8c97"
+      } ],
       "imported" : false
     },
     "eb074148-e1a7-40f2-9304-4377d05ad5bf" : {
@@ -389,6 +428,11 @@
     "timeStamp" : 1716338953266,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "33296db7e2cf3663811d91916465fb2bf8b9c001",
+    "timeStamp" : 1716339108163,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : true,
   "environmentName" : "",
