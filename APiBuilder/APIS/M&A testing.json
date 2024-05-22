@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716337170533,
+  "mts" : 1716337338070,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -73,23 +73,11 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
-            "name" : "",
-            "reference" : "headers",
-            "value" : "",
+            "name" : "sdf",
+            "reference" : "body",
+            "value" : "sdf",
             "active" : true,
-            "source" : "headers",
-            "hide" : false
-          }, {
-            "name" : "",
-            "reference" : "headers",
-            "value" : "",
-            "active" : true,
-            "source" : "headers",
-            "hide" : false
-          }, {
-            "name" : "DashboardData",
-            "value" : "$.data",
-            "active" : true,
+            "source" : "raw",
             "hide" : false
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
@@ -216,6 +204,11 @@
     "timeStamp" : 1716336741950,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "0c9d446ebfcc9a0d74a78d01bf2350e4925bf978",
+    "timeStamp" : 1716337170533,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
   } ],
   "enableTracing" : true,
   "environmentName" : "",
