@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716336741950,
+  "mts" : 1716337170533,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -18,11 +18,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+    "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
+  }, {
     "source" : "a3f5ec0f-abe2-4db4-908b-f681620faee0",
     "target" : "9662ce19-29c6-4e18-90e8-b864a999c730"
   }, {
     "source" : "9662ce19-29c6-4e18-90e8-b864a999c730",
-    "target" : "f3bd4f15-81ee-4a2c-b627-c413467535ab"
+    "target" : "eb074148-e1a7-40f2-9304-4377d05ad5bf"
   }, {
     "source" : "v1",
     "target" : "a3f5ec0f-abe2-4db4-908b-f681620faee0"
@@ -77,25 +80,24 @@
             "source" : "headers",
             "hide" : false
           }, {
-            "name" : "DashboardData",
-            "reference" : "body",
-            "value" : "data",
+            "name" : "",
+            "reference" : "headers",
+            "value" : "",
             "active" : true,
-            "source" : "raw",
+            "source" : "headers",
             "hide" : false
-          } ]
+          }, {
+            "name" : "DashboardData",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 0,
-          "headers" : {
-            "content-type" : "application/json"
-          },
-          "body" : {
-            "data" : "{\n    \"message\": \"M & A Dashboard call timed out\"\n}",
-            "type" : "json"
-          }
+          "statusCode" : 0
         }
       },
       "imported" : false
@@ -140,6 +142,21 @@
         "errorResponse" : {
           "statusCode" : 0
         }
+      },
+      "imported" : false
+    },
+    "eb074148-e1a7-40f2-9304-4377d05ad5bf" : {
+      "vertexId" : "eb074148-e1a7-40f2-9304-4377d05ad5bf",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : ""
       },
       "imported" : false
     },
@@ -192,6 +209,11 @@
   }, {
     "commitId" : "3b4bb30f9d392f24c4e35144ddbd06d037aa7dd0",
     "timeStamp" : 1716336443094,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "ffa48b1ee3935ff3580d4112769c830be6e0d284",
+    "timeStamp" : 1716336741950,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
