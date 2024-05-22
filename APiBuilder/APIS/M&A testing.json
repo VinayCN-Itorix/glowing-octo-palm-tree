@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716337444583,
+  "mts" : 1716337453588,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -72,7 +72,13 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ ],
+          "variables" : [ {
+            "name" : "M&ADashboardataa",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
@@ -131,13 +137,13 @@
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
-        "listVariableSource" : "",
+        "listVariableSource" : "M&ADashboardataa",
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
         "listName" : "",
         "startingVertex" : [ ],
-        "listVariableVertexId" : ""
+        "listVariableVertexId" : "9662ce19-29c6-4e18-90e8-b864a999c730"
       },
       "imported" : false
     },
@@ -205,6 +211,11 @@
   }, {
     "commitId" : "f2dfee14d8e13c35466983bcdfdea814f3b813b7",
     "timeStamp" : 1716337338070,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "5b5772d994ab29fa4ca747059d98031e7902c97a",
+    "timeStamp" : 1716337444583,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
