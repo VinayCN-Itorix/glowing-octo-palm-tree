@@ -1,8 +1,9 @@
 {
+  "id" : "664d894e88aacb257de70bee",
   "cts" : 1716357444470,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716357444470,
+  "mts" : 1716357493348,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664d894488aacb257de70bed",
@@ -11,8 +12,8 @@
   "description" : "testing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/M-A-Dashboard/testing/{id}",
-  "pathArray" : [ "M-A-Dashboard", "testing", "*" ],
+  "path" : "/M-A-Dashboard/testing2/{id}",
+  "pathArray" : [ "M-A-Dashboard", "testing2", "*" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -367,6 +368,12 @@
       "imported" : true
     }
   },
+  "changeLogs" : [ {
+    "commitId" : "4ac478f9e4fe6888fa6d49cab2a3ce1d7664d05a",
+    "timeStamp" : 1716357444470,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  } ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
