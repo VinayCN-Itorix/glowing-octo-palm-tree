@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716339556980,
+  "mts" : 1716339620286,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -12,9 +12,9 @@
   "description" : "testing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/M-A-Dashboard/{id}",
-  "pathArray" : [ "M-A-Dashboard", "*" ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/M-A-Dashboard/testing/{id}",
+  "pathArray" : [ "M-A-Dashboard", "testing", "*" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -369,6 +369,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716339604546,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716339571829,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1716312701047,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -442,6 +452,11 @@
   }, {
     "commitId" : "055e68ca484cc8f74610b78be20fd1fc5928662e",
     "timeStamp" : 1716339411160,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "257dd1e2de95f4806471df6771a2a3f4a4ec5b8c",
+    "timeStamp" : 1716339556980,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
