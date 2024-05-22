@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716348004937,
+  "mts" : 1716354752060,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/M-A-Dashboard/testing/{id}",
   "pathArray" : [ "M-A-Dashboard", "testing", "*" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -197,13 +197,6 @@
             "value" : "data",
             "active" : true,
             "hide" : true
-          }, {
-            "name" : " M&ADashboardataa",
-            "reference" : "body",
-            "value" : "data",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
@@ -376,6 +369,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716354695060,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "mm"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716354509440,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1716347793186,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -529,6 +532,11 @@
   }, {
     "commitId" : "9edca4936f56f3442a2e781aa0f48aeac5a2384c",
     "timeStamp" : 1716347932542,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "bae20db26f46ab536bf9bbd3fe1e5bc76151d0be",
+    "timeStamp" : 1716348004937,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
