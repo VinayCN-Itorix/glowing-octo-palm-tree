@@ -3,7 +3,7 @@
   "cts" : 1716357444470,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716357606954,
+  "mts" : 1716375408849,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664d894488aacb257de70bed",
@@ -117,7 +117,7 @@
           "x-agent" : "apibuiler"
         },
         "body" : {
-          "data" : "{\n    \"id\": \"{{id}}\",\n    \"variablesCapture\": {{{status}}},\n    \"DashboardData\": {{{DashboardData}}}\n}",
+          "data" : "{\n    \"id\": \"232343e23e323232123\",\n    \"variablesCapture\": {{{status}}},\n}",
           "type" : "json"
         }
       }
@@ -328,6 +328,17 @@
       "imported" : true
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716375388244,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "fde"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716364435150,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "jghc"
+  } ],
   "changeLogs" : [ {
     "commitId" : "4ac478f9e4fe6888fa6d49cab2a3ce1d7664d05a",
     "timeStamp" : 1716357444470,
@@ -338,7 +349,13 @@
     "timeStamp" : 1716357493348,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "585486cbd369c0756112f0e6f8d325168e5ac2f5",
+    "timeStamp" : 1716357606954,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
