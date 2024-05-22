@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716347637048,
+  "mts" : 1716347894693,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -197,6 +197,13 @@
             "value" : "data",
             "active" : true,
             "hide" : true
+          }, {
+            "name" : "DashboardData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arrInMillionUSD\": {\n            \"type\": \"integer\"\n          },\n          \"party\": {\n            \"type\": \"string\"\n          },\n          \"dealType\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
@@ -370,6 +377,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1716347793186,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "jh"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716347659588,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "jk"
+  }, {
+    "status" : "Draft",
     "cts" : 1716347591475,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "kj"
@@ -492,6 +509,11 @@
   }, {
     "commitId" : "691944f86a15a0b12df04281f3b4f4f92c6fc9d0",
     "timeStamp" : 1716339948351,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "637ea7972eece6d1468c4ef3d2ff8eedaf40ab21",
+    "timeStamp" : 1716347637048,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
