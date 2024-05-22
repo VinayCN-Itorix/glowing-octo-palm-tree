@@ -3,7 +3,7 @@
   "cts" : 1716312701047,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716339411160,
+  "mts" : 1716339556980,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "664cda7d8ac11a73dcf3eb91",
@@ -147,12 +147,18 @@
     "f3bd4f15-81ee-4a2c-b627-c413467535ab" : {
       "vertexId" : "f3bd4f15-81ee-4a2c-b627-c413467535ab",
       "vertexType" : "STOP",
-      "name" : "Stop",
+      "name" : "Consumer Onboarding Response",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 202,
+        "headers" : {
+          "content-type" : "application/json",
+          "time" : "1708526031457",
+          "x-agent" : "apibuiler"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"id\": \"{{id}}\",\n    \"variablesCapture\": {{{status}}},\n    \"DashboardData\": {{{DashboardData}}}\n}",
+          "type" : "json"
         }
       }
     },
@@ -433,6 +439,11 @@
     "timeStamp" : 1716339108163,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "055e68ca484cc8f74610b78be20fd1fc5928662e",
+    "timeStamp" : 1716339411160,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : true,
   "environmentName" : "",
