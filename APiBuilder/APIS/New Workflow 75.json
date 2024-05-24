@@ -1,8 +1,9 @@
 {
+  "id" : "66506276d3f4027cf0bb2d69",
   "cts" : 1716544110287,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716544110287,
+  "mts" : 1716548931726,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6650626ed3f4027cf0bb2d68",
@@ -16,8 +17,20 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
     "target" : "591dc742-b086-43fd-b852-8e935c0f08a0"
+  }, {
+    "source" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
+    "target" : "34257988-d859-49cb-801a-30261763ae04"
+  }, {
+    "source" : "v1",
+    "target" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6"
+  }, {
+    "source" : "34257988-d859-49cb-801a-30261763ae04",
+    "target" : "63d3f29c-3723-4256-a2be-ecd355de540b"
+  }, {
+    "source" : "34257988-d859-49cb-801a-30261763ae04",
+    "target" : "20a5ee12-bf82-474f-8b82-5d6aea7ae8ea"
   } ],
   "vertexHashMap" : {
     "591dc742-b086-43fd-b852-8e935c0f08a0" : {
@@ -32,11 +45,69 @@
         }
       }
     },
+    "d4951f76-d29a-4f23-ac67-164ea43bbdd6" : {
+      "vertexId" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "34257988-d859-49cb-801a-30261763ae04" ],
+        "listVariableVertexId" : "",
+        "loopVertexes" : [ "34257988-d859-49cb-801a-30261763ae04", "63d3f29c-3723-4256-a2be-ecd355de540b", "20a5ee12-bf82-474f-8b82-5d6aea7ae8ea" ]
+      },
+      "imported" : false
+    },
+    "34257988-d859-49cb-801a-30261763ae04" : {
+      "vertexId" : "34257988-d859-49cb-801a-30261763ae04",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "63d3f29c-3723-4256-a2be-ecd355de540b" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "20a5ee12-bf82-474f-8b82-5d6aea7ae8ea" ]
+      } ],
+      "parentVertex" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
+      "imported" : false
+    },
+    "63d3f29c-3723-4256-a2be-ecd355de540b" : {
+      "vertexId" : "63d3f29c-3723-4256-a2be-ecd355de540b",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
+      "imported" : false
+    },
+    "20a5ee12-bf82-474f-8b82-5d6aea7ae8ea" : {
+      "vertexId" : "20a5ee12-bf82-474f-8b82-5d6aea7ae8ea",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "d4951f76-d29a-4f23-ac67-164ea43bbdd6",
       "imported" : false
     }
   },
@@ -45,6 +116,12 @@
     "cts" : 1716544110287,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "543354429b6a9fb21e789fac37eb14ecd57acbb5",
+    "timeStamp" : 1716544110287,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
