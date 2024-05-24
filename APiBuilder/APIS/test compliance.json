@@ -3,7 +3,7 @@
   "cts" : 1716544156067,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716544222109,
+  "mts" : 1716544331006,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6650629cd3f4027cf0bb2d6b",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "3d598281-aa44-4921-a08d-1c752311acfb"
+  }, {
+    "source" : "3d598281-aa44-4921-a08d-1c752311acfb",
     "target" : "2e028653-ada9-454b-8d7f-38529f6b5f3a"
   } ],
   "vertexHashMap" : {
@@ -40,6 +43,53 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "3d598281-aa44-4921-a08d-1c752311acfb" : {
+      "vertexId" : "3d598281-aa44-4921-a08d-1c752311acfb",
+      "vertexType" : "TARGET",
+      "name" : "petstore",
+      "target" : {
+        "name" : "petstore",
+        "description" : "petstore",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "petstore.swagger.io",
+          "path" : "/v2/pet/findByStatus",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "status",
+            "value" : "available"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -51,6 +101,11 @@
   "changeLogs" : [ {
     "commitId" : "0a9e7d6452ce650172d26423cfbb76ba1825a2aa",
     "timeStamp" : 1716544156067,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "f0274991433ff54ed201984a580aa0909c2d98e7",
+    "timeStamp" : 1716544222109,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
