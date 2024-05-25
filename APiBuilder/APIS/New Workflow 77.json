@@ -3,7 +3,7 @@
   "cts" : 1716642183908,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716642247593,
+  "mts" : 1716642362360,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6651e187d3b74c7e46cb9419",
@@ -43,14 +43,27 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "x-agent-apiwiz" : "apibuilder"
+        },
         "body" : {
-          "data" : "{{payload}}",
-          "type" : "JSON"
+          "data" : "{{{payload}}}",
+          "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716642325564,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "frew"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716642257170,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "few"
+  }, {
     "status" : "Draft",
     "cts" : 1716642183908,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -66,7 +79,13 @@
     "timeStamp" : 1716642230511,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "b496e75065dbf6af783309284deece479f792f38",
+    "timeStamp" : 1716642247593,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
