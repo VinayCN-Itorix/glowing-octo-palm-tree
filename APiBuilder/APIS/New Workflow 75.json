@@ -3,7 +3,7 @@
   "cts" : 1716544110287,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716548931726,
+  "mts" : 1716643022604,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6650626ed3f4027cf0bb2d68",
@@ -85,8 +85,15 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : false
+      "requestVariables" : [ {
+        "name" : "hbiu",
+        "reference" : "path-variable",
+        "value" : "jhbjhb",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      } ],
+      "imported" : true
     },
     "63d3f29c-3723-4256-a2be-ecd355de540b" : {
       "vertexId" : "63d3f29c-3723-4256-a2be-ecd355de540b",
@@ -122,6 +129,11 @@
     "timeStamp" : 1716544110287,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "9b31d2a7c9eae28e5f1e52e0d66c79650739aa05",
+    "timeStamp" : 1716548931726,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
