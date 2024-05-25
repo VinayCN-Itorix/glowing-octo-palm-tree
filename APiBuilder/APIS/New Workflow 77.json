@@ -1,17 +1,19 @@
 {
+  "id" : "6651e190d3b74c7e46cb941a",
   "cts" : 1716642183908,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716642183908,
+  "mts" : 1716642230511,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6651e187d3b74c7e46cb9419",
   "revision" : 1,
   "name" : "New Workflow 77",
+  "description" : "New Workflow 77",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "",
-  "pathArray" : [ ],
+  "path" : "/new",
+  "pathArray" : [ "new" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -24,8 +26,15 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : false
+      "requestVariables" : [ {
+        "name" : "payload",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
     },
     "d4d5c42d-58cc-4d60-849d-380cdeaf031b" : {
       "vertexId" : "d4d5c42d-58cc-4d60-849d-380cdeaf031b",
@@ -45,6 +54,12 @@
     "cts" : 1716642183908,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "890fb7396c990b99f0158a1d9aff750d76d381f9",
+    "timeStamp" : 1716642183908,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
