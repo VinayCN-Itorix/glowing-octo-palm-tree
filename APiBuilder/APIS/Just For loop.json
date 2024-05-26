@@ -3,7 +3,7 @@
   "cts" : 1716736557238,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736857795,
+  "mts" : 1716737657453,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653522d12a3bb55bc4e8b19",
@@ -13,26 +13,17 @@
   "apiMethod" : "GET",
   "path" : "/for-loop-testing-new",
   "pathArray" : [ "for-loop-testing-new" ],
-  "revisionStatus" : "REVIEW",
+  "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "6401c01a-7c7d-4c0a-9767-e0015edf8014",
-    "target" : "c62a57c0-18f7-496f-8967-15e7fe4c139c"
-  }, {
     "source" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
-    "target" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557"
+    "target" : "8fb67f8e-c4ca-4629-9f3c-d211657f6c21"
   }, {
     "source" : "v1",
     "target" : "06dffc96-4702-49e6-8a83-d333cc1e3893"
   }, {
-    "source" : "6401c01a-7c7d-4c0a-9767-e0015edf8014",
-    "target" : "12e954b4-9006-495e-a8bb-4d526097585d"
-  }, {
-    "source" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
-    "target" : "8fb67f8e-c4ca-4629-9f3c-d211657f6c21"
-  }, {
-    "source" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
+    "source" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
     "target" : "6401c01a-7c7d-4c0a-9767-e0015edf8014"
   } ],
   "vertexHashMap" : {
@@ -49,70 +40,12 @@
         }
       }
     },
-    "6401c01a-7c7d-4c0a-9767-e0015edf8014" : {
-      "vertexId" : "6401c01a-7c7d-4c0a-9767-e0015edf8014",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "c62a57c0-18f7-496f-8967-15e7fe4c139c" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "12e954b4-9006-495e-a8bb-4d526097585d" ]
-      } ],
-      "parentVertex" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
-      "imported" : false
-    },
-    "12e954b4-9006-495e-a8bb-4d526097585d" : {
-      "vertexId" : "12e954b4-9006-495e-a8bb-4d526097585d",
-      "vertexType" : "DELAY",
-      "name" : "Delay",
-      "delayData" : {
-        "delayUnit" : "SECONDS",
-        "delayAmount" : 0
-      },
-      "parentVertex" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
-      "imported" : false
-    },
-    "88c69013-b62f-4cd2-9cc2-3f0aa48dc557" : {
-      "vertexId" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
-      "vertexType" : "LOOP",
-      "name" : "For Loop",
-      "loopData" : {
-        "listVariableSource" : "DummyJSon",
-        "variables" : [ ],
-        "listType" : "json",
-        "loopList" : [ ],
-        "listName" : "",
-        "startingVertex" : [ "6401c01a-7c7d-4c0a-9767-e0015edf8014" ],
-        "listVariableVertexId" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
-        "loopVertexes" : [ "6401c01a-7c7d-4c0a-9767-e0015edf8014", "c62a57c0-18f7-496f-8967-15e7fe4c139c", "12e954b4-9006-495e-a8bb-4d526097585d" ]
-      },
-      "imported" : false
-    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
-    },
-    "c62a57c0-18f7-496f-8967-15e7fe4c139c" : {
-      "vertexId" : "c62a57c0-18f7-496f-8967-15e7fe4c139c",
-      "vertexType" : "DELAY",
-      "name" : "Delay",
-      "delayData" : {
-        "delayUnit" : "SECONDS",
-        "delayAmount" : 0
-      },
-      "parentVertex" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
-      "imported" : false
     },
     "06dffc96-4702-49e6-8a83-d333cc1e3893" : {
       "vertexId" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
@@ -169,6 +102,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716737648843,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716736865818,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Review",
     "cts" : 1716736846457,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -227,6 +170,11 @@
   }, {
     "commitId" : "dc3076b1992f2db3cde98051e7f5b428d410ca33",
     "timeStamp" : 1716736825989,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "3eedfb6620718d329939164010c3cea5486dc6e8",
+    "timeStamp" : 1716736857795,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
   } ],
