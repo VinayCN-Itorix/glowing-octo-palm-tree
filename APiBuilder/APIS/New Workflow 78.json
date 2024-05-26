@@ -2,10 +2,10 @@
   "id" : "6652c0a1018b394ef42044c0",
   "cts" : 1716699294804,
   "createdUserName" : "Vinay CN",
-  "modifiedUserName" : "Vinay CN",
-  "mts" : 1716699346395,
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1716716516274,
   "createdBy" : "65a8bb25f536760799fcd4fd",
-  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6652c09e018b394ef42044bf",
   "revision" : 1,
   "name" : "New Workflow 78",
@@ -16,7 +16,7 @@
   "pathArray" : [ "v1", "sample-tester" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Vinay CN",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
     "target" : "c63c6e87-16da-4182-a81a-c2cb80564d45"
@@ -51,6 +51,11 @@
   "changeLogs" : [ {
     "commitId" : "195ef809d6545724c443c55a5cb133880b8cf53d",
     "timeStamp" : 1716699294804,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "cec1be659159c192a0bfc91d893f455813371f42",
+    "timeStamp" : 1716699346395,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 2
   } ],
