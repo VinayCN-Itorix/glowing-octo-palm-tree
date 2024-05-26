@@ -1,11 +1,11 @@
 {
-  "cts" : 1716733780980,
+  "cts" : 1716734076117,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716733780980,
+  "mts" : 1716734076117,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6653475412a3bb55bc4e8b13",
+  "proxyId" : "6653487c12a3bb55bc4e8b15",
   "revision" : 1,
   "name" : "M&A Corporate Dashboard",
   "description" : "Load the advisory dashboard for corporate banking",
@@ -276,13 +276,13 @@
         "delayUnit" : "SECONDS",
         "delayAmount" : 1
       },
-      "parentVertex" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+      "parentVertex" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770",
       "imported" : false
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1716733780980,
+    "cts" : 1716734076117,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
