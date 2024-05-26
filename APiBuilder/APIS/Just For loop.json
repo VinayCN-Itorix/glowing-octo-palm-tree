@@ -3,7 +3,7 @@
   "cts" : 1716736557238,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736649472,
+  "mts" : 1716736682511,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653522d12a3bb55bc4e8b19",
@@ -75,7 +75,8 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          } ]
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"products\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": {\n            \"type\": \"integer\"\n          },\n          \"title\": {\n            \"type\": \"string\"\n          },\n          \"description\": {\n            \"type\": \"string\"\n          },\n          \"category\": {\n            \"type\": \"string\"\n          },\n          \"price\": {\n            \"type\": \"number\"\n          },\n          \"discountPercentage\": {\n            \"type\": \"number\"\n          },\n          \"rating\": {\n            \"type\": \"number\"\n          },\n          \"stock\": {\n            \"type\": \"integer\"\n          },\n          \"tags\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            }\n          },\n          \"brand\": {\n            \"type\": \"string\"\n          },\n          \"sku\": {\n            \"type\": \"string\"\n          },\n          \"weight\": {\n            \"type\": \"integer\"\n          },\n          \"dimensions\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"width\": {\n                \"type\": \"number\"\n              },\n              \"height\": {\n                \"type\": \"number\"\n              },\n              \"depth\": {\n                \"type\": \"number\"\n              }\n            }\n          },\n          \"warrantyInformation\": {\n            \"type\": \"string\"\n          },\n          \"shippingInformation\": {\n            \"type\": \"string\"\n          },\n          \"availabilityStatus\": {\n            \"type\": \"string\"\n          },\n          \"reviews\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"rating\": {\n                  \"type\": \"integer\"\n                },\n                \"comment\": {\n                  \"type\": \"string\"\n                },\n                \"date\": {\n                  \"type\": \"string\",\n                  \"format\": \"date-time\"\n                },\n                \"reviewerName\": {\n                  \"type\": \"string\"\n                },\n                \"reviewerEmail\": {\n                  \"type\": \"string\",\n                  \"format\": \"email\"\n                }\n              }\n            }\n          },\n          \"returnPolicy\": {\n            \"type\": \"string\"\n          },\n          \"minimumOrderQuantity\": {\n            \"type\": \"integer\"\n          },\n          \"meta\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"createdAt\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\"\n              },\n              \"updatedAt\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\"\n              },\n              \"barcode\": {\n                \"type\": \"string\",\n                \"format\": \"utc-millisec\"\n              },\n              \"qrCode\": {\n                \"type\": \"string\",\n                \"format\": \"uri\"\n              }\n            }\n          },\n          \"images\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\",\n              \"format\": \"uri\"\n            }\n          },\n          \"thumbnail\": {\n            \"type\": \"string\",\n            \"format\": \"uri\"\n          }\n        }\n      }\n    },\n    \"total\": {\n      \"type\": \"integer\"\n    },\n    \"skip\": {\n      \"type\": \"integer\"\n    },\n    \"limit\": {\n      \"type\": \"integer\"\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -106,6 +107,11 @@
     "timeStamp" : 1716736588193,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "c4c9a422ef944a6e4acebef4bdbaae69a2f583b3",
+    "timeStamp" : 1716736649472,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
