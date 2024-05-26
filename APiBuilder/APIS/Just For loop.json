@@ -3,7 +3,7 @@
   "cts" : 1716736557238,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736588193,
+  "mts" : 1716736649472,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653522d12a3bb55bc4e8b19",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
     "target" : "8fb67f8e-c4ca-4629-9f3c-d211657f6c21"
+  }, {
+    "source" : "v1",
+    "target" : "06dffc96-4702-49e6-8a83-d333cc1e3893"
   } ],
   "vertexHashMap" : {
     "8fb67f8e-c4ca-4629-9f3c-d211657f6c21" : {
@@ -39,6 +42,52 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "06dffc96-4702-49e6-8a83-d333cc1e3893" : {
+      "vertexId" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
+      "vertexType" : "TARGET",
+      "name" : "DummyJSon",
+      "target" : {
+        "name" : "DummyJSon",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dummyjson.com",
+          "path" : "/products",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "products",
+            "reference" : "body",
+            "value" : "$.products",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -50,6 +99,11 @@
   "changeLogs" : [ {
     "commitId" : "a07703994a1176f1ed7f94d37c7c98a782919891",
     "timeStamp" : 1716736557238,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "f282243704945b68ec2aad21fce11aae6e932622",
+    "timeStamp" : 1716736588193,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
