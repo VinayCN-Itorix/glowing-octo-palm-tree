@@ -1,8 +1,9 @@
 {
+  "id" : "6653503512a3bb55bc4e8b18",
   "cts" : 1716736052291,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736052291,
+  "mts" : 1716736198436,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653503412a3bb55bc4e8b17",
@@ -124,10 +125,10 @@
           "apiMethod" : "GET",
           "scheme" : "https",
           "host" : "acmebank-app.apiwiz.io",
-          "path" : "/{{env}}/v1/corporate/advisory",
+          "path" : "/dev/v1/corporate/advisory",
           "headerParams" : [ {
             "name" : "Authorization",
-            "value" : "K9aEs39uhgyBhiowdjDmxhzafEOKgVmp"
+            "value" : "{{token}}"
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -139,18 +140,18 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "GetM&AAdvisory",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          }, {
             "name" : "response",
             "reference" : "body",
             "value" : "$",
             "active" : true,
             "source" : "raw",
             "hide" : false
-          }, {
-            "name" : "GetM&AAdvisory",
-            "reference" : "body",
-            "value" : "$.data",
-            "active" : true,
-            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arr\": {\n            \"type\": \"integer\"\n          },\n          \"risk\": {\n            \"type\": \"integer\"\n          },\n          \"advice\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
@@ -262,10 +263,27 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1716736156750,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "draft"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716736092225,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
+    "status" : "Draft",
     "cts" : 1716736052291,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
+  "changeLogs" : [ {
+    "commitId" : "4747c36dac0653290a190bd890bd88fe6722fb33",
+    "timeStamp" : 1716736052291,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "AcmeBank DEV",
   "environmentId" : "6651dc284289865ae027e44e",
