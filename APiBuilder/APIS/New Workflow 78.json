@@ -1,17 +1,19 @@
 {
+  "id" : "6652c0a1018b394ef42044c0",
   "cts" : 1716699294804,
   "createdUserName" : "Vinay CN",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716699294804,
+  "mts" : 1716699346395,
   "createdBy" : "65a8bb25f536760799fcd4fd",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6652c09e018b394ef42044bf",
   "revision" : 1,
   "name" : "New Workflow 78",
+  "description" : "new sample path testing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "",
-  "pathArray" : [ ],
+  "path" : "/v1/sample-tester",
+  "pathArray" : [ "v1", "sample-tester" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Vinay CN",
@@ -25,7 +27,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     },
     "c63c6e87-16da-4182-a81a-c2cb80564d45" : {
       "vertexId" : "c63c6e87-16da-4182-a81a-c2cb80564d45",
@@ -46,8 +48,14 @@
     "lastModifiedBy" : "Vinay CN",
     "description" : "Created new proxy"
   } ],
+  "changeLogs" : [ {
+    "commitId" : "195ef809d6545724c443c55a5cb133880b8cf53d",
+    "timeStamp" : 1716699294804,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 2
+  } ],
   "enableTracing" : false,
-  "environmentName" : "",
-  "environmentId" : "",
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
   "deployed" : false
 }
