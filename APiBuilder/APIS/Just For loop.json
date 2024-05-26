@@ -3,7 +3,7 @@
   "cts" : 1716736557238,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736682511,
+  "mts" : 1716736700418,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653522d12a3bb55bc4e8b19",
@@ -18,10 +18,13 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "06dffc96-4702-49e6-8a83-d333cc1e3893",
-    "target" : "8fb67f8e-c4ca-4629-9f3c-d211657f6c21"
+    "target" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557"
   }, {
     "source" : "v1",
     "target" : "06dffc96-4702-49e6-8a83-d333cc1e3893"
+  }, {
+    "source" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
+    "target" : "8fb67f8e-c4ca-4629-9f3c-d211657f6c21"
   } ],
   "vertexHashMap" : {
     "8fb67f8e-c4ca-4629-9f3c-d211657f6c21" : {
@@ -35,6 +38,21 @@
           "type" : "JSON"
         }
       }
+    },
+    "88c69013-b62f-4cd2-9cc2-3f0aa48dc557" : {
+      "vertexId" : "88c69013-b62f-4cd2-9cc2-3f0aa48dc557",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "DummyJSon",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : "06dffc96-4702-49e6-8a83-d333cc1e3893"
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -75,6 +93,12 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "DummyJSon",
+            "reference" : "body",
+            "value" : "$.products",
+            "active" : true,
+            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"products\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": {\n            \"type\": \"integer\"\n          },\n          \"title\": {\n            \"type\": \"string\"\n          },\n          \"description\": {\n            \"type\": \"string\"\n          },\n          \"category\": {\n            \"type\": \"string\"\n          },\n          \"price\": {\n            \"type\": \"number\"\n          },\n          \"discountPercentage\": {\n            \"type\": \"number\"\n          },\n          \"rating\": {\n            \"type\": \"number\"\n          },\n          \"stock\": {\n            \"type\": \"integer\"\n          },\n          \"tags\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            }\n          },\n          \"brand\": {\n            \"type\": \"string\"\n          },\n          \"sku\": {\n            \"type\": \"string\"\n          },\n          \"weight\": {\n            \"type\": \"integer\"\n          },\n          \"dimensions\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"width\": {\n                \"type\": \"number\"\n              },\n              \"height\": {\n                \"type\": \"number\"\n              },\n              \"depth\": {\n                \"type\": \"number\"\n              }\n            }\n          },\n          \"warrantyInformation\": {\n            \"type\": \"string\"\n          },\n          \"shippingInformation\": {\n            \"type\": \"string\"\n          },\n          \"availabilityStatus\": {\n            \"type\": \"string\"\n          },\n          \"reviews\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"rating\": {\n                  \"type\": \"integer\"\n                },\n                \"comment\": {\n                  \"type\": \"string\"\n                },\n                \"date\": {\n                  \"type\": \"string\",\n                  \"format\": \"date-time\"\n                },\n                \"reviewerName\": {\n                  \"type\": \"string\"\n                },\n                \"reviewerEmail\": {\n                  \"type\": \"string\",\n                  \"format\": \"email\"\n                }\n              }\n            }\n          },\n          \"returnPolicy\": {\n            \"type\": \"string\"\n          },\n          \"minimumOrderQuantity\": {\n            \"type\": \"integer\"\n          },\n          \"meta\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"createdAt\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\"\n              },\n              \"updatedAt\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\"\n              },\n              \"barcode\": {\n                \"type\": \"string\",\n                \"format\": \"utc-millisec\"\n              },\n              \"qrCode\": {\n                \"type\": \"string\",\n                \"format\": \"uri\"\n              }\n            }\n          },\n          \"images\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\",\n              \"format\": \"uri\"\n            }\n          },\n          \"thumbnail\": {\n            \"type\": \"string\",\n            \"format\": \"uri\"\n          }\n        }\n      }\n    },\n    \"total\": {\n      \"type\": \"integer\"\n    },\n    \"skip\": {\n      \"type\": \"integer\"\n    },\n    \"limit\": {\n      \"type\": \"integer\"\n    }\n  }\n}"
         },
@@ -110,6 +134,11 @@
   }, {
     "commitId" : "c4c9a422ef944a6e4acebef4bdbaae69a2f583b3",
     "timeStamp" : 1716736649472,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "4c4d66260b60f39160cceb4d1b3b64078371ff6c",
+    "timeStamp" : 1716736682511,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
