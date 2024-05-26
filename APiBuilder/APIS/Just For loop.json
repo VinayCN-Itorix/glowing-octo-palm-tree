@@ -3,7 +3,7 @@
   "cts" : 1716736557238,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736825989,
+  "mts" : 1716736857795,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653522d12a3bb55bc4e8b19",
@@ -11,9 +11,9 @@
   "name" : "Just For loop",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/for-loop-testing",
-  "pathArray" : [ "for-loop-testing" ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/for-loop-testing-new",
+  "pathArray" : [ "for-loop-testing-new" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -169,6 +169,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716736846457,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716736833266,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1716736808945,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -212,6 +222,11 @@
   }, {
     "commitId" : "1df8db75aff6c7ae105f8d6e98426e8467c6c52d",
     "timeStamp" : 1716736757575,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "dc3076b1992f2db3cde98051e7f5b428d410ca33",
+    "timeStamp" : 1716736825989,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
   } ],
