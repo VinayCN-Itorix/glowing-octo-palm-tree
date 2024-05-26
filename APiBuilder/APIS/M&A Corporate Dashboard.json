@@ -1,0 +1,293 @@
+{
+  "cts" : 1716733780980,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1716733780980,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6653475412a3bb55bc4e8b13",
+  "revision" : 1,
+  "name" : "M&A Corporate Dashboard",
+  "description" : "Load the advisory dashboard for corporate banking",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/v1/corporate/advisory",
+  "pathArray" : [ "v1", "corporate", "advisory" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+    "target" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770"
+  }, {
+    "source" : "v1",
+    "target" : "aa8cb2e5-5878-47d7-b570-810b09645901"
+  }, {
+    "source" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+    "target" : "d5e83042-23ee-49dc-83f7-e1b2f7bd9dba"
+  }, {
+    "source" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770",
+    "target" : "caa535c9-4f87-4d1d-b5cc-8b8b4851a5b2"
+  }, {
+    "source" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770",
+    "target" : "0233d180-05d7-49bd-821f-54a8740c1671"
+  }, {
+    "source" : "aa8cb2e5-5878-47d7-b570-810b09645901",
+    "target" : "bcc23c44-1c15-4d7b-b0c2-d15a3a2d3d1d"
+  }, {
+    "source" : "bcc23c44-1c15-4d7b-b0c2-d15a3a2d3d1d",
+    "target" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b"
+  } ],
+  "vertexHashMap" : {
+    "0233d180-05d7-49bd-821f-54a8740c1671" : {
+      "vertexId" : "0233d180-05d7-49bd-821f-54a8740c1671",
+      "vertexType" : "TARGET",
+      "name" : "Analyze Risk",
+      "target" : {
+        "name" : "Analyze Risk",
+        "description" : "Analyze Risk",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/{{env}}/v1/corporate/risk",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "value" : "{{token}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"company\":\"{{company}}\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "parentVertex" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770",
+      "imported" : false
+    },
+    "aa8cb2e5-5878-47d7-b570-810b09645901" : {
+      "vertexId" : "aa8cb2e5-5878-47d7-b570-810b09645901",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Authentication",
+      "target" : {
+        "name" : "Authentication",
+        "description" : "Authentication",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "access_token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d5e83042-23ee-49dc-83f7-e1b2f7bd9dba" : {
+      "vertexId" : "d5e83042-23ee-49dc-83f7-e1b2f7bd9dba",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{{{response}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "89b2be1f-96f3-4200-8eb7-7b2d247d849b" : {
+      "vertexId" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "GetM&AAdvisory",
+        "variables" : [ {
+          "name" : "arr",
+          "reference" : "body",
+          "value" : "arr",
+          "active" : true,
+          "hide" : false
+        }, {
+          "name" : "company",
+          "reference" : "body",
+          "value" : "company",
+          "active" : true,
+          "hide" : false
+        } ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "f4d741f5-ac2b-499b-af6d-aa6a3513c770" ],
+        "listVariableVertexId" : "bcc23c44-1c15-4d7b-b0c2-d15a3a2d3d1d",
+        "loopVertexes" : [ "0233d180-05d7-49bd-821f-54a8740c1671", "f4d741f5-ac2b-499b-af6d-aa6a3513c770", "caa535c9-4f87-4d1d-b5cc-8b8b4851a5b2" ]
+      },
+      "imported" : false
+    },
+    "bcc23c44-1c15-4d7b-b0c2-d15a3a2d3d1d" : {
+      "vertexId" : "bcc23c44-1c15-4d7b-b0c2-d15a3a2d3d1d",
+      "vertexType" : "TARGET",
+      "name" : "Get M&A Advisory",
+      "target" : {
+        "name" : "Get M&A Advisory",
+        "description" : "Get M&A Advisory",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "acmebank-app.apiwiz.io",
+          "path" : "/{{env}}/v1/corporate/advisory",
+          "headerParams" : [ {
+            "name" : "Authorization",
+            "value" : "{{token}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "GetM&AAdvisory",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "hide" : true
+          }, {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$.data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"company\": {\n            \"type\": \"string\"\n          },\n          \"arr\": {\n            \"type\": \"integer\"\n          },\n          \"risk\": {\n            \"type\": \"integer\"\n          },\n          \"advice\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "f4d741f5-ac2b-499b-af6d-aa6a3513c770" : {
+      "vertexId" : "f4d741f5-ac2b-499b-af6d-aa6a3513c770",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "variables.arr",
+            "value" : "arr",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "0233d180-05d7-49bd-821f-54a8740c1671" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "caa535c9-4f87-4d1d-b5cc-8b8b4851a5b2" ]
+      } ],
+      "parentVertex" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+      "imported" : false
+    },
+    "caa535c9-4f87-4d1d-b5cc-8b8b4851a5b2" : {
+      "vertexId" : "caa535c9-4f87-4d1d-b5cc-8b8b4851a5b2",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 1
+      },
+      "parentVertex" : "89b2be1f-96f3-4200-8eb7-7b2d247d849b",
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716733780980,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "AcmeBank DEV",
+  "environmentId" : "6651dc284289865ae027e44e",
+  "deployed" : false
+}
