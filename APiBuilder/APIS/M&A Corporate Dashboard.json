@@ -3,7 +3,7 @@
   "cts" : 1716736052291,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716736198436,
+  "mts" : 1716736220431,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6653503412a3bb55bc4e8b17",
@@ -220,10 +220,10 @@
           "apiMethod" : "POST",
           "scheme" : "https",
           "host" : "acmebank-app.apiwiz.io",
-          "path" : "/{{env}}/v1/corporate/risk",
+          "path" : "/dev/v1/corporate/risk",
           "headerParams" : [ {
             "name" : "Authorization",
-            "value" : "K9aEs39uhgyBhiowdjDmxhzafEOKgVmp"
+            "value" : "{{token}}"
           }, {
             "name" : "Content-Type",
             "value" : "application/json"
@@ -280,6 +280,11 @@
   "changeLogs" : [ {
     "commitId" : "4747c36dac0653290a190bd890bd88fe6722fb33",
     "timeStamp" : 1716736052291,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "dd1d96f8bd79f9357430562bc704206c629464ed",
+    "timeStamp" : 1716736198436,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
   } ],
