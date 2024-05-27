@@ -3,7 +3,7 @@
   "cts" : 1716807651315,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1716808863979,
+  "mts" : 1716809100021,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "665467e312a3bb55bc4e8b2e",
@@ -32,8 +32,13 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 0,
+        "headers" : {
+          "E-Tag" : "{{ETag-env}}",
+          "name" : "{{name-env}}"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"name\" : \"{{name}}\",\n    \"E-Tag\" : \"{{ETag-env}}\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -141,6 +146,11 @@
     "timeStamp" : 1716808099469,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
+  }, {
+    "commitId" : "3fb857de361bb256af2b4b529e157e6d70f1c0fa",
+    "timeStamp" : 1716808863979,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "env-1",
