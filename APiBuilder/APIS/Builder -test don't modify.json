@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716879532771,
+  "mts" : 1716880696821,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -153,7 +153,7 @@
           "variables" : [ {
             "name" : "swaggerInfo",
             "reference" : "body",
-            "value" : "$",
+            "value" : "$.swagger",
             "active" : true,
             "source" : "raw",
             "hide" : false
@@ -210,6 +210,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716880654138,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "w"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716879542474,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "adas"
+  }, {
     "status" : "Review",
     "cts" : 1716879513205,
     "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
@@ -278,6 +288,11 @@
   }, {
     "commitId" : "cfdaa6d68ad118b4b89b5c36c55ed15080f2431d",
     "timeStamp" : 1716879227456,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "1653d49dc639f1535a52d727a90fdfffcf56aaf0",
+    "timeStamp" : 1716879532771,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 6
   } ],
