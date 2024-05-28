@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716879213555,
+  "mts" : 1716879227456,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -67,6 +67,12 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "getswaggers",
+            "reference" : "body",
+            "value" : "$.swaggers",
+            "active" : true,
+            "hide" : true
           }, {
             "name" : "getswaggers",
             "reference" : "body",
@@ -183,7 +189,7 @@
     "efdfba50-145c-4b6b-8da9-ba364a5399e4" : {
       "vertexId" : "efdfba50-145c-4b6b-8da9-ba364a5399e4",
       "vertexType" : "LOOP",
-      "name" : "For Loop",
+      "name" : "",
       "loopData" : {
         "listVariableSource" : "getswaggers",
         "variables" : [ {
@@ -252,6 +258,11 @@
   }, {
     "commitId" : "3ad158362d63df1dfaeb29905aee5b93a54e5d20",
     "timeStamp" : 1716879178324,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "7c9c16203e3eefd9b5e200c0193408847441092d",
+    "timeStamp" : 1716879213555,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 6
   } ],
