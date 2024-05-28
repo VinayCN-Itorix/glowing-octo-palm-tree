@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716880886977,
+  "mts" : 1716881014576,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -139,8 +139,11 @@
           "apiMethod" : "GET",
           "scheme" : "https",
           "host" : "dev-api.apiwiz.io",
-          "path" : "/v1/swaggers/{{swaggerId}}",
-          "headerParams" : [ ],
+          "path" : "/v1/swaggers/87871db74201457ea01cba96bbaeb740",
+          "headerParams" : [ {
+            "name" : "JsessionId",
+            "value" : "66543a26c8774e3f62872dd7"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "type" : "json"
@@ -318,6 +321,11 @@
   }, {
     "commitId" : "fed37702dcf83c5cf9a7fbcec5fe173ecb882001",
     "timeStamp" : 1716880818614,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "ba1f6e58974d56da506866fe01b76a51a0a1fde2",
+    "timeStamp" : 1716880886977,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 6
   } ],
