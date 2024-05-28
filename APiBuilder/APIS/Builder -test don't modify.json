@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716886135425,
+  "mts" : 1716886798791,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -93,9 +93,9 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
-        "name" : "66543a26c8774e3f62872dd7",
+        "name" : "jsessionid",
         "reference" : "headers",
-        "value" : "JsessionId",
+        "value" : "jsessionid",
         "active" : true,
         "source" : "headers",
         "hide" : false
@@ -117,6 +117,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716886764415,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "a"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716886145331,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "sd"
+  }, {
     "status" : "Review",
     "cts" : 1716886126986,
     "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
@@ -275,6 +285,11 @@
   }, {
     "commitId" : "c2271f96bf986ee22b5a6950795d43dea4d3d9a5",
     "timeStamp" : 1716886052529,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "e3fe0f95062d64b5e85bcfb550683cce04a1d152",
+    "timeStamp" : 1716886135425,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 3
   } ],
