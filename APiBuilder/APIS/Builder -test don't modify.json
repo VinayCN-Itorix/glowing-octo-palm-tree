@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716886798791,
+  "mts" : 1716886818012,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -43,7 +43,7 @@
           "path" : "/itorix/v1/swaggers",
           "headerParams" : [ {
             "name" : "JsessionId",
-            "value" : "{{66543a26c8774e3f62872dd7}}"
+            "value" : "{{jsessionid}}"
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -290,6 +290,11 @@
   }, {
     "commitId" : "e3fe0f95062d64b5e85bcfb550683cce04a1d152",
     "timeStamp" : 1716886135425,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "75bc7610fbb3f4372dd441657681c05f9a6e455d",
+    "timeStamp" : 1716886798791,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 3
   } ],
