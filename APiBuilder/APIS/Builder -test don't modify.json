@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716879227456,
+  "mts" : 1716879532771,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/v1/execution/flow/start",
   "pathArray" : [ "v1", "execution", "flow", "start" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Vinay CN",
   "edgeSet" : [ {
@@ -119,10 +119,10 @@
       "name" : "Start",
       "requestVariables" : [ {
         "name" : "66543a26c8774e3f62872dd7",
-        "reference" : "body",
+        "reference" : "headers",
         "value" : "JsessionId",
         "active" : true,
-        "source" : "raw",
+        "source" : "headers",
         "hide" : false
       } ],
       "imported" : true
@@ -210,6 +210,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1716879513205,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "review"
+  }, {
+    "status" : "Approved",
+    "cts" : 1716879242701,
+    "lastModifiedBy" : "65a8bb25f536760799fcd4fd",
+    "description" : "approved"
+  }, {
     "status" : "Draft",
     "cts" : 1716737851349,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -265,7 +275,13 @@
     "timeStamp" : 1716879213555,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 6
+  }, {
+    "commitId" : "cfdaa6d68ad118b4b89b5c36c55ed15080f2431d",
+    "timeStamp" : 1716879227456,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 6
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
