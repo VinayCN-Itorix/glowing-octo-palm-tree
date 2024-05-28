@@ -1,0 +1,53 @@
+{
+  "cts" : 1716875967131,
+  "createdUserName" : "Vinay CN",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1716875967131,
+  "createdBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "665572bf2f09a863d15c7840",
+  "revision" : 1,
+  "name" : "New Workflow 89",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "354fe0c9-da9f-439c-a657-a120f45fd0de"
+  } ],
+  "vertexHashMap" : {
+    "354fe0c9-da9f-439c-a657-a120f45fd0de" : {
+      "vertexId" : "354fe0c9-da9f-439c-a657-a120f45fd0de",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716875967131,
+    "lastModifiedBy" : "Vinay CN",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
