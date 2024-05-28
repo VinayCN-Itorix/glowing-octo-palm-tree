@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716877321378,
+  "mts" : 1716877640722,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -21,8 +21,11 @@
     "source" : "v1",
     "target" : "07fc1828-cd6c-4ec5-99ca-c145471160dd"
   }, {
-    "source" : "07fc1828-cd6c-4ec5-99ca-c145471160dd",
+    "source" : "efdfba50-145c-4b6b-8da9-ba364a5399e4",
     "target" : "0daa7a94-5c44-4def-9fc9-777e8e2c8011"
+  }, {
+    "source" : "07fc1828-cd6c-4ec5-99ca-c145471160dd",
+    "target" : "efdfba50-145c-4b6b-8da9-ba364a5399e4"
   } ],
   "vertexHashMap" : {
     "07fc1828-cd6c-4ec5-99ca-c145471160dd" : {
@@ -58,6 +61,12 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "getswaggers",
+            "reference" : "body",
+            "value" : "$.swaggers",
+            "active" : true,
+            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"swaggers\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"name\": {\n            \"type\": \"string\"\n          },\n          \"id\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
@@ -98,6 +107,22 @@
           "type" : "JSON"
         }
       }
+    },
+    "efdfba50-145c-4b6b-8da9-ba364a5399e4" : {
+      "vertexId" : "efdfba50-145c-4b6b-8da9-ba364a5399e4",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "getswaggers",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : "07fc1828-cd6c-4ec5-99ca-c145471160dd",
+        "loopVertexes" : [ ]
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -134,6 +159,11 @@
   }, {
     "commitId" : "d1d5cb32b4f0c0f9cd592d73bc5ef6280360cb87",
     "timeStamp" : 1716877285390,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "a8c739b4679c7f47491d3435cfe0e8083f431965",
+    "timeStamp" : 1716877321378,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 3
   } ],
