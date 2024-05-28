@@ -3,7 +3,7 @@
   "cts" : 1716737851349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Vinay CN",
-  "mts" : 1716880818614,
+  "mts" : 1716880886977,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65a8bb25f536760799fcd4fd",
   "proxyId" : "6653573b12a3bb55bc4e8b1b",
@@ -61,33 +61,33 @@
         "response" : {
           "statusCode" : 200,
           "variables" : [ {
+            "name" : "getswaggers",
+            "reference" : "body",
+            "value" : "$.swaggers",
+            "active" : true,
+            "hide" : true
+          }, {
+            "name" : "getswaggers",
+            "reference" : "body",
+            "value" : "$.swaggers",
+            "active" : true,
+            "hide" : true
+          }, {
             "name" : "swaggerId",
             "reference" : "body",
             "value" : "$.swaggers[:].id",
             "active" : true,
             "source" : "raw",
             "hide" : false
-          }, {
-            "name" : "getswaggers",
-            "reference" : "body",
-            "value" : "$.swaggers",
-            "active" : true,
-            "hide" : true
-          }, {
-            "name" : "getswaggers",
-            "reference" : "body",
-            "value" : "$.swaggers",
-            "active" : true,
-            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"swaggers\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"name\": {\n            \"type\": \"string\"\n          },\n          \"id\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 0,
+          "statusCode" : 205,
           "body" : {
-            "data" : "",
+            "data" : "{\n    \"error\":\"error\"\n}",
             "type" : "json"
           }
         }
@@ -313,6 +313,11 @@
   }, {
     "commitId" : "7841df08116bf84c1668ff5df2c5c1d0714507a3",
     "timeStamp" : 1716880793176,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "fed37702dcf83c5cf9a7fbcec5fe173ecb882001",
+    "timeStamp" : 1716880818614,
     "modifiedBy" : "Vinay CN",
     "totalNodes" : 6
   } ],
