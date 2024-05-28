@@ -1,0 +1,78 @@
+{
+  "id" : "6653573c12a3bb55bc4e8b1c",
+  "cts" : 1716737851349,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1716876561878,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "6653573b12a3bb55bc4e8b1b",
+  "revision" : 1,
+  "name" : "Builder -test don't modify",
+  "description" : "testing builder with complex data",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/v1/execution/flow/start",
+  "pathArray" : [ "v1", "execution", "flow", "start" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "0daa7a94-5c44-4def-9fc9-777e8e2c8011"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "66543a26c8774e3f62872dd7",
+        "reference" : "body",
+        "value" : "JsessionId",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "0daa7a94-5c44-4def-9fc9-777e8e2c8011" : {
+      "vertexId" : "0daa7a94-5c44-4def-9fc9-777e8e2c8011",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716737851349,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "a881478976fb6a97fd747414d096ae483f298785",
+    "timeStamp" : 1716737851349,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "81f609567159d83f262d5f988a92e1e9a5555082",
+    "timeStamp" : 1716813832471,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "807f72aadb854a992d62f7641ff094f8f641dabd",
+    "timeStamp" : 1716876040697,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
