@@ -1,12 +1,12 @@
 {
-  "cts" : 1716795965465,
-  "createdUserName" : "Vinay CN",
-  "modifiedUserName" : "Vinay CN",
-  "mts" : 1716795965465,
-  "createdBy" : "65a8bb25f536760799fcd4fd",
-  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "cts" : 1716969873946,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1716969873946,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66543a3d12a3bb55bc4e8b23",
-  "revision" : 1,
+  "revision" : 2,
   "name" : "New Workflow 87",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -14,7 +14,7 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Vinay CN",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
     "target" : "9e7fce28-5671-4a68-9419-39500d184637"
@@ -40,12 +40,6 @@
       }
     }
   },
-  "statusHistory" : [ {
-    "status" : "Draft",
-    "cts" : 1716795965465,
-    "lastModifiedBy" : "Vinay CN",
-    "description" : "Created new proxy"
-  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
