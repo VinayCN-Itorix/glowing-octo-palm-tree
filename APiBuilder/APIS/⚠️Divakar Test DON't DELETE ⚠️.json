@@ -3,7 +3,7 @@
   "cts" : 1716807651315,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1716973939580,
+  "mts" : 1716974145936,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "665467e312a3bb55bc4e8b2e",
@@ -137,7 +137,21 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "sessionId-get",
+            "reference" : "headers",
+            "value" : "set-cookie",
+            "active" : true,
+            "source" : "headers",
+            "hide" : false
+          }, {
+            "name" : "$.url",
+            "reference" : "body",
+            "value" : "url-get",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -219,6 +233,11 @@
   }, {
     "commitId" : "2859e0601e212c3d11c1ae73e10a67e9b0b36433",
     "timeStamp" : 1716973898358,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "f36399811bc1bfaf211c2ad85359cc2f6836ddeb",
+    "timeStamp" : 1716973939580,
     "modifiedBy" : "divakar v",
     "totalNodes" : 4
   } ],
