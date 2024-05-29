@@ -1,12 +1,13 @@
 {
-  "cts" : 1716809113638,
+  "id" : "665467e412a3bb55bc4e8b2f",
+  "cts" : 1716807651315,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1716809113638,
+  "mts" : 1716969342516,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "665467e312a3bb55bc4e8b2e",
-  "revision" : 2,
+  "revision" : 1,
   "name" : "⚠️Divakar Test DON't DELETE ⚠️",
   "description" : "⚠️⚠️⚠️⚠️⚠️ For testing purpose⚠️⚠️⚠️⚠️",
   "apiType" : "RESTAPI",
@@ -21,6 +22,9 @@
     "target" : "cb3150c6-8337-41ac-8f07-7a0167ff5eb6"
   }, {
     "source" : "v1",
+    "target" : "4ed135db-d466-4b99-a718-74fbabda21c7"
+  }, {
+    "source" : "v1",
     "target" : "0a4dde05-e2e4-4be2-80f2-0f0422afff34"
   } ],
   "vertexHashMap" : {
@@ -30,7 +34,7 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "headers" : {
           "E-Tag" : "{{ETag-env}}",
           "name" : "{{name-env}}"
@@ -50,7 +54,7 @@
         "description" : "postman-echo",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "GET",
+          "apiMethod" : "POST",
           "scheme" : "https",
           "host" : "postman-echo.com",
           "path" : "/post",
@@ -100,6 +104,50 @@
       },
       "imported" : false
     },
+    "4ed135db-d466-4b99-a718-74fbabda21c7" : {
+      "vertexId" : "4ed135db-d466-4b99-a718-74fbabda21c7",
+      "vertexType" : "TARGET",
+      "name" : "get API",
+      "target" : {
+        "name" : "get API",
+        "description" : "get API",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ {
+            "name" : "sessionId",
+            "value" : "{{sessionId-env}}"
+          } ],
+          "queryParams" : [ {
+            "name" : "name",
+            "value" : "{{name-env}}"
+          } ],
+          "body" : {
+            "data" : "{\n    \"sessionId\":\"{{sessionId-env}}\",\n    \"name\": \"{{name-env}}\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -129,6 +177,43 @@
       "imported" : true
     }
   },
+  "statusHistory" : [ {
+    "status" : "Approved",
+    "cts" : 1716809132450,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "aprroved"
+  }, {
+    "status" : "Draft",
+    "cts" : 1716807651315,
+    "lastModifiedBy" : "divakar v",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "86ffbbdb0ed1db1fd7cc23463325ddb10b0548da",
+    "timeStamp" : 1716807651315,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "baefa7895fdf764f27c0fcde9d228979e8cdfa23",
+    "timeStamp" : 1716808099469,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "3fb857de361bb256af2b4b529e157e6d70f1c0fa",
+    "timeStamp" : 1716808863979,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "e416abe5dbb637605de6fc1a492ca9e4878e3d1f",
+    "timeStamp" : 1716809100021,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
+  } ],
+  "virtualHostList" : [ {
+    "id" : "664c95008ac11a73dcf3eb8e",
+    "name" : "acme-team-gcp-stage",
+    "timeStamp" : 1716809194191
+  } ],
   "enableTracing" : false,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
