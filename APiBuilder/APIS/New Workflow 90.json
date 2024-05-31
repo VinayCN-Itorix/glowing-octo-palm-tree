@@ -1,11 +1,11 @@
 {
-  "cts" : 1716898869167,
-  "createdUserName" : "Vinay CN",
-  "modifiedUserName" : "Vinay CN",
-  "mts" : 1716898869167,
-  "createdBy" : "65a8bb25f536760799fcd4fd",
-  "modifiedBy" : "65a8bb25f536760799fcd4fd",
-  "proxyId" : "6655cc352f09a863d15c784a",
+  "cts" : 1717179639637,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1717179639637,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "665a14f759a32742f5a04723",
   "revision" : 1,
   "name" : "New Workflow 90",
   "apiType" : "RESTAPI",
@@ -14,21 +14,14 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Vinay CN",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "5a7cbf2f-e104-477d-800d-2a4b92674f79"
+    "target" : "35212261-5ba9-48cd-9702-5a697fe489d6"
   } ],
   "vertexHashMap" : {
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : false
-    },
-    "5a7cbf2f-e104-477d-800d-2a4b92674f79" : {
-      "vertexId" : "5a7cbf2f-e104-477d-800d-2a4b92674f79",
+    "35212261-5ba9-48cd-9702-5a697fe489d6" : {
+      "vertexId" : "35212261-5ba9-48cd-9702-5a697fe489d6",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -38,12 +31,19 @@
           "type" : "JSON"
         }
       }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1716898869167,
-    "lastModifiedBy" : "Vinay CN",
+    "cts" : 1717179639637,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
   "enableTracing" : false,
