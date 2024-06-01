@@ -1,8 +1,9 @@
 {
+  "id" : "665a150159a32742f5a04724",
   "cts" : 1717179639637,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1717179639637,
+  "mts" : 1717246600713,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "665a14f759a32742f5a04723",
@@ -16,7 +17,16 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "fe006277-8289-4bd5-a1f4-6f2e33f242cd",
+    "target" : "5186102e-d840-4543-9991-f8bee97b7b16"
+  }, {
     "source" : "v1",
+    "target" : "18388ad7-26e8-4e45-bdb9-1cd8e9054f6b"
+  }, {
+    "source" : "18388ad7-26e8-4e45-bdb9-1cd8e9054f6b",
+    "target" : "fe006277-8289-4bd5-a1f4-6f2e33f242cd"
+  }, {
+    "source" : "5186102e-d840-4543-9991-f8bee97b7b16",
     "target" : "35212261-5ba9-48cd-9702-5a697fe489d6"
   } ],
   "vertexHashMap" : {
@@ -32,11 +42,91 @@
         }
       }
     },
+    "5186102e-d840-4543-9991-f8bee97b7b16" : {
+      "vertexId" : "5186102e-d840-4543-9991-f8bee97b7b16",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "imported" : false
+    },
+    "fe006277-8289-4bd5-a1f4-6f2e33f242cd" : {
+      "vertexId" : "fe006277-8289-4bd5-a1f4-6f2e33f242cd",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "8487b26b-4c53-4d56-a555-895bfc66ff04" ],
+        "listVariableVertexId" : "",
+        "loopVertexes" : [ "8487b26b-4c53-4d56-a555-895bfc66ff04" ]
+      },
+      "imported" : false
+    },
+    "8487b26b-4c53-4d56-a555-895bfc66ff04" : {
+      "vertexId" : "8487b26b-4c53-4d56-a555-895bfc66ff04",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "parentVertex" : "fe006277-8289-4bd5-a1f4-6f2e33f242cd",
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
+      "imported" : false
+    },
+    "18388ad7-26e8-4e45-bdb9-1cd8e9054f6b" : {
+      "vertexId" : "18388ad7-26e8-4e45-bdb9-1cd8e9054f6b",
+      "vertexType" : "TARGET",
+      "name" : "New Node",
+      "target" : {
+        "name" : "New Node",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dummyjson.com",
+          "path" : "/products",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "products",
+            "reference" : "body",
+            "value" : "$.products",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     }
   },
@@ -45,6 +135,12 @@
     "cts" : 1717179639637,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "4ce9219893a75340b19ffbc88ebaf713df4b09b1",
+    "timeStamp" : 1717179639637,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
