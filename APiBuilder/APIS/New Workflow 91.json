@@ -1,11 +1,12 @@
 {
-  "cts" : 1717412546370,
+  "id" : "665da2c3cc9a48767d6286e3",
+  "cts" : 1717412537346,
   "createdUserName" : "divakar v",
-  "modifiedUserName" : "divakar v",
-  "mts" : 1717412546370,
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1717416927526,
   "createdBy" : "63cf749921c7bb55c7368952",
-  "modifiedBy" : "63cf749921c7bb55c7368952",
-  "proxyId" : "665da2c2cc9a48767d6286e2",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "665da2b9cc9a48767d6286e1",
   "revision" : 1,
   "name" : "New Workflow 91",
   "apiType" : "RESTAPI",
@@ -14,14 +15,35 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "divakar v",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "eedc509f-2a84-4f8b-b147-2ba212a4faba"
+    "target" : "a7acac82-6831-47d6-8b2c-45fa379d1b01"
+  }, {
+    "source" : "a7acac82-6831-47d6-8b2c-45fa379d1b01",
+    "target" : "7eb0db4b-3d9d-4205-8feb-af0dec931893"
   } ],
   "vertexHashMap" : {
-    "eedc509f-2a84-4f8b-b147-2ba212a4faba" : {
-      "vertexId" : "eedc509f-2a84-4f8b-b147-2ba212a4faba",
+    "a7acac82-6831-47d6-8b2c-45fa379d1b01" : {
+      "vertexId" : "a7acac82-6831-47d6-8b2c-45fa379d1b01",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "7eb0db4b-3d9d-4205-8feb-af0dec931893" : {
+      "vertexId" : "7eb0db4b-3d9d-4205-8feb-af0dec931893",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -36,15 +58,35 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : false
+      "requestVariables" : [ {
+        "name" : "asdfasdf",
+        "reference" : "path-variable",
+        "value" : "asdfasdfasdf",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      }, {
+        "name" : "werewrwer",
+        "reference" : "path-variable",
+        "value" : "werwer",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      } ],
+      "imported" : true
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1717412546370,
+    "cts" : 1717412537346,
     "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "cbddc6d288030e94c0bbab4577ab19078c868e98",
+    "timeStamp" : 1717412537346,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
