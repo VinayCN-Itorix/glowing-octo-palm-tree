@@ -1,0 +1,53 @@
+{
+  "cts" : 1717582173502,
+  "createdUserName" : "Adeeb Tahir",
+  "modifiedUserName" : "Adeeb Tahir",
+  "mts" : 1717582173502,
+  "createdBy" : "63cf749921c7bb55c7368954",
+  "modifiedBy" : "63cf749921c7bb55c7368954",
+  "proxyId" : "6660395d80d0ce3ef568cf82",
+  "revision" : 1,
+  "name" : "New Workflow 95",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Adeeb Tahir",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "ac3fa0e3-8dc3-4851-ae7b-6ca3f58c1437"
+  } ],
+  "vertexHashMap" : {
+    "ac3fa0e3-8dc3-4851-ae7b-6ca3f58c1437" : {
+      "vertexId" : "ac3fa0e3-8dc3-4851-ae7b-6ca3f58c1437",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1717582173502,
+    "lastModifiedBy" : "Adeeb Tahir",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
