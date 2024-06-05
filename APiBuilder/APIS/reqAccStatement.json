@@ -3,7 +3,7 @@
   "cts" : 1717561825392,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Adeeb Tahir",
-  "mts" : 1717582624463,
+  "mts" : 1717582691852,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "63cf749921c7bb55c7368954",
   "proxyId" : "665fe9e180d0ce3ef568cf7f",
@@ -19,6 +19,9 @@
   "lockedBy" : "Adeeb Tahir",
   "edgeSet" : [ {
     "source" : "c2bb3013-0591-466c-8cb6-afeed8db56ee",
+    "target" : "8e1dd897-7412-40d3-b13d-b4aaef2bb06f"
+  }, {
+    "source" : "8e1dd897-7412-40d3-b13d-b4aaef2bb06f",
     "target" : "135789fc-3d3d-4ea9-8a95-840d8dee519f"
   }, {
     "source" : "v1",
@@ -104,6 +107,43 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "8e1dd897-7412-40d3-b13d-b4aaef2bb06f" : {
+      "vertexId" : "8e1dd897-7412-40d3-b13d-b4aaef2bb06f",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "token",
+            "value" : "sdlkd;dj",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "135789fc-3d3d-4ea9-8a95-840d8dee519f" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -127,6 +167,11 @@
     "timeStamp" : 1717582348358,
     "modifiedBy" : "Adeeb Tahir",
     "totalNodes" : 2
+  }, {
+    "commitId" : "c9fc9698973cf3b9de783c22d1fccd13858cefb6",
+    "timeStamp" : 1717582624463,
+    "modifiedBy" : "Adeeb Tahir",
+    "totalNodes" : 3
   } ],
   "enableTracing" : true,
   "environmentName" : "",
