@@ -1,0 +1,75 @@
+{
+  "id" : "665fe9e380d0ce3ef568cf81",
+  "cts" : 1717561825392,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "Adeeb Tahir",
+  "mts" : 1717582340329,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "63cf749921c7bb55c7368954",
+  "proxyId" : "665fe9e180d0ce3ef568cf7f",
+  "revision" : 1,
+  "name" : "reqAccStatement",
+  "description" : "reqAccStatement",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/v1/accout-statement",
+  "pathArray" : [ "v1", "accout-statement" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Adeeb Tahir",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "135789fc-3d3d-4ea9-8a95-840d8dee519f"
+  } ],
+  "vertexHashMap" : {
+    "135789fc-3d3d-4ea9-8a95-840d8dee519f" : {
+      "vertexId" : "135789fc-3d3d-4ea9-8a95-840d8dee519f",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "tenant",
+        "reference" : "headers",
+        "value" : "x-tenant",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1717561825392,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "05174b5bfb91d86c85089d9cb6ae50b228e84542",
+    "timeStamp" : 1717561825392,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
