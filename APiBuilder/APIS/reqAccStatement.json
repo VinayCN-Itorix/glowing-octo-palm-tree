@@ -3,7 +3,7 @@
   "cts" : 1717561825392,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Adeeb Tahir",
-  "mts" : 1717582348358,
+  "mts" : 1717582624463,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "63cf749921c7bb55c7368954",
   "proxyId" : "665fe9e180d0ce3ef568cf7f",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "Adeeb Tahir",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "c2bb3013-0591-466c-8cb6-afeed8db56ee",
     "target" : "135789fc-3d3d-4ea9-8a95-840d8dee519f"
+  }, {
+    "source" : "v1",
+    "target" : "c2bb3013-0591-466c-8cb6-afeed8db56ee"
   } ],
   "vertexHashMap" : {
     "135789fc-3d3d-4ea9-8a95-840d8dee519f" : {
@@ -33,6 +36,53 @@
           "type" : "JSON"
         }
       }
+    },
+    "c2bb3013-0591-466c-8cb6-afeed8db56ee" : {
+      "vertexId" : "c2bb3013-0591-466c-8cb6-afeed8db56ee",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "getToken",
+      "target" : {
+        "name" : "getToken",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "3.111.65.30:9000",
+          "path" : "/oauth2/token",
+          "headerParams" : [ {
+            "name" : "x-custom",
+            "value" : "{{tenant}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.access_token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -70,6 +120,11 @@
   }, {
     "commitId" : "ee0c5e735bd1b93f185b7f0e9078634ed6d9aa34",
     "timeStamp" : 1717582340329,
+    "modifiedBy" : "Adeeb Tahir",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "d68995e381889228679eeddf21a1e97142547d60",
+    "timeStamp" : 1717582348358,
     "modifiedBy" : "Adeeb Tahir",
     "totalNodes" : 2
   } ],
