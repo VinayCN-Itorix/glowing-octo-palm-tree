@@ -3,7 +3,7 @@
   "cts" : 1717561825392,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Adeeb Tahir",
-  "mts" : 1717582340329,
+  "mts" : 1717582348358,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "63cf749921c7bb55c7368954",
   "proxyId" : "665fe9e180d0ce3ef568cf7f",
@@ -12,8 +12,8 @@
   "description" : "reqAccStatement",
   "apiType" : "RESTAPI",
   "apiMethod" : "POST",
-  "path" : "/v1/accout-statement",
-  "pathArray" : [ "v1", "accout-statement" ],
+  "path" : "/v1/account-statement",
+  "pathArray" : [ "v1", "account-statement" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Adeeb Tahir",
@@ -66,6 +66,11 @@
     "commitId" : "05174b5bfb91d86c85089d9cb6ae50b228e84542",
     "timeStamp" : 1717561825392,
     "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ee0c5e735bd1b93f185b7f0e9078634ed6d9aa34",
+    "timeStamp" : 1717582340329,
+    "modifiedBy" : "Adeeb Tahir",
     "totalNodes" : 2
   } ],
   "enableTracing" : true,
