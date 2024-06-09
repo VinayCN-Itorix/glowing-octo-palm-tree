@@ -1,12 +1,13 @@
 {
-  "cts" : 1717900877665,
+  "id" : "6665119771091a0a6f6acae1",
+  "cts" : 1717899662666,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1717900877665,
+  "mts" : 1717904328603,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6665118e71091a0a6f6acae0",
-  "revision" : 2,
+  "revision" : 1,
   "name" : "New Workflow 97",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -17,6 +18,9 @@
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "1085372c-0789-4ced-b469-c9a0026b7645"
+  }, {
+    "source" : "1085372c-0789-4ced-b469-c9a0026b7645",
     "target" : "dc38ba4f-06d3-42b0-969b-9ca16e26bdf0"
   } ],
   "vertexHashMap" : {
@@ -32,6 +36,38 @@
         }
       }
     },
+    "1085372c-0789-4ced-b469-c9a0026b7645" : {
+      "vertexId" : "1085372c-0789-4ced-b469-c9a0026b7645",
+      "vertexType" : "TARGET",
+      "target" : {
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -40,6 +76,18 @@
       "imported" : false
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1717899662666,
+    "lastModifiedBy" : "divakar v",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "5ddc51a70a08b2877411b480d2e8458f026e94d3",
+    "timeStamp" : 1717899662666,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
+  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
