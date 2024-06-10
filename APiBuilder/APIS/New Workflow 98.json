@@ -1,11 +1,11 @@
 {
-  "cts" : 1717901697600,
+  "cts" : 1718004465722,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1717901697600,
+  "mts" : 1718004465722,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
-  "proxyId" : "6665198171091a0a6f6acae3",
+  "proxyId" : "6666aaf192d2a70d58e6bcd9",
   "revision" : 1,
   "name" : "New Workflow 98",
   "apiType" : "RESTAPI",
@@ -17,11 +17,11 @@
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "e5cd2e26-01b3-4fa3-8991-a1e55dd936f6"
+    "target" : "dbf6488a-ebad-4baf-b9e9-586eb92f61d0"
   } ],
   "vertexHashMap" : {
-    "e5cd2e26-01b3-4fa3-8991-a1e55dd936f6" : {
-      "vertexId" : "e5cd2e26-01b3-4fa3-8991-a1e55dd936f6",
+    "dbf6488a-ebad-4baf-b9e9-586eb92f61d0" : {
+      "vertexId" : "dbf6488a-ebad-4baf-b9e9-586eb92f61d0",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -42,7 +42,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1717901697600,
+    "cts" : 1718004465722,
     "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
   } ],
