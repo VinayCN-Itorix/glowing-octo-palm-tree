@@ -3,16 +3,17 @@
   "cts" : 1718020914067,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718021053647,
+  "mts" : 1718021158459,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6666eb3274c8a51ab316e4c9",
   "revision" : 1,
   "name" : "New Workflow 100",
+  "description" : "test tracing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "",
-  "pathArray" : [ ],
+  "path" : "/test/tracing",
+  "pathArray" : [ "test", "tracing" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "divakar v",
@@ -88,7 +89,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
@@ -102,9 +103,14 @@
     "timeStamp" : 1718020914067,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
+  }, {
+    "commitId" : "cd7edd82659a02519b8eda9053cef160564980d3",
+    "timeStamp" : 1718021053647,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
-  "enableTracing" : false,
-  "environmentName" : "",
-  "environmentId" : "",
+  "enableTracing" : true,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
   "deployed" : false
 }
