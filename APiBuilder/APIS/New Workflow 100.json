@@ -1,0 +1,53 @@
+{
+  "cts" : 1718020914067,
+  "createdUserName" : "divakar v",
+  "modifiedUserName" : "divakar v",
+  "mts" : 1718020914067,
+  "createdBy" : "63cf749921c7bb55c7368952",
+  "modifiedBy" : "63cf749921c7bb55c7368952",
+  "proxyId" : "6666eb3274c8a51ab316e4c9",
+  "revision" : 1,
+  "name" : "New Workflow 100",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "divakar v",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "daca49b9-b20f-4d91-9d30-8d5586bac58b"
+  } ],
+  "vertexHashMap" : {
+    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
+      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718020914067,
+    "lastModifiedBy" : "divakar v",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
