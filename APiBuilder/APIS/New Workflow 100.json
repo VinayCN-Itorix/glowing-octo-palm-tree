@@ -1,8 +1,9 @@
 {
+  "id" : "6666eb3c74c8a51ab316e4ca",
   "cts" : 1718020914067,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718020914067,
+  "mts" : 1718021053647,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6666eb3274c8a51ab316e4c9",
@@ -16,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
     "target" : "daca49b9-b20f-4d91-9d30-8d5586bac58b"
+  }, {
+    "source" : "v1",
+    "target" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7"
   } ],
   "vertexHashMap" : {
     "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
@@ -32,6 +36,53 @@
         }
       }
     },
+    "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7" : {
+      "vertexId" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
+      "vertexType" : "TARGET",
+      "name" : "Postman echo",
+      "target" : {
+        "name" : "Postman echo",
+        "description" : "Postman echo",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "postman-echo.com",
+          "path" : "/post",
+          "headerParams" : [ {
+            "name" : "testh1",
+            "value" : "testhv1"
+          }, {
+            "name" : "testh2",
+            "value" : "testhv2"
+          } ],
+          "queryParams" : [ {
+            "name" : "testhq1",
+            "value" : "testhqv1"
+          } ],
+          "body" : {
+            "data" : "{\n    \"test\":\"body\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -45,6 +96,12 @@
     "cts" : 1718020914067,
     "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "1b70a1c3dc84c99b2e1da5a39d5fa24bd06a2979",
+    "timeStamp" : 1718020914067,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
