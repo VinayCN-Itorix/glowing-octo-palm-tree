@@ -3,7 +3,7 @@
   "cts" : 1718020914067,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718021158459,
+  "mts" : 1718021368394,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6666eb3274c8a51ab316e4c9",
@@ -31,9 +31,13 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
+        "headers" : {
+          "error" : "212"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"message\": \"ok\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -94,6 +98,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1718021336756,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "dwsa"
+  }, {
+    "status" : "Approved",
+    "cts" : 1718021177249,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "xsasd"
+  }, {
+    "status" : "Draft",
     "cts" : 1718020914067,
     "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
@@ -108,7 +122,13 @@
     "timeStamp" : 1718021053647,
     "modifiedBy" : "divakar v",
     "totalNodes" : 3
+  }, {
+    "commitId" : "bb402b6b8f63f2c48bb9ac968d87165f4327655d",
+    "timeStamp" : 1718021158459,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
