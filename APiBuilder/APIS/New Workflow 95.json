@@ -1,13 +1,12 @@
 {
-  "id" : "6660395f80d0ce3ef568cf83",
-  "cts" : 1717582173502,
-  "createdUserName" : "Adeeb Tahir",
+  "cts" : 1717996531618,
+  "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1717995522880,
-  "createdBy" : "63cf749921c7bb55c7368954",
+  "mts" : 1717996531618,
+  "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6660395d80d0ce3ef568cf82",
-  "revision" : 1,
+  "revision" : 5,
   "name" : "New Workflow 95",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -78,15 +77,9 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1717582173502,
-    "lastModifiedBy" : "Adeeb Tahir",
+    "cts" : 1717996531618,
+    "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
-  } ],
-  "changeLogs" : [ {
-    "commitId" : "beca007cab6bb3ecdbf77eac378e9411ff68bb4a",
-    "timeStamp" : 1717582173502,
-    "modifiedBy" : "Adeeb Tahir",
-    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
