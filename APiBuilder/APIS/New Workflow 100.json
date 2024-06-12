@@ -1,13 +1,13 @@
 {
   "id" : "6666eb3c74c8a51ab316e4ca",
-  "cts" : 1718020914067,
+  "cts" : 1718162064587,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718021368394,
+  "mts" : 1718162064587,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6666eb3274c8a51ab316e4c9",
-  "revision" : 1,
+  "revision" : 2,
   "name" : "New Workflow 100",
   "description" : "test tracing",
   "apiType" : "RESTAPI",
@@ -25,22 +25,6 @@
     "target" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7"
   } ],
   "vertexHashMap" : {
-    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
-      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "error" : "212"
-        },
-        "body" : {
-          "data" : "{\n    \"message\": \"ok\"\n}",
-          "type" : "json"
-        }
-      }
-    },
     "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7" : {
       "vertexId" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
       "vertexType" : "TARGET",
@@ -88,6 +72,22 @@
       },
       "imported" : false
     },
+    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
+      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "error" : "212"
+        },
+        "body" : {
+          "data" : "{\n    \"message\": \"ok\"\n}",
+          "type" : "json"
+        }
+      }
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -96,39 +96,6 @@
       "imported" : true
     }
   },
-  "statusHistory" : [ {
-    "status" : "Draft",
-    "cts" : 1718021336756,
-    "lastModifiedBy" : "63cf749921c7bb55c7368952",
-    "description" : "dwsa"
-  }, {
-    "status" : "Approved",
-    "cts" : 1718021177249,
-    "lastModifiedBy" : "63cf749921c7bb55c7368952",
-    "description" : "xsasd"
-  }, {
-    "status" : "Draft",
-    "cts" : 1718020914067,
-    "lastModifiedBy" : "divakar v",
-    "description" : "Created new proxy"
-  } ],
-  "changeLogs" : [ {
-    "commitId" : "1b70a1c3dc84c99b2e1da5a39d5fa24bd06a2979",
-    "timeStamp" : 1718020914067,
-    "modifiedBy" : "divakar v",
-    "totalNodes" : 2
-  }, {
-    "commitId" : "cd7edd82659a02519b8eda9053cef160564980d3",
-    "timeStamp" : 1718021053647,
-    "modifiedBy" : "divakar v",
-    "totalNodes" : 3
-  }, {
-    "commitId" : "bb402b6b8f63f2c48bb9ac968d87165f4327655d",
-    "timeStamp" : 1718021158459,
-    "modifiedBy" : "divakar v",
-    "totalNodes" : 3
-  } ],
-  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
