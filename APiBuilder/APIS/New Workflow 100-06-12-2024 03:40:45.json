@@ -1,0 +1,108 @@
+{
+  "cts" : 1718163645723,
+  "createdUserName" : "divakar v",
+  "modifiedUserName" : "divakar v",
+  "mts" : 1718163645723,
+  "createdBy" : "63cf749921c7bb55c7368952",
+  "modifiedBy" : "63cf749921c7bb55c7368952",
+  "proxyId" : "666918bd2e52115b240a3236",
+  "revision" : 1,
+  "name" : "New Workflow 100-06-12-2024 03:40:45",
+  "description" : "test tracing",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/test/tracing",
+  "pathArray" : [ "test", "tracing" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "divakar v",
+  "edgeSet" : [ {
+    "source" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
+    "target" : "daca49b9-b20f-4d91-9d30-8d5586bac58b"
+  }, {
+    "source" : "v1",
+    "target" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7"
+  } ],
+  "vertexHashMap" : {
+    "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7" : {
+      "vertexId" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
+      "vertexType" : "TARGET",
+      "name" : "Postman echo",
+      "target" : {
+        "name" : "Postman echo",
+        "description" : "Postman echo",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "postman-echo.com",
+          "path" : "/post",
+          "headerParams" : [ {
+            "name" : "testh1",
+            "value" : "testhv1"
+          }, {
+            "name" : "testh2",
+            "value" : "testhv2"
+          } ],
+          "queryParams" : [ {
+            "name" : "testhq1",
+            "value" : "testhqv1"
+          } ],
+          "body" : {
+            "data" : "{\n    \"test\":\"body\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
+      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "error" : "212"
+        },
+        "body" : {
+          "data" : "{\n    \"message\": \"ok\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718163645723,
+    "lastModifiedBy" : "divakar v",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "deployed" : false
+}
