@@ -1,12 +1,13 @@
 {
-  "cts" : 1718163607564,
+  "id" : "6666eb3c74c8a51ab316e4ca",
+  "cts" : 1718163457810,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718163607564,
+  "mts" : 1718163807965,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6666eb3274c8a51ab316e4c9",
-  "revision" : 5,
+  "revision" : 4,
   "name" : "New Workflow 100",
   "description" : "test tracing",
   "apiType" : "RESTAPI",
@@ -17,13 +18,32 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
-    "source" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
+    "source" : "465ac83b-003a-4bbc-accf-c0b0b2a666e5",
     "target" : "daca49b9-b20f-4d91-9d30-8d5586bac58b"
   }, {
     "source" : "v1",
     "target" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7"
+  }, {
+    "source" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
+    "target" : "465ac83b-003a-4bbc-accf-c0b0b2a666e5"
   } ],
   "vertexHashMap" : {
+    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
+      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "error" : "212"
+        },
+        "body" : {
+          "data" : "{\n    \"message\": \"ok\"\n}",
+          "type" : "json"
+        }
+      }
+    },
     "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7" : {
       "vertexId" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
       "vertexType" : "TARGET",
@@ -71,21 +91,23 @@
       },
       "imported" : false
     },
-    "daca49b9-b20f-4d91-9d30-8d5586bac58b" : {
-      "vertexId" : "daca49b9-b20f-4d91-9d30-8d5586bac58b",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "error" : "212"
-        },
-        "body" : {
-          "data" : "{\n    \"message\": \"ok\"\n}",
-          "type" : "json"
+    "465ac83b-003a-4bbc-accf-c0b0b2a666e5" : {
+      "vertexId" : "465ac83b-003a-4bbc-accf-c0b0b2a666e5",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
         }
-      }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -95,6 +117,18 @@
       "imported" : true
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718163457810,
+    "lastModifiedBy" : "divakar v",
+    "description" : "Created new proxy revision"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "bb6c8e3e7aeeaecaeb28f72f25a58bf59433cc02",
+    "timeStamp" : 1718163457810,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
+  } ],
   "enableTracing" : true,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
