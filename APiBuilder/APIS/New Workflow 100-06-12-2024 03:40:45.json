@@ -3,7 +3,7 @@
   "cts" : 1718163645723,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718182551214,
+  "mts" : 1718183432342,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "666918bd2e52115b240a3236",
@@ -60,6 +60,9 @@
           }, {
             "name" : "workflow-id",
             "value" : "eff6c80977734118a1ab6d34465b77af"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -95,6 +98,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1718183329629,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "fssfsa"
+  }, {
+    "status" : "Approved",
+    "cts" : 1718182564654,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "sda"
+  }, {
+    "status" : "Draft",
     "cts" : 1718163645723,
     "lastModifiedBy" : "divakar v",
     "description" : "Duplicated proxy"
@@ -114,7 +127,13 @@
     "timeStamp" : 1718182548488,
     "modifiedBy" : "divakar v",
     "totalNodes" : 3
+  }, {
+    "commitId" : "d99134e2bfd7eabf914f5b7dba807c12029f95bd",
+    "timeStamp" : 1718182551214,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
