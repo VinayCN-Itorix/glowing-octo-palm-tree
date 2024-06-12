@@ -3,7 +3,7 @@
   "cts" : 1718163645723,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718183432342,
+  "mts" : 1718199274660,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "666918bd2e52115b240a3236",
@@ -18,6 +18,9 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "1584bf0b-00b4-49c6-8390-c2bca20dfc39"
+  }, {
     "source" : "2d55ca2a-2913-4ed7-9a82-38fff6bce5a7",
     "target" : "daca49b9-b20f-4d91-9d30-8d5586bac58b"
   }, {
@@ -94,9 +97,56 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "1584bf0b-00b4-49c6-8390-c2bca20dfc39" : {
+      "vertexId" : "1584bf0b-00b4-49c6-8390-c2bca20dfc39",
+      "vertexType" : "TARGET",
+      "name" : "postman echo",
+      "target" : {
+        "name" : "postman echo",
+        "description" : "postman echo",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718199199583,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "das"
+  }, {
+    "status" : "Approved",
+    "cts" : 1718183452610,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "dasd"
+  }, {
     "status" : "Draft",
     "cts" : 1718183329629,
     "lastModifiedBy" : "63cf749921c7bb55c7368952",
@@ -130,6 +180,11 @@
   }, {
     "commitId" : "d99134e2bfd7eabf914f5b7dba807c12029f95bd",
     "timeStamp" : 1718182551214,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "90af6cfa99725d0178ab240ef8c36f78e6439e44",
+    "timeStamp" : 1718183432342,
     "modifiedBy" : "divakar v",
     "totalNodes" : 3
   } ],
