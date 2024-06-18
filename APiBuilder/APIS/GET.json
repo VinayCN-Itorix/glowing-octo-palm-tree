@@ -1,132 +1,59 @@
 {
-  "id" : "66541a6712a3bb55bc4e8b20",
-  "cts" : 1716787813790,
+  "id" : "666fe35e122de46624608b30",
+  "cts" : 1718608732349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1716888871867,
+  "mts" : 1718714580925,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "66541a6512a3bb55bc4e8b1f",
+  "proxyId" : "666fe35c122de46624608b2f",
   "revision" : 1,
   "name" : "GET",
-  "description" : "Test",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/v1/acme/fx/risk/greeks/{countryAbbreviation}",
-  "pathArray" : [ "v1", "acme", "fx", "risk", "greeks", "*" ],
+  "path" : "/events/events",
+  "pathArray" : [ "events", "events" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "f3a33438-1481-410a-8b6b-a21af7ca1c53"
-  }, {
-    "source" : "f3a33438-1481-410a-8b6b-a21af7ca1c53",
-    "target" : "c009fe7c-0c61-4442-bb85-9daf2dfb456b"
-  }, {
-    "source" : "c009fe7c-0c61-4442-bb85-9daf2dfb456b",
-    "target" : "6842e533-d48a-4f1e-90bd-417eecc85d36"
-  }, {
-    "source" : "f3a33438-1481-410a-8b6b-a21af7ca1c53",
-    "target" : "9466832e-da1a-433c-a789-84aa49881c9a"
+    "target" : "2b6998c8-19eb-482e-b2bb-bf840a966472"
   } ],
   "vertexHashMap" : {
-    "c009fe7c-0c61-4442-bb85-9daf2dfb456b" : {
-      "vertexId" : "c009fe7c-0c61-4442-bb85-9daf2dfb456b",
-      "vertexType" : "TARGET",
-      "target" : {
-        "name" : "findAllBankAccount",
-        "description" : "Find All Bank Accounts",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "path" : "/v1/acmebank/accounts/bank-account",
-          "headerParams" : [ {
-            "name" : "pageSize",
-            "value" : ""
-          }, {
-            "name" : "x-apikey",
-            "value" : ""
-          }, {
-            "name" : "Accept",
-            "value" : ""
-          }, {
-            "name" : "x-fin-acme",
-            "value" : ""
-          } ],
-          "queryParams" : [ ],
-          "body" : { },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 0,
-          "variables" : [ ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 0,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
-        "name" : "countryAbbreviation",
-        "reference" : "path-variable",
+        "name" : "EventUUID",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "22",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "help",
+        "reference" : "headers",
+        "value" : "",
+        "active" : false,
+        "hide" : false
+      }, {
+        "name" : "x-tenant",
+        "reference" : "headers",
         "value" : "",
         "active" : false,
         "hide" : false
       } ],
       "imported" : true
     },
-    "f3a33438-1481-410a-8b6b-a21af7ca1c53" : {
-      "vertexId" : "f3a33438-1481-410a-8b6b-a21af7ca1c53",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "9466832e-da1a-433c-a789-84aa49881c9a" ]
-      }, {
-        "condition" : "else-if",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "c009fe7c-0c61-4442-bb85-9daf2dfb456b" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        }
-      } ],
-      "imported" : false
-    },
-    "6842e533-d48a-4f1e-90bd-417eecc85d36" : {
-      "vertexId" : "6842e533-d48a-4f1e-90bd-417eecc85d36",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 0,
-        "body" : {
-          "type" : "JSON"
-        }
-      }
-    },
-    "9466832e-da1a-433c-a789-84aa49881c9a" : {
-      "vertexId" : "9466832e-da1a-433c-a789-84aa49881c9a",
+    "2b6998c8-19eb-482e-b2bb-bf840a966472" : {
+      "vertexId" : "2b6998c8-19eb-482e-b2bb-bf840a966472",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -140,18 +67,13 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1716787813790,
+    "cts" : 1718608732349,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
   "changeLogs" : [ {
-    "commitId" : "6fc5af8b4784c7048470ae4c6d47c6ad1a18ce1a",
-    "timeStamp" : 1716787813790,
-    "modifiedBy" : "vidya.wiz vidya.wiz",
-    "totalNodes" : 2
-  }, {
-    "commitId" : "63f7e25a33c7e7fa5ef17c7d0cc96987676395b3",
-    "timeStamp" : 1716888759647,
+    "commitId" : "4c799ee51d648d79ccf4d53d3937940abf6eb945",
+    "timeStamp" : 1718608732349,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
