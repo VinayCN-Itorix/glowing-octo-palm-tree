@@ -1,0 +1,163 @@
+{
+  "id" : "666fe182122de46624608b2e",
+  "cts" : 1718608256272,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1718713582869,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "666fe180122de46624608b2d",
+  "revision" : 1,
+  "name" : "chinkmayee",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "ff08e225-0ee9-40fa-9132-fb2989299b3e"
+  }, {
+    "source" : "76c66f20-e0f6-480b-a878-03a4830f1a3c",
+    "target" : "9e878930-2e20-4a75-8537-7d74ab4b91e4"
+  }, {
+    "source" : "ff08e225-0ee9-40fa-9132-fb2989299b3e",
+    "target" : "76c66f20-e0f6-480b-a878-03a4830f1a3c"
+  } ],
+  "vertexHashMap" : {
+    "9e878930-2e20-4a75-8537-7d74ab4b91e4" : {
+      "vertexId" : "9e878930-2e20-4a75-8537-7d74ab4b91e4",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "76c66f20-e0f6-480b-a878-03a4830f1a3c" : {
+      "vertexId" : "76c66f20-e0f6-480b-a878-03a4830f1a3c",
+      "vertexType" : "TARGET",
+      "name" : "get-allproducts",
+      "target" : {
+        "name" : "get-allproducts",
+        "description" : "An apple mobile which is nothing like apple",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "jhfvtuvgiuybhj",
+          "path" : "/V1/products/",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : ""
+          }, {
+            "name" : "Authorization",
+            "value" : ""
+          }, {
+            "name" : "limit",
+            "value" : ""
+          }, {
+            "name" : "skip",
+            "value" : ""
+          }, {
+            "name" : "select",
+            "value" : ""
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "ff08e225-0ee9-40fa-9132-fb2989299b3e" : {
+      "vertexId" : "ff08e225-0ee9-40fa-9132-fb2989299b3e",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Oauth2service",
+      "target" : {
+        "name" : "Oauth2service",
+        "description" : "Oauth2service",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "mock.apiwiz.io",
+          "path" : "/oauth/accesstoken",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718608256272,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "4b714ccc6ea8b2b189ca4fc648455194a78f3490",
+    "timeStamp" : 1718608256272,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "5e5171c4e3cfdfffa9e5e66679055dd7aa048421",
+    "timeStamp" : 1718713473228,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "a9508a0e2db7202a0b662c5feeb871bc1cbd005a",
+    "timeStamp" : 1718713540987,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
