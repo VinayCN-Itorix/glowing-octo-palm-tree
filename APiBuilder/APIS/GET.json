@@ -3,12 +3,13 @@
   "cts" : 1718608732349,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1718714580925,
+  "mts" : 1718773239354,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "666fe35c122de46624608b2f",
   "revision" : 1,
   "name" : "GET",
+  "description" : "description",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
   "path" : "/events/events",
@@ -28,26 +29,26 @@
       "requestVariables" : [ {
         "name" : "EventUUID",
         "reference" : "headers",
-        "value" : "",
-        "active" : false,
+        "value" : "123",
+        "active" : true,
         "hide" : false
       }, {
         "name" : "22",
         "reference" : "headers",
-        "value" : "",
-        "active" : false,
+        "value" : "233",
+        "active" : true,
         "hide" : false
       }, {
         "name" : "help",
         "reference" : "headers",
-        "value" : "",
-        "active" : false,
+        "value" : "12",
+        "active" : true,
         "hide" : false
       }, {
         "name" : "x-tenant",
         "reference" : "headers",
-        "value" : "",
-        "active" : false,
+        "value" : "2",
+        "active" : true,
         "hide" : false
       } ],
       "imported" : true
@@ -74,6 +75,11 @@
   "changeLogs" : [ {
     "commitId" : "4c799ee51d648d79ccf4d53d3937940abf6eb945",
     "timeStamp" : 1718608732349,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "faf8239ecac1efec59760aaa59edbf9317272d6f",
+    "timeStamp" : 1718714580925,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
