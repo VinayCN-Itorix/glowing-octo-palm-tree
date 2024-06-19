@@ -1,0 +1,147 @@
+{
+  "id" : "666fe35e122de46624608b30",
+  "cts" : 1718608732349,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1718794976966,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "666fe35c122de46624608b2f",
+  "revision" : 1,
+  "name" : "GET-events",
+  "description" : "description",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/events/events",
+  "pathArray" : [ "events", "events" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "f3e9e2de-ffc4-46a5-ae4a-b2b49fd66b0e"
+  }, {
+    "source" : "f3e9e2de-ffc4-46a5-ae4a-b2b49fd66b0e",
+    "target" : "2b6998c8-19eb-482e-b2bb-bf840a966472"
+  } ],
+  "vertexHashMap" : {
+    "f3e9e2de-ffc4-46a5-ae4a-b2b49fd66b0e" : {
+      "vertexId" : "f3e9e2de-ffc4-46a5-ae4a-b2b49fd66b0e",
+      "vertexType" : "TARGET",
+      "name" : "oauth2service",
+      "target" : {
+        "name" : "oauth2service",
+        "description" : "oauth2service",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "mock.apiwiz.io",
+          "path" : "/",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ {
+            "name" : "grant_type",
+            "reference" : "body",
+            "value" : "client_credentials",
+            "active" : true,
+            "source" : "urlEncoding",
+            "hide" : false
+          } ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "EventUUID",
+        "reference" : "headers",
+        "value" : "123",
+        "active" : true,
+        "hide" : false
+      }, {
+        "name" : "22",
+        "reference" : "headers",
+        "value" : "233",
+        "active" : true,
+        "hide" : false
+      }, {
+        "name" : "help",
+        "reference" : "headers",
+        "value" : "12",
+        "active" : true,
+        "hide" : false
+      }, {
+        "name" : "x-tenant",
+        "reference" : "headers",
+        "value" : "2",
+        "active" : true,
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "2b6998c8-19eb-482e-b2bb-bf840a966472" : {
+      "vertexId" : "2b6998c8-19eb-482e-b2bb-bf840a966472",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1718608732349,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "4c799ee51d648d79ccf4d53d3937940abf6eb945",
+    "timeStamp" : 1718608732349,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "faf8239ecac1efec59760aaa59edbf9317272d6f",
+    "timeStamp" : 1718714580925,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "2c129212569393fe2b89fa65e678fbeeaae0121b",
+    "timeStamp" : 1718773239354,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "40621132567dd785fbbd2b6dd6467865d79bb516",
+    "timeStamp" : 1718775398106,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false
+}
