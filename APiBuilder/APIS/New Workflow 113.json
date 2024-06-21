@@ -3,7 +3,7 @@
   "cts" : 1718963196558,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718964986267,
+  "mts" : 1718965015523,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "66754bfca08ce85ce84edda1",
@@ -51,7 +51,7 @@
       "vertexType" : "ASSERTION",
       "name" : "Assertion",
       "assertion" : {
-        "expression" : " ({0}) && ({1})",
+        "expression" : " ({0}) && ({1}) && ({2})",
         "placeHolders" : [ {
           "rule" : "EQUAL_TO",
           "key" : "url-env",
@@ -62,6 +62,11 @@
           "key" : "host-env",
           "value" : "postman-echo.com",
           "valueDataType" : "STRING"
+        }, {
+          "rule" : "EQUAL_TO",
+          "key" : "header-env",
+          "value" : "123",
+          "valueDataType" : "INTEGER"
         } ],
         "continueOnError" : false,
         "errorResponse" : {
@@ -260,6 +265,11 @@
   }, {
     "commitId" : "c1384b517d21730a8923571efa3e2f946cf8b294",
     "timeStamp" : 1718964937713,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "0690c5f1f5d0aeadb9d0d7ad7988cd26fc13c29f",
+    "timeStamp" : 1718964986267,
     "modifiedBy" : "divakar v",
     "totalNodes" : 6
   } ],
