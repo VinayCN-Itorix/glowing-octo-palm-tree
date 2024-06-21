@@ -1,0 +1,66 @@
+{
+  "id" : "6670e830e7808dfe0f4b4439",
+  "cts" : 1717149268141,
+  "createdUserName" : "Darshan Shivashankar",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1718944728934,
+  "createdBy" : "60367d4038e56d398c70be6f",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "66597de9a232957aabb1cd21e3",
+  "revision" : 1,
+  "name" : "DataBase",
+  "description" : "DataBase",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/db/find-op",
+  "pathArray" : [ "db", "find-op" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v2",
+    "target" : "v3"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "DATABASE",
+      "name" : "Get DATABASE Data",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\n  \"databaseName\": \"test-team\",\n  \"operation\": \"find\",\n  \"collection\": \"ApiBuilder.VirtualHosts.List\",\n  \"filter\": {\n    \"status\": \"TESTED\"\n  },\n  \"projection\": {\n    \"_id\": 1,\n    \"name\": 1,\n    \"host\": 1,\n    \"scheme\": 1,\n    \"deploymentAccess\": 1,\n    \"operationalAccess\": 1,\n    \"status\": 1\n  }\n}",
+        "variableName" : "databaseResponse"
+      },
+      "imported" : false
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{databaseResponse}}}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "enableTracing" : false,
+  "deployed" : false
+}
