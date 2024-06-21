@@ -3,7 +3,7 @@
   "cts" : 1718963196558,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718963636092,
+  "mts" : 1718964751186,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "66754bfca08ce85ce84edda1",
@@ -17,10 +17,13 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
+    "source" : "9aabbe14-9c0d-4958-b54c-5d08e077552e",
+    "target" : "22684bc2-f2a0-4c47-956a-66cdc59d172d"
+  }, {
     "source" : "v1",
     "target" : "9aabbe14-9c0d-4958-b54c-5d08e077552e"
   }, {
-    "source" : "9aabbe14-9c0d-4958-b54c-5d08e077552e",
+    "source" : "22684bc2-f2a0-4c47-956a-66cdc59d172d",
     "target" : "7efe89ac-5d93-4032-86c7-7017fe844c42"
   } ],
   "vertexHashMap" : {
@@ -35,6 +38,34 @@
           "type" : "JSON"
         }
       }
+    },
+    "22684bc2-f2a0-4c47-956a-66cdc59d172d" : {
+      "vertexId" : "22684bc2-f2a0-4c47-956a-66cdc59d172d",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : " ({0}) && ({1})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "url-env",
+          "value" : "https://postman-echo.com/get",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "EQUAL_TO",
+          "key" : "host-env",
+          "value" : "postman-echo.com",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "9aabbe14-9c0d-4958-b54c-5d08e077552e" : {
       "vertexId" : "9aabbe14-9c0d-4958-b54c-5d08e077552e",
@@ -119,6 +150,11 @@
     "timeStamp" : 1718963196558,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
+  }, {
+    "commitId" : "768c0574491da0e83d49736ccd9199f1db70e643",
+    "timeStamp" : 1718963636092,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
