@@ -3,7 +3,7 @@
   "cts" : 1718963196558,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1718964895967,
+  "mts" : 1718964937713,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "66754bfca08ce85ce84edda1",
@@ -17,13 +17,16 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
+    "source" : "d2b73265-0f38-4778-855c-1f12ade26d44",
+    "target" : "4972c5ed-cba1-43e2-a3c3-5a8d5ce84358"
+  }, {
     "source" : "22684bc2-f2a0-4c47-956a-66cdc59d172d",
     "target" : "d2b73265-0f38-4778-855c-1f12ade26d44"
   }, {
     "source" : "9aabbe14-9c0d-4958-b54c-5d08e077552e",
     "target" : "22684bc2-f2a0-4c47-956a-66cdc59d172d"
   }, {
-    "source" : "d2b73265-0f38-4778-855c-1f12ade26d44",
+    "source" : "4972c5ed-cba1-43e2-a3c3-5a8d5ce84358",
     "target" : "7efe89ac-5d93-4032-86c7-7017fe844c42"
   }, {
     "source" : "v1",
@@ -185,6 +188,29 @@
         }
       },
       "imported" : false
+    },
+    "4972c5ed-cba1-43e2-a3c3-5a8d5ce84358" : {
+      "vertexId" : "4972c5ed-cba1-43e2-a3c3-5a8d5ce84358",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : " ({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "accept_env",
+          "value" : "*/*",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -218,6 +244,11 @@
     "timeStamp" : 1718964773875,
     "modifiedBy" : "divakar v",
     "totalNodes" : 4
+  }, {
+    "commitId" : "20debbb01ff1bf458c66da614396d5823d15af32",
+    "timeStamp" : 1718964895967,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
