@@ -1,0 +1,71 @@
+{
+  "cts" : 1719207903098,
+  "createdUserName" : "Vinay CN",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1719207903098,
+  "createdBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "667907df91f5865dc4355184",
+  "revision" : 1,
+  "name" : "test-comlpex",
+  "description" : "DataBase",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/db/pipeline/aggregate-complex",
+  "pathArray" : [ "db", "pipeline", "aggregate-complex" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v2",
+    "target" : "v3"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "DATABASE",
+      "name" : "Get DATABASE Data",
+      "databaseData" : {
+        "connectorId" : "64b2cbd64a3154389c8be833",
+        "databaseType" : "MONGODB",
+        "query" : "{\n  \"databaseName\": \"test-team\",\n  \"operation\": \"aggregate\",\n  \"collection\": \"ApiBuilder.Proxy.Deployed.List\",\n  \"pipelines\": [\n  {\n    $match:\n      {\n        path: \"/db\"\n      }\n  }\n]\n}\n",
+        "variableName" : "databaseResponse"
+      },
+      "imported" : false
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{databaseResponse}}}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1719207903098,
+    "lastModifiedBy" : "Vinay CN",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
