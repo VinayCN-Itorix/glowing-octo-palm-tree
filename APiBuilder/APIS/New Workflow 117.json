@@ -1,10 +1,11 @@
 {
+  "id" : "667a8dcd91f5865dc4355192",
   "cts" : 1719307722394,
   "createdUserName" : "Vinay CN",
-  "modifiedUserName" : "Vinay CN",
-  "mts" : 1719307722394,
+  "modifiedUserName" : "pranav A",
+  "mts" : 1719377732505,
   "createdBy" : "65a8bb25f536760799fcd4fd",
-  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "667a8dca91f5865dc4355191",
   "revision" : 1,
   "name" : "New Workflow 117",
@@ -14,21 +15,48 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Vinay CN",
+  "lockedBy" : "pranav A",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "9b854b0a-48fa-4fb2-ab9e-77edfa9b2b56"
+    "target" : "3c714962-9526-4242-8f9f-687da81e3229"
+  }, {
+    "source" : "3c714962-9526-4242-8f9f-687da81e3229",
+    "target" : "92564eab-a642-4018-926f-bd5b879c825f"
+  }, {
+    "source" : "3c714962-9526-4242-8f9f-687da81e3229",
+    "target" : "d44ac868-c43c-45fe-9558-7818fb19d706"
+  }, {
+    "source" : "3c714962-9526-4242-8f9f-687da81e3229",
+    "target" : "54fea3c5-360c-422b-a52e-144c822b02a6"
   } ],
   "vertexHashMap" : {
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ],
+    "3c714962-9526-4242-8f9f-687da81e3229" : {
+      "vertexId" : "3c714962-9526-4242-8f9f-687da81e3229",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "92564eab-a642-4018-926f-bd5b879c825f" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "d44ac868-c43c-45fe-9558-7818fb19d706" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "54fea3c5-360c-422b-a52e-144c822b02a6" ]
+      } ],
       "imported" : false
     },
-    "9b854b0a-48fa-4fb2-ab9e-77edfa9b2b56" : {
-      "vertexId" : "9b854b0a-48fa-4fb2-ab9e-77edfa9b2b56",
+    "54fea3c5-360c-422b-a52e-144c822b02a6" : {
+      "vertexId" : "54fea3c5-360c-422b-a52e-144c822b02a6",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -38,6 +66,38 @@
           "type" : "JSON"
         }
       }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "d44ac868-c43c-45fe-9558-7818fb19d706" : {
+      "vertexId" : "d44ac868-c43c-45fe-9558-7818fb19d706",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "92564eab-a642-4018-926f-bd5b879c825f" : {
+      "vertexId" : "92564eab-a642-4018-926f-bd5b879c825f",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "data" : "\"this is a secure call with jsessionid\"",
+          "type" : "json"
+        }
+      }
     }
   },
   "statusHistory" : [ {
@@ -45,6 +105,12 @@
     "cts" : 1719307722394,
     "lastModifiedBy" : "Vinay CN",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "da2779b867833d7d82915a561c2709d3c141b63a",
+    "timeStamp" : 1719307722394,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
