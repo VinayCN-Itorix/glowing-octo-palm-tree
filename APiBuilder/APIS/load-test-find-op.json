@@ -1,0 +1,71 @@
+{
+  "cts" : 1719480004329,
+  "createdUserName" : "Vinay CN",
+  "modifiedUserName" : "Vinay CN",
+  "mts" : 1719480004329,
+  "createdBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "65a8bb25f536760799fcd4fd",
+  "proxyId" : "667d2ec42f695d02832978cc",
+  "revision" : 1,
+  "name" : "load-test-find-op",
+  "description" : "DataBase",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/load/find-op",
+  "pathArray" : [ "load", "find-op" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Vinay CN",
+  "edgeSet" : [ {
+    "source" : "v2",
+    "target" : "v3"
+  }, {
+    "source" : "v1",
+    "target" : "v2"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "v2" : {
+      "vertexId" : "v2",
+      "vertexType" : "DATABASE",
+      "name" : "Get DATABASE Data",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\n  \"databaseName\": \"test-team\",\n  \"operation\": \"aggregate\",\n  \"collection\": \"API.Compliance.Report\",\n  \"pipelines\": [\n    { \"$match\": { \"isCompliant\": false } },\n    { \"$group\": { \"_id\": \"$appName\", \"count\": { \"$sum\": 1 } } },\n    { \"$sort\": { \"count\": -1 } }\n  ]\n}\n",
+        "variableName" : "databaseResponse"
+      },
+      "imported" : false
+    },
+    "v3" : {
+      "vertexId" : "v3",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{databaseResponse}}}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1719480004329,
+    "lastModifiedBy" : "Vinay CN",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "deployed" : false
+}
